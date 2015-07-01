@@ -1,0 +1,21 @@
+{
+  "name": "SPJedi",
+  "version": "0.0.0",
+  "authors": [
+    "Anne Tsugunyan <anne.tsugunyan@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "scrollReveal.js": "~2.3.2",
+    "jquery": "1.11.3",
+    "slick.js": "~1.5.5"
+  }
+}
