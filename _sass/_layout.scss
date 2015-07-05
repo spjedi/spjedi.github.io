@@ -1206,11 +1206,101 @@
         font-size: 24px;
         color: #727272;
     }
+    .about-migration {
+        background-image: url(../img/blackmamba.png);
+        h2 {
+            color: #fff;
+            padding: 50px 0;
+            font-size: 40px;
+        }
+
+        .migration-box {
+            position: relative;
+            margin-bottom: 50px;
+            & > span {
+                position: absolute;
+                z-index: 20;
+                left: 50%;
+                width: 60px;
+                height: 60px;
+                border: 1px solid #e0e0e0;
+                margin-top: -30px;
+                margin-left: -30px;
+                background-color: #f8f8f8;
+                text-align: center;
+                -webkit-transition: all 0.2s;
+                transition: all 0.2s;
+            }
+            & > span i {
+                display: inline-block;
+                font-size: 40px;
+                line-height: 60px;
+                -webkit-transition: all 0.2s;
+                transition: all 0.2s;
+                color: #F68E55;;
+            }
+            .icon-box-content {
+                position: relative;
+                z-index: 10;
+                padding: 70px 40px 30px 40px;
+                border: 1px solid #e0e0e0;
+                border-radius: 3px;
+                margin-top: 16px;
+                text-align: center;
+                @media #{$xs} { 
+                    padding: 50px 15px 15px 15px
+                }
+
+                h3 {
+                    font-size: 30px;
+                    color: #4FB7FF;
+                    font-family: 'Lora', serif;
+                    @media #{$xs} { 
+                        font-size: 25px;
+                    }
+                }
+                p {
+                    color: #fff;
+                    font-size: 20px;
+                    @media #{$xs} { 
+                        font-size: 18px;
+                    }
+                }
+            }
+            &:hover h3 {
+                color: #F68E55;
+            }
+            &:hover > span {
+                background-color: #4fb7ff;
+                color: #fff;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            &:hover > span i {
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                color: #fff;
+            }
+        }
+
+
+    }
+
+
+
+
+
     .migration-approach {
         background-color: #f8f8f8;
     }
     .approach-box {
         margin: 15px 0;
+            @media #{$xs} {
+                margin: 0;
+            }
+        &:last-child {
+            padding-bottom: 30px;
+        }
         & > div {
             @media #{$xs} {
                 margin-top: 15px;
@@ -1253,13 +1343,23 @@
         }
     }
     .office365-info {
+        margin-bottom: 30px;
+        background-image: url(../img/brillant.png);
+        img {
+            width: 100%;
+        }
         h3 {
             margin: 20px 0;
             font-size: 30px;
             color: rgb(246, 142, 85);
+            small {
+                display: block;
+                color: rgb(246, 142, 85);
+                padding: 5px;
+                font-weight: 100;
+            }
         }
         .office365-boxs {
-
             &> div {
                 color: #818181;
                 font-size: 20px;
