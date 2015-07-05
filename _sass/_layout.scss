@@ -532,6 +532,7 @@
     }
     .background-testimonials {
         padding: 15px 33px;
+        background-image: url(../img/brillant.png);
     }
     .clients-slider img {
         border: 1px solid #4FB7FF;
@@ -1343,7 +1344,7 @@
         }
     }
     .office365-info {
-        margin-bottom: 30px;
+        padding-bottom: 30px;
         background-image: url(../img/brillant.png);
         img {
             width: 100%;
@@ -1370,6 +1371,68 @@
                 }
                 span {
                     font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+
+/******** Project page ********/
+.project-page {
+    .project-hub-img {
+        & > div {
+            margin-top: 15px;
+        }
+        .mask-box {
+            position: relative;
+            height: 100%;
+            display: block;
+            border: 1px solid rgb(246, 142, 85);
+            &:hover {
+                text-decoration: none; 
+                .mask {
+                    display: table-cell;
+                }
+            }
+            img {
+                width: 100%;
+                height: 250px;
+            }
+            h4 {
+                font-size: 25px;
+                position: relative;
+                bottom: -1px;
+                text-decoration: none;
+                margin: 0;
+                background-color: rgba(0, 159, 180, 0.84);
+                color: #fff;
+                font-weight: 400;
+                small {
+                    display: block;
+                    padding: 5px 0;
+                    font-size: 16px;
+                    font-style: italic;
+                    color: #fff;
+                    font-weight: 400;
+                }
+            }
+            .mask {
+                display: none;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: inherit;
+                vertical-align: middle;
+                background-color: rgba(29, 52, 95, 0.21);
+                i {
+                    color: #fff;
+                    font-size: 40px;
+                    text-align: center;
+                    display: inherit;
+                    vertical-align: middle;
+                    position: relative;
+                    top: 40%;
                 }
             }
         }
