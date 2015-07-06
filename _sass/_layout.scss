@@ -1,11 +1,11 @@
 /********** Basic styles *****/
 .orange-button {
     background-color: #F68E55;
-     @extend .button-styles
+     @extend .button-styles;
 }
 .blue-button {
     background-color: #009FB4;
-     @extend .button-styles
+     @extend .button-styles;
 }
 .button-styles {
     padding: 5px 15px;
@@ -131,15 +131,15 @@
             }
             .main-menu {
                 margin: 0 15px 0 0;
+                li a {
+                    padding: 15px 8px;
+                }
             }
             ul.main-menu > li > a:before {
-                bottom: 8px;
+                bottom: -1px;
             }
             .sub-menu {
-                top: 55px;
-                @media #{$sm} {
-                    top: 38px;
-                }
+                top: 47px;
             }
             .navbar-toggle {
                 margin-top: 14px;
@@ -357,14 +357,75 @@
     }
     .slider-1, .slider-2, .slider-3, .slider-4 {
         @extend .background-img-position;
-        height: 380px;
+        height: 450px;
+        @media #{$xs} {
+            height: 370px;
+        }
+    }
+    .slider-color {
+        width: 100%;
+        height: inherit;
+        background-color: rgba(0, 0, 0, 0.17);
     }
     .carousel-indicators {
         bottom: -5px;
     }
-    .carousel-caption > button {
-        margin-right: 10px;
-
+    .carousel-caption {
+        right: 0;
+        left: 15%;
+        top: 0;
+        @media #{$xs} {
+            left: 0;
+            right: 0;
+        }
+        .slider-button {
+            position: absolute;
+            bottom: 25px;
+            left: 0;
+            
+            button {
+                margin-right: 10px;
+            }
+        }
+        h2 {
+            color: #009FB4;
+            font-weight: 700;
+            position: relative;
+            top: 10px;
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            text-align: left;
+            text-shadow: none;
+            @media #{$xs} {
+                font-size: 26px;
+                margin-bottom: 20px;
+                top: 0;
+                text-align: center;
+            }
+        }
+        .slider-text {
+            p {
+                color: #fff;
+                font-size: 25px;
+                font-weight: 700;
+                text-shadow: none;
+                @media #{$xs} {
+                    font-size: 20px;
+                    margin: 5px 0;
+                    text-align: center;
+                }
+                i {
+                    color: #009FB4;
+                    width: 45px;
+                    font-size: 40px;
+                    @media #{$xs} {
+                        font-size: 17px;
+                        width: 20px;
+                }
+                }
+            }
+        }
     }
     .home-second-block {
         background-color: #f8f8f8;
@@ -1380,6 +1441,7 @@
 
 /******** Project page ********/
 .project-page {
+    background-image: url(../img/brillant.png);
     .project-hub-img {
         & > div {
             margin-top: 15px;
@@ -1388,7 +1450,7 @@
             position: relative;
             height: 100%;
             display: block;
-            border: 1px solid rgb(246, 142, 85);
+            border: 1px solid #d2d2d2;
             &:hover {
                 text-decoration: none; 
                 .mask {
@@ -1397,7 +1459,7 @@
             }
             img {
                 width: 100%;
-                height: 250px;
+                height: 180px;
             }
             h4 {
                 font-size: 25px;
@@ -1434,6 +1496,106 @@
                     position: relative;
                     top: 40%;
                 }
+            }
+        }
+    }
+    .application-overview {
+        border: 1px solid #D2D2D2;
+        border-top: 3px solid rgb(39, 173, 190);
+        padding: 15px;
+        text-align: center;
+        margin-top: 15px;
+        background-color: #fff;
+        h4 {
+            font-size: 22px;
+        }
+        p {
+            color: rgb(145, 145, 145);
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            &:hover {
+                background-color: #009FB4;
+                color: #fff;
+                -webkit-transition: background .5s ease-in;
+                -moz-transition: background .5s ease-in;
+                -o-transition: background .5s ease-in;
+                -ms-transition: background .5s ease-in;
+                transition: background .5s ease-in;
+                transition: 0.6s ease;
+                -webkit-transition: 0.5s ease;
+                -moz-transition:  0.5s ease;
+                -o-transition:  0.5s ease;
+            }
+            i {
+                margin-right: 10px;
+            }
+        }
+        .top-header {
+            margin-top: 10px;
+            text-align: right;
+            background-color: #fff;
+        }
+    }
+    .application-overview-2 {
+        button {
+            margin-top: 15px;
+            &:hover {
+                background-color: #F68E55;
+                -webkit-transition: background .5s ease-in;
+                -moz-transition: background .5s ease-in;
+                -o-transition: background .5s ease-in;
+                -ms-transition: background .5s ease-in;
+                transition: background .5s ease-in;
+                transition: 0.6s ease;
+                -webkit-transition: 0.5s ease;
+                -moz-transition:  0.5s ease;
+                -o-transition:  0.5s ease;
+            }
+        }
+        h5 {
+            display: inline-block;
+            margin: 0;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .row {
+            border-bottom: 1px solid #eee;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: left;
+            a {
+                border: 1px solid #eee;
+                padding: 5px;
+                text-decoration: none;
+                color: #009FB4;
+                display: inline-block;
+                margin-top: 5px;
+            }
+        }
+    }
+    .related-applications {
+        background-image: url(../img/blur-lead.jpg);
+        @extend .background-img-position;
+        padding: 30px 0;
+        margin-top: 20px;
+        a {
+            text-decoration: none;
+        }
+        h4 {
+            color: #fff;
+            font-weight: 700;
+            margin: 5px 0;
+        }
+        h4 + p {
+            color: #fff;
+            font-style: italic;
+        }
+        .row > div {
+            @media #{$sm} {
+                height: 275px;
             }
         }
     }
