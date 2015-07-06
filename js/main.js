@@ -8,45 +8,46 @@ $(document).ready(function(){
 		slidesToShow: 5,
 		slidesToScroll: 1,
 		responsive: [
-		{
-			breakpoint: 1024,
-			settings: {
-			slidesToShow: 4,
-			slidesToScroll: 1,
-			infinite: true,
-			dots: false
+			{
+				breakpoint: 1024,
+				settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: false
+				}
+			},
+			{
+				breakpoint: 850,
+				settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 640,
+				settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+				}
 			}
-		},
-		{
-			breakpoint: 850,
-			settings: {
-			slidesToShow: 3,
-			slidesToScroll: 1
-			}
-		},
-		{
-			breakpoint: 768,
-			settings: {
-			slidesToShow: 3,
-			slidesToScroll: 1
-			}
-		},
-		{
-			breakpoint: 640,
-			settings: {
-			slidesToShow: 2,
-			slidesToScroll: 1
-			}
-		},
-		{
-			breakpoint: 480,
-			settings: {
-			slidesToShow: 1,
-			slidesToScroll: 1
-			}
-		}
 		]
-		});
+	});
+
 	$('.testimonials').slick({
 		infinite: true,
 		dots: false,
@@ -58,6 +59,7 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	});
+
 	// resize header on scroll
 	$(window).on('scroll', headerResizeHandler);
 
@@ -91,15 +93,70 @@ $(document).ready(function(){
 
 
 	// Google map
-	 function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var mapOptions = {
-          center: new google.maps.LatLng(33.3111327, -111.9770588,665),
-          zoom: 20,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-      
+	function initialize() {
+		var mapCanvas = document.getElementById('map-canvas');
+		var mapOptions = {
+			center: new google.maps.LatLng(33.3111327, -111.9770588,665),
+			zoom: 20,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+		var map = new google.maps.Map(mapCanvas, mapOptions);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+
+
+	$("#contactForm").submit(function(e) {
+		e.preventDefault();
+
+		var $that = $(this);
+
+		var $name = $that.find('[name=name]'),
+			$email = $that.find('[name=email]'),
+			$subject = $that.find('[name=subject]'),
+			$message = $that.find('[name=message]');
+
+		var $button = $that.find('#msg button');
+
+		$button.addClass('loading').prop('disabled', true);
+
+		$.ajax({
+			type: "POST",
+			url: "https://mandrillapp.com/api/1.0/messages/send.json",
+			data: {
+				'key': 'vkzXy4TRFE87bF0uGwcvwQ',
+				'message': {
+					'from_email': $email.val(),
+					'from_name': $name.val(),
+					'headers': {
+						'Reply-To': $email.val()
+					},
+					'subject': $subject.val(),
+					'text': $message.val(),
+					'to': [
+						{
+							'email': 'info@spjedi.com',
+							'name': 'Jed Elliott',
+							'type': 'to'
+						}
+					]
+				}
+			}
+		})
+		.done(function(response) {
+			$button.removeClass('loading').prop('disabled', false);
+			$name.val('');
+			$email.val('');
+			$subject.val('');
+			$message.val('');
+
+			$('.status-message').addClass('hidden');
+			$('.status-message.text-success').removeClass('hidden');
+		})
+		.fail(function(response) {
+			$('.status-message').addClass('hidden');
+			$('.status-message.text-danger').removeClass('hidden');
+		});
+	});
+
 });

@@ -1,10 +1,11 @@
 ---
 layout: default
+permalink: /contact/
 ---
 <div class="contactus-page header-position">
 	<div class="contact-background-img">
 		<h1 class="contact-info animated zoomIn">
-			 Feel free to talk to our online<br>representative at any time you please using our Live Chat<br> system on our website or one of the below<br>instant messaging programs.
+			Feel free to talk to our online<br>representative at any time you please using our Live Chat<br> system on our website or one of the below<br>instant messaging programs.
 			<div class="header-line"></div>
 			<small>Please be patient while waiting for response. (24/7 Support!)</small>
 		</h1>
@@ -23,43 +24,53 @@ layout: default
 					</div>
 					<div class="social-icons">
 						<ul>
-			               <a href="#" title="Facebook"><li><i class="fa fa-facebook"></i></li></a>
-			               <a href="#" title="Twitter"><li><i class="fa fa-twitter"></i></li></a>
-			               <a href="#" title="Dribble"><li><i class="fa fa-dribbble"></i></li></a>
-			               <a href="#" title="LinkedIn"><li><i class="fa fa-linkedin"></i></li></a>
-			               <a href="#" title="Rss"><li><i class="fa fa-rss"></i></li></a>
-			            </ul>
+							<a href="#" title="Facebook"><li><i class="fa fa-facebook"></i></li></a>
+							<a href="#" title="Twitter"><li><i class="fa fa-twitter"></i></li></a>
+							<a href="#" title="Dribble"><li><i class="fa fa-dribbble"></i></li></a>
+							<a href="#" title="LinkedIn"><li><i class="fa fa-linkedin"></i></li></a>
+							<a href="#" title="Rss"><li><i class="fa fa-rss"></i></li></a>
+						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-8 col-sm-6 col-xs-12">
+
+				<p class="text-success status-message hidden">Succesfully sent.</p>
+				<p class="text-danger status-message hidden">Error sending email.</p>
+
 				<h2>Send Us an Email</h2>
-				<form class="row">
-					<div class="group col-sm-6">      
-						<input type="text" required>
+				<form id="contactForm" class="row">
+					<div class="group col-sm-6">
+						<input type="text" name="name" required>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Name</label>
 					</div>
-					<div class="group col-sm-6">      
-						<input type="text" required>
+					<div class="group col-sm-6">
+						<input type="email" name="email" required>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Email</label>
 					</div>
-					<div class="group col-sm-12">      
-						<input type="text" required>
+					<div class="group col-sm-12">
+						<input type="text" name="subject" required>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Subject</label>
 					</div>
-				</form>
-				<form class="row">
-					  <div class="form-group col-sm-12" id="msg">
-    					<label>Message</label>
-						<textarea class="form-control" rows="4"></textarea>
-						<button class="orange-button btn animated fadeIn">Send<i class="fa fa-paper-plane-o"></i></button>
+
+					<div class="form-group col-sm-12" id="msg">
+						<label>Message</label>
+						<textarea class="form-control" rows="4" name="message" required></textarea>
+
+						<button type="submit" class="orange-button btn animated fadeIn">
+							Send
+							<i class="fa fa-paper-plane-o"></i>
+							<i class="fa fa-refresh fa-spin"></i>
+						</button>
+
 					</div>
+
 				</form>
 			</div>
 		</div>
