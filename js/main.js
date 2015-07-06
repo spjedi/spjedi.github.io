@@ -79,10 +79,6 @@ $(document).ready(function(){
 	// Fancy box
 	$("a#single_image").fancybox();
 	
-	$("a#inline").fancybox({
-		'hideOnContentClick': true
-	});
-	
 	$("a.group").fancybox({
 		'transitionIn'	:	'elastic',
 		'transitionOut'	:	'elastic',
@@ -90,20 +86,6 @@ $(document).ready(function(){
 		'speedOut'		:	200, 
 		'overlayShow'	:	false
 	});
-
-
-	// Google map
-	function initialize() {
-		var mapCanvas = document.getElementById('map-canvas');
-		var mapOptions = {
-			center: new google.maps.LatLng(33.3111327, -111.9770588,665),
-			zoom: 20,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		}
-		var map = new google.maps.Map(mapCanvas, mapOptions);
-	}
-	google.maps.event.addDomListener(window, 'load', initialize);
-
 
 
 	$("#contactForm").submit(function(e) {
