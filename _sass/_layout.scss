@@ -1723,3 +1723,102 @@
         }
     }
 }
+
+/*********** Operation Assistance page ***********/
+.six-sigma-page {
+    background-color: #f8f8f8;
+    h2 {
+        padding-top: 20px;
+    }
+    .six-sigma-header {
+        background: url(/img/blur-lead.jpg);
+        padding: 10px;
+        h2 {
+            margin: 0;
+            color: #fff;
+            font-family: 'Lora', serif;
+            font-weight: 400;
+            padding: 0;
+            i {
+                margin-right: 20px;
+            }
+        }
+    }
+    h3 {
+        padding-top: 20px;
+    }
+    .comment-box {
+        border: 1px solid #eee;
+        border-top: 5px solid rgb(39, 173, 190); 
+        background-color: #fff;
+        padding: 15px;
+        span {
+            font-weight: 400;
+            font-size: 22px;
+            padding: 0 15px;
+        }
+        .comment-info {
+            margin-top: 15px;
+            color: rgb(144, 144, 144);
+            img {
+                border-radius: 100%;
+            }
+            small {
+                font-size: 15px;
+                color: rgb(39, 173, 190);
+                display: block;
+            }
+        }
+    }
+    .comment-box-2 {
+        margin-top: 30px;
+        padding: 0;
+
+        h6 {
+            font-weight: 400;
+            font-size: 22px;
+            padding: 0 15px;
+            padding-top: 15px;
+        }
+        p {
+            padding: 15px;
+            margin: 0;
+            color: rgb(144, 144, 144);
+        }
+        .testimonials-box {
+            img {
+                border-radius: 50%;
+            }
+            .arrow_box {
+                position: relative;
+                background: #ffffff;
+            }
+            .arrow_box:after {
+                top: 100%;
+                left: 30px;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-color: rgba(255, 255, 255, 0);
+                border-top-color: #ffffff;
+                border-width: 25px;
+            }
+            .name-testi {
+                display: block;
+                font-size: 17px;
+                color: rgb(39, 173, 190);
+            }
+            .info-test {
+                font-size: 16px;
+                color: rgb(144, 144, 144);
+            }
+        }
+        .v-center {
+            background-color: #f8f8f8;
+            padding: 25px 15px 15px 15px;
+        }
+    }
+}
