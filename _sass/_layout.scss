@@ -224,7 +224,7 @@
                 a {
                     color: #B2B2B2;
                     display: block;
-                    padding: 20px;
+                    padding: 19px;
 
                     @media #{$sm} {
                         padding: 15px 8px;
@@ -1611,6 +1611,115 @@
             @media #{$sm} {
                 height: 275px;
             }
+        }
+    }
+}
+
+
+/******* Remote Support page *********/
+.remote-support-page {
+    .about-remote {
+        background-image: url(../img/blur-lead.jpg);
+        padding: 40px 0;
+        .remote-support {
+            h5 {
+                font-size: 18px;
+                margin: 5px 0;
+                display: inline-block;
+                color: #fff;
+            }
+            a {
+                display: inline-block;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            p {
+                font-size: 17px;
+            }
+        }
+        h2 {
+            font-family: 'Lora', serif;
+            padding-bottom: 20px;
+            margin: 0;
+            color: #F68E55;
+            font-size: 40px;
+            font-weight: 400;
+            & + span {
+                font-size: 22px;
+                display: block;
+                color: rgb(0, 159, 180);
+                font-weight: 400;
+            }
+        }
+        p {
+            font-size: 22px;
+            color: #fff;
+        }
+    }
+    .aboutus-page {
+        .box-background {
+            .span-1 {
+                border-left: 1px solid #009fb4;
+                @media #{$xs} {
+                    border-left: none;
+                }
+            }
+            .span4 {
+                height: 200px;
+                .front {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    @media #{$xs} {
+                        padding: 0 10px;
+                    }
+                    img {
+                        height: 250px;
+                        width: 250px;
+                        @media #{$xs} {
+                            height: auto;
+                            width: auto;
+                        }
+                    }
+                }
+               .back .back-box {
+                    h3 {  
+                        font-size: 31px;
+                        color: #F68E55;
+                        padding-top: 15px;
+                    }
+                    p {
+                        font-size: 18px;
+                        color: #838383;
+                    }
+                }
+            }
+        }
+    }
+    .migration-page .about-migration {
+        background-image: url(/img/slide_5.jpg);
+        .header-line + .row {
+            padding-top: 20px;
+        }
+        .migration-box .icon-box-content {
+            min-height: 410px;
+            @media #{$xs} {
+                min-height: 200px;
+            }
+        }
+        .mig-box-3 .icon-box-content {
+            @media #{$sm} {
+                min-height: 200px;
+            }
+        }
+        .background-img-2 {
+            height: inherit;
+            background-color: rgba(0, 0, 0, 0.73);
+        }
+        h2 {
+            padding-top: 50px;
+            padding-bottom: 0;
+            font-family: 'Lora', serif;
         }
     }
 }
