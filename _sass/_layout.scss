@@ -1768,6 +1768,15 @@
                 color: rgb(39, 173, 190);
                 display: block;
             }
+            
+            @media #{$xs} { 
+                display: table;
+            }
+            & > * {
+                @media #{$xs} { 
+                    display: table-cell;
+                }
+            }
         }
     }
     .comment-box-2 {
@@ -1792,10 +1801,21 @@
             .arrow_box {
                 position: relative;
                 background: #ffffff;
+
+                & + .v-center {
+                    @media #{$xs} { 
+                        display: table;
+                    }
+                    & > * {
+                        @media #{$xs} { 
+                            display: table-cell;
+                        }
+                    }
+                }
             }
             .arrow_box:after {
                 top: 100%;
-                left: 30px;
+                left: 65px;
                 border: solid transparent;
                 content: " ";
                 height: 0;
@@ -1804,7 +1824,7 @@
                 pointer-events: none;
                 border-color: rgba(255, 255, 255, 0);
                 border-top-color: #ffffff;
-                border-width: 25px;
+                border-width: 17px;
             }
             .name-testi {
                 display: block;
