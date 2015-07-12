@@ -1012,7 +1012,7 @@
     .team-section {
         margin-top: 20px;
         & > div {
-            padding: 0;
+            padding: 0 2px;
         }
         .margin-position {
             margin-top: -120px;
@@ -1464,7 +1464,8 @@
             position: relative;
             height: 100%;
             display: block;
-            border: 1px solid #d2d2d2;
+            border: 7px rgba(246, 142, 85, 0.51);
+            border-style: double;
             &:hover {
                 text-decoration: none; 
                 .mask {
@@ -1841,4 +1842,49 @@
             padding: 25px 15px 15px 15px;
         }
     }
+}
+
+
+/************** FAQ *************/
+
+.faq-page {
+    .faq-box {
+        text-decoration: none;
+        h3 {
+            font-family: 'Lora', serif;
+            text-transform: capitalize;
+            color: rgb(190, 190, 190);
+            font-size: 20px;
+            margin-left: 10px;
+        }
+        .panel-title, a:visited, a:hover, a {
+            font-size: 25px;
+            color: rgb(82, 187, 208);
+            text-decoration: none;
+        }
+        .panel-body {
+            font-size: 17px;
+            color: rgb(147, 147, 147);
+            background-color: #fff;
+                img {
+                    width: 100%;
+                }
+            &:hover {
+                background-color: #fff;
+            }
+        }
+        .panel-heading {
+            padding: 18px;
+        }
+        .panel-default {
+            border: none;
+            border-bottom: 1px solid #f2f2f2;
+            border-radius: 0;
+            box-shadow: none;
+            margin-top: 0;
+            &:hover {
+                background-color: #f2f2f2;
+            }
+        }
+    }      
 }

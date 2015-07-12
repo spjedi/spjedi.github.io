@@ -60,6 +60,8 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 	});
 
+
+	window.sr = new scrollReveal();
 	// resize header on scroll
 	$(window).on('scroll', headerResizeHandler);
 
