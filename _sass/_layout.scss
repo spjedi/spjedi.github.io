@@ -1016,6 +1016,9 @@
         }
         .margin-position {
             margin-top: -120px;
+            @media #{$xs} {
+                margin-top: 0;
+            }
         }
 
         .masonry-project {
@@ -1598,6 +1601,9 @@
         margin-top: 20px;
         a {
             text-decoration: none;
+            img {
+                border: 2px solid rgb(246, 142, 85);
+            }
         }
         h4 {
             color: #fff;
@@ -1607,6 +1613,7 @@
         h4 + p {
             color: #fff;
             font-style: italic;
+            margin: 0;
         }
         .row > div {
             @media #{$sm} {
@@ -1848,6 +1855,20 @@
 /************** FAQ *************/
 
 .faq-page {
+    .faq-background {
+        background: url(/img/stardust.png);
+        padding: 70px 0;
+        -webkit-box-shadow: 3px 4px 20px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px 4px 20px -1px rgba(0,0,0,0.75);
+        box-shadow: 3px 4px 20px -1px rgba(0,0,0,0.75);
+        h2 {
+            color: #EA844C;
+            font-weight: 400;
+            margin: 0;
+            font-size: 36px;
+        }
+
+    }
     .faq-box {
         text-decoration: none;
         h3 {
@@ -1855,7 +1876,8 @@
             text-transform: capitalize;
             color: rgb(190, 190, 190);
             font-size: 20px;
-            margin-left: 10px;
+            text-align: center;
+            margin-top: 25px;
         }
         .panel-title, a:visited, a:hover, a {
             font-size: 25px;
