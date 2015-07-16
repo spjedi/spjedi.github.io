@@ -1857,26 +1857,83 @@
 .faq-page {
     .faq-background {
         background: url(/img/stardust.png);
-        padding: 70px 0;
-        -webkit-box-shadow: 3px 4px 20px -1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 3px 4px 20px -1px rgba(0,0,0,0.75);
-        box-shadow: 3px 4px 20px -1px rgba(0,0,0,0.75);
+        padding: 30px 0;
+        -webkit-box-shadow: 24px 26px 29px -30px rgba(0,0,0,0.75);
+        -moz-box-shadow: 24px 26px 29px -30px rgba(0,0,0,0.75);
+        box-shadow: 24px 26px 29px -30px rgba(0,0,0,0.75);
         h2 {
             color: #EA844C;
             font-weight: 400;
             margin: 0;
-            font-size: 36px;
+            font-size: 30px;
+
         }
 
     }
+    input {
+        font-size: 23px;
+        padding:10px 10px 10px 5px;
+        display:block;
+        width: 100%;
+        border:none;
+        border-bottom:1px solid #e4e4e4;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        &:focus {
+            webkit-box-shadow: none;
+            box-shadow: none;
+            border: none;
+            border-bottom:1px solid #e4e4e4;
+        }
+    }
+    .faq-headers {
+        margin-top: 25px;
+        @media #{$xs} { 
+            text-align: center;
+        }
+        h4 {
+            font-size: 25px;
+            color: #EA844C;
+            margin: 0;
+            border-bottom: 1px solid #e4e4e4;
+            padding-bottom: 15px;
+            width: 170px;
+            @media #{$xs} { 
+                text-align: center;
+                width: 100%;
+            }
+        }
+        a {
+            h5 {
+                padding: 10px;
+                font-size: 20px;
+                color: #52bbd0;
+                margin: 0;
+
+
+                &:hover {
+                    color: #444349;
+                    text-decoration: none;
+                    -webkit-transition: color .25s;
+                    transition: color .25s; 
+                    background-color: #f2f2f2;
+                }
+            }
+        }
+    }
     .faq-box {
         text-decoration: none;
+        @media #{$xs} { 
+            text-align: center;
+        }
         h3 {
             font-family: 'Lora', serif;
             text-transform: capitalize;
             color: rgb(190, 190, 190);
             font-size: 20px;
-            text-align: center;
             margin-top: 25px;
         }
         .panel-title, a:visited, a:hover, a {
@@ -1896,7 +1953,13 @@
             }
         }
         .panel-heading {
-            padding: 18px;
+            padding: 15px;
+            text-decoration: none;
+            h4 {
+                padding-top: 4px;
+                color: #EA844C;
+                font-size: 18px;
+            }
         }
         .panel-default {
             border: none;
