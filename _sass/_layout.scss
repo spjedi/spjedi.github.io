@@ -1969,6 +1969,12 @@
                 display: inline-block;
                 margin: 0;
             }
+            ol {
+                 @media #{$xs} { 
+                    display: inline-block;
+                    text-align: center;
+                }
+            }
         }
         .panel-default {
             border: none;

@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$('.clients-slider').slick({
 		infinite: true,
 		dots: false,
-		speed: 100,
+		autoplaySpeed: 4000,
 		autoplay: true,
 		arrows: false,
 		slidesToShow: 5,
@@ -51,13 +51,13 @@ $(document).ready(function(){
 	$('.testimonials').slick({
 		infinite: true,
 		dots: false,
-		speed: 400,
 		autoplay: true,
 		arrows: false,
 		verticalSwiping: true,
 		vertical: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
+		autoplaySpeed: 8500,
 	});
 
 
