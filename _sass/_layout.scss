@@ -1917,9 +1917,9 @@
                 &:hover {
                     color: #444349;
                     text-decoration: none;
-                    -webkit-transition: color .25s;
-                    transition: color .25s; 
-                    background-color: #f2f2f2;
+                    -webkit-box-shadow: 3px 12px 13px -12px rgba(0,0,0,0.6);
+                    -moz-box-shadow: 3px 12px 13px -12px rgba(0,0,0,0.6);
+                    box-shadow: 3px 12px 13px -12px rgba(0,0,0,0.6);
                 }
             }
         }
@@ -1935,10 +1935,12 @@
             color: rgb(190, 190, 190);
             font-size: 20px;
             margin-top: 25px;
+            margin-bottom: 3px;
         }
         .panel-title, a:visited, a:hover, a {
-            font-size: 25px;
-            color: rgb(82, 187, 208);
+            font-size: 22px;
+            color: #F48C57;
+            margin-top: 15px;
             text-decoration: none;
         }
         .panel-body {
@@ -1955,10 +1957,17 @@
         .panel-heading {
             padding: 15px;
             text-decoration: none;
+            li {
+                line-height: 20px;
+                color: rgb(190, 190, 198);
+            }
             h4 {
                 padding-top: 4px;
-                color: #EA844C;
-                font-size: 18px;
+                color: #52bbd0;
+                font-size: 15px;
+                font-weight: 400;
+                display: inline-block;
+                margin: 0;
             }
         }
         .panel-default {
