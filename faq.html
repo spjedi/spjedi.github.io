@@ -9,98 +9,50 @@ title: FAQ
 	</div>
 	
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<input type="text" class="form-control" placeholder="Search for...">
-			</div>
-		</div>
-		<div class="faq-box">
+		<div class="faq-box row">
 			<div class="col-md-4 col-sm-5 col-xs-12">
 				<div class="faq-headers">
 					<h4>Helps & FAQs</h4>
-					<a href="#box-1"><h5>SharePoint Online</h5></a>
-					<a href="#"><h5>SharePoint On-Premise</h5></a>
-					<a href="#"><h5>Office 365</h5></a>
-					<a href="#"><h5>Agile Methodology/Six Sigma</h5></a>
-					<a href="#"><h5>Staffing Assessment</h5></a>
-					<a href="#"><h5>Technology Assistance</h5></a>
+					<ul class="nav nav-stacked" role="tablist">
+						{% for heading in site.data.faq %}
+							<li role="presentation" class="{% if forloop.index == 1  %} active {% endif %}">
+								<a href="#heading-{{ forloop.index }}" aria-controls="heading-{{ forloop.index }}" role="tab" data-toggle="tab">
+									<h5>{{ heading.name }}</h5>
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
 				</div>
 			</div>
 
 			<div class="col-md-8 col-sm-7  col-xs-12">
 				<div class="panel-heading">
-					<h3>SharePoint Online</h3>
-					<ol>
-						<li><a href="#box-1"><h4 class="panel-title">Which one is option 1?</h4></a></li>
-						<li><a href="#box-2"><h4 class="panel-title">Where is the option 2?</h4></a></li>
-						<li><a href="#box-3"><h4 class="panel-title">What about option 3?</h4></a></li>
-						<li><a href="#box-4"><h4 class="panel-title">Have you seen option 4?</h4></a></li>
-						<li><a href="#box-5"><h4 class="panel-title">Is option 5 the last one?</h4></a></li>
-					</ol>
-					<h3>SharePoint On-Premise</h3>
-					<ol>
-						<li><a href="#box-1"><h4 class="panel-title">Which one is option 1?</h4></a></li>
-						<li><a href="#box-2"><h4 class="panel-title">Where is the option 2?</h4></a></li>
-						<li><a href="#box-3"><h4 class="panel-title">What about option 3?</h4></a></li>
-						<li><a href="#box-4"><h4 class="panel-title">Have you seen option 4?</h4></a></li>
-						<li><a href="#box-5"><h4 class="panel-title">Is option 5 the last one?</h4></a></li>
-					</ol>
-					<h3>Office 365</h3>
-					<ol>
-						<li><a href="#box-1"><h4 class="panel-title">Which one is option 1?</h4></a></li>
-						<li><a href="#box-2"><h4 class="panel-title">Where is the option 2?</h4></a></li>
-						<li><a href="#box-3"><h4 class="panel-title">What about option 3?</h4></a></li>
-						<li><a href="#box-4"><h4 class="panel-title">Have you seen option 4?</h4></a></li>
-						<li><a href="#box-5"><h4 class="panel-title">Is option 5 the last one?</h4></a></li>
-					</ol>
-					<h3>Agile Methodology/Six Sigma</h3>
-					<ol>
-						<li><a href="#box-1"><h4 class="panel-title">Which one is option 1?</h4></a></li>
-						<li><a href="#box-2"><h4 class="panel-title">Where is the option 2?</h4></a></li>
-						<li><a href="#box-3"><h4 class="panel-title">What about option 3?</h4></a></li>
-						<li><a href="#box-4"><h4 class="panel-title">Have you seen option 4?</h4></a></li>
-						<li><a href="#box-5"><h4 class="panel-title">Is option 5 the last one?</h4></a></li>
-					</ol>
-			</div>
 
-				<div class="row">
-					<div id="box-1">
-						<h3>SharePoint Online</h3>
-						<h5 class="panel-title">Which one is option 1?</h5>
-						<div class="panel-body">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-						</div>
-					</div>
-					
-					<div id="box-2">
-						<h5 class="panel-title">Where is the option 2?</h5>
-						<div class="panel-body row v-center">
-						<div class="col-sm-4">
-							<img src="/img/cat.jpg">
-						</div>
-						<div class="col-sm-8">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
-						</div>
-					</div>
-					
-					<div id="box-3">
-						<h5 class="panel-title">What about option 3?</h5>
-						<div class="panel-body">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-						</div>
-					</div>
-							
-					<div id="box-4">
-						<h5 class="panel-title">Have you seen option 4?</h5>
-						<div class="panel-body">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-						</div>
-					</div>
-							
-					<div id="box-5">
-						<h5 class="panel-title">Is option 5 the last one?</h5>
-						<div class="panel-body">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-						</div>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						{% for heading in site.data.faq %}
+
+							{% assign hid = forloop.index %}
+
+							<div role="tabpanel" class="tab-pane {% if forloop.index == 1  %} active {% endif %}" id="heading-{{ forloop.index }}">
+								<h3>{{ heading.name }}</h3>
+								<ol>
+									{% for question in heading.questions %}
+										<li><a href="#h{{ hid }}qa{{ forloop.index }}"><h4 class="panel-title">{{ question.name }}</h4></a></li>
+									{% endfor %}
+								</ol>
+								<div class="row">
+									{% for question in heading.questions %}
+										<div id="h{{ hid }}qa{{ forloop.index }}">
+											<h5 class="panel-title">{{ question.name }}</h5>
+											<div class="panel-body">
+												{{ question.answer }}
+											</div>
+										</div>
+									{% endfor %}
+								</div>
+							</div>
+						{% endfor %}
 					</div>
 				</div>
 			</div>
