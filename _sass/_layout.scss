@@ -369,16 +369,22 @@
 
 .home-page {
     .slider-1 {
-        background-image: url(../img/lucho.jpg)
+        background-image: url(../img/cloud.jpg)
     }
     .slider-2 {
-        background-image: url(../img/operational.jpg)
+        background-image: url(../img/lucho.jpg)
     }
     .slider-3 {
-        background-image: url(../img/helpdeskportal.jpg)
+        background-image: url(../img/operational.jpg)
     }
     .slider-4 {
-        background-image: url(../img/slide_5.jpg)
+        background-image: url(../img/helpdeskportal.jpg)
+    }
+	.slider-5 {
+        background-image: url(../img/lucho.jpg)
+    }
+	.slider-6 {
+        background-image: url(../img/web-design.jpg)
     }
     .slider-1, .slider-2, .slider-3, .slider-4 {
         @extend .background-img-position;
