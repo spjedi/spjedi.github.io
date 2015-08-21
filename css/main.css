@@ -484,6 +484,22 @@ footer .footer-copyright {
         margin-bottom: 20px;
         top: 0;
         text-align: center; } }
+      .home-page .carousel-caption h3 {
+    color: #ffffff;
+    font-weight: 700;
+    position: relative;
+    top: 10px;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: left;
+    text-shadow: none; }
+    @media (max-width: 767px) {
+      .home-page .carousel-caption h3 {
+        font-size: 26px;
+        margin-bottom: 20px;
+        top: 0;
+        text-align: center; } }
   .home-page .carousel-caption .slider-text p {
     color: #fff;
     font-size: 25px;
