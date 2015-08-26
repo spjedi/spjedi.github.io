@@ -40,7 +40,7 @@ $(document).ready(function(){
 				}
 			},
 			{
-				breakpoint: 480,
+				breakpoint: 535,
 				settings: {
 				slidesToShow: 1,
 				centerMode: true,
@@ -91,6 +91,28 @@ $(document).ready(function(){
 		'overlayShow'	:	false
 
 	});
+
+	$("a#single_image_2")
+    .attr('rel', 'gallery')
+    .fancybox({
+        padding    : 0,
+        margin     : 15,
+        nextEffect : 'fade',
+        prevEffect : 'none',
+        autoCenter : false,
+        afterLoad  : function () {
+            $.extend(this, {
+                aspectRatio : false,
+        		scrollOutside : false,
+        		autoResize : true,
+        		fitToView : false,
+        		scrollbars : 'auto',
+                type    : 'html',
+                maxWidth   : '80%',
+                content : '<div class="fancybox-image" style="background-image:url(' + this.href + '); background-size: cover; background-position:50% 50%;background-repeat:no-repeat;height:100%;width:100%;" /></div>'
+            });
+        }
+    });
 
 
 	$("#contactForm").submit(function(e) {
@@ -146,4 +168,19 @@ $(document).ready(function(){
 		});
 	});
 
+	$(".main").onepage_scroll({
+	   sectionContainer: ".section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+	   easing: "ease",                   // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in" //
+	   animationTime: 800,             // AnimationTime let you define how long each section takes to animate
+	   pagination: false,
+	   updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+	   beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+	   afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+	   loop: true,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+	   keyboard: true,                  // You can activate the keyboard controls
+	   responsiveFallback: 992,        // You can fallback to normal page scroll by defining the width of the browser in which
+	                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+	                                    // the browser's width is less than 600, the fallback will kick in.
+	   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+	});
 });
