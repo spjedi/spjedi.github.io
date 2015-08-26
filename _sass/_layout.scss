@@ -386,7 +386,7 @@
 	.slider-6 {
         background-image: url(../img/web-design.jpg)
     }
-    .slider-1, .slider-2, .slider-3, .slider-4 {
+    .slider-1, .slider-2, .slider-3, .slider-4, .slider-5, .slider-6 {
         @extend .background-img-position;
         height: 450px;
         @media #{$xs} {
