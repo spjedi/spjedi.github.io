@@ -71,7 +71,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .background-img-position, .home-page .slider-1, .home-page .slider-2, .home-page .slider-3, .home-page .slider-4, .home-page .slider-5, .home-page .slider-6, .home-page .home-third-block, .contactus-page .contact-background-img, .project-page .related-applications { background-size: cover; background-position: center; background-repeat: no-repeat; }
 
-.v-center { display: table; width:100%;}
+.v-center { display: table; width: 100%;}
 @media (max-width: 767px) { .v-center { display: block; } }
 
 .v-center > * { display: table-cell; vertical-align: middle; float: none; }
