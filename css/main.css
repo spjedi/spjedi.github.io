@@ -566,7 +566,7 @@ footer .footer-copyright a, footer .footer-copyright a:hover, footer .footer-cop
 .service-page .banner-main { position: relative;}
 .bannerService::before {background: url("../img/ico-hand-line.png") no-repeat scroll 50% 0;content: "";height: 558px; left: 49.5%; margin: 0 0 0 -400px; position: absolute; top: 167px; width: 799px;}
 .bannerService::after {background: url("../img/ico-hand.png") no-repeat scroll 50% 0; content: ""; height: 558px; left: 50%; margin: 0 0 0 -400px; position: absolute; top: 173px;width: 799px;}
-.bannerService { background: url("../img/slider-ourService.JPG") no-repeat scroll 50% 0 / cover ; color: #fff; height: 730px; position: relative; text-align: center;}
+.bannerService { background: url("../img/slider-ourService.jpg") no-repeat scroll 50% 0 / cover ; color: #fff; height: 730px; position: relative; text-align: center;}
 .service-page .banner-main .bannerCaption { position: absolute; top: 0; width: 100%;}
 .service-page .banner-main .bannerCaption .container { position: relative;}
 .cellSubscript { color: #fff; text-align: left;}
@@ -598,7 +598,7 @@ footer .footer-copyright a, footer .footer-copyright a:hover, footer .footer-cop
 .fix-br { float: right;}
 .service-page .fix-br { clear: none;}
 .service-page .fix-tl, .service-page .fix-tr, .service-page .fix-bl, .service-page .fix-br { position: relative; top: 0;}
-.bannerService { background: url("../img/slider-ourService.JPG") no-repeat scroll 50% 0 / cover;
+.bannerService { background: url("../img/slider-ourService.jpg") no-repeat scroll 50% 0 / cover;
     color: #fff; height: 500px; position: relative; text-align: center;}
 .bannerService:before { display: none;}
 .bannerService:after {  background: url("../img/ico-hand.png") no-repeat scroll 50% 0;
@@ -610,7 +610,7 @@ footer .footer-copyright a, footer .footer-copyright a:hover, footer .footer-cop
 .fix-tl, .fix-tr, .fix-bl, .fix-bm, .fix-br { padding: 20px 0; position: inherit; width: 100%;}
 .fix-tl, .service-page .fix-tl, .fix-bl, .service-page .fix-bl { float: none; text-align: center;}
 .service-page .fix-tr, .service-page .fix-br { float: none; text-align: center;}
-.bannerService { background: url("../img/slider-ourService.JPG") no-repeat scroll 50% 0 / cover;
+.bannerService { background: url("../img/slider-ourService.jpg") no-repeat scroll 50% 0 / cover;
     color: #fff; height: 715px; position: relative; text-align: center;}
 
 .cellSubscript li { display: table; margin: 0 auto;}
