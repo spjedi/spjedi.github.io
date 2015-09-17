@@ -540,11 +540,19 @@ textarea
 	cursor: pointer;
 }
 
-p,h1,h2,h3,h4,h5,h6,ol,ul,span.actAsPara /* disable Android font boosting */
+p,h1,h3,h4,h5,ol,ul,span.actAsPara /* disable Android font boosting */
 {
 	font-size: 11pt;
 }
 
+h2
+{
+	font-size: 25pt;
+}
+h6
+{
+	font-size: 20pt;
+}
 .superscript
 {
 	vertical-align: super;
