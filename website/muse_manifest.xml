@@ -1,39 +1,9 @@
-<manifest alg="2" build="2015.0.1.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="spjedi.com/migration" resolutions="1x" timestamp="1442552353537">
+<manifest alg="2" build="2015.0.1.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="website.com" resolutions="1x" timestamp="1442369546046">
   <folder name="css">
     <file name="site_global.css" crc="4090963256"/>
-    <file name="index.css" crc="58431217" ref="index"/>
+    <file name="index.css" crc="4074308302" ref="index"/>
   </folder>
   <folder name="assets">
-    <folder name="60daya">
-      <folder name="edge_includes">
-        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1442551849000"/>
-        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1442551849000"/>
-      </folder>
-      <folder name="images">
-        <file name="icon.png" crc="168494578" mt="1442551849000"/>
-        <file name="Migration Process-52.png" crc="280152076" mt="1442551849000"/>
-        <file name="Poster2.png" crc="168494578" mt="1442551849000"/>
-      </folder>
-      <file name="60daya_edge.js" crc="135538124" mt="1442551849000"/>
-      <file name="60daya_edgeActions.js" crc="80988673" mt="1442551849000"/>
-      <file name="60daya_edgePreload.js" crc="133884666" mt="1442551849000"/>
-      <file name="60daya.html" crc="442892805" mt="1442551849000"/>
-    </folder>
-    <folder name="screen">
-      <folder name="edge_includes">
-        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1442551813000"/>
-        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1442551813000"/>
-      </folder>
-      <folder name="images">
-        <file name="icon.png" crc="305114419" mt="1442551813000"/>
-        <file name="Migration Process-53.png" crc="3858487934" mt="1442551813000"/>
-        <file name="Poster.png" crc="305114419" mt="1442551813000"/>
-      </folder>
-      <file name="screen_edge.js" crc="3907009138" mt="1442551813000"/>
-      <file name="screen_edgeActions.js" crc="130674379" mt="1442551813000"/>
-      <file name="screen_edgePreload.js" crc="4168989456" mt="1442551813000"/>
-      <file name="screen.html" crc="3839735452" mt="1442551813000"/>
-    </folder>
     <folder name="mauthb">
       <folder name="edge_includes">
         <file name="edge.4.0.0.min.js" crc="4277870922" mt="1442215935000"/>
@@ -141,6 +111,21 @@
       <file name="mauth_edgePreload.js" crc="317450778" mt="1442039122000"/>
       <file name="mauth.html" crc="404032411" mt="1442039122000"/>
     </folder>
+    <folder name="screen">
+      <folder name="edge_includes">
+        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1442040095000"/>
+        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1442040095000"/>
+      </folder>
+      <folder name="images">
+        <file name="icon.png" crc="305114419" mt="1442040095000"/>
+        <file name="Migration Process-53.png" crc="3858487934" mt="1442040095000"/>
+        <file name="Poster.png" crc="305114419" mt="1442040095000"/>
+      </folder>
+      <file name="screen_edge.js" crc="4197578852" mt="1442040095000"/>
+      <file name="screen_edgeActions.js" crc="130674379" mt="1442040095000"/>
+      <file name="screen_edgePreload.js" crc="4168989456" mt="1442040095000"/>
+      <file name="screen.html" crc="3839735452" mt="1442040095000"/>
+    </folder>
     <folder name="smoke">
       <folder name="edge_includes">
         <file name="edge.4.0.0.min.js" crc="4277870922" mt="1441947666000"/>
@@ -186,6 +171,21 @@
       <file name="arow_edgeActions.js" crc="4144986594" mt="1441947624000"/>
       <file name="arow_edgePreload.js" crc="3796020520" mt="1441947624000"/>
       <file name="arow.html" crc="36569260" mt="1441947624000"/>
+    </folder>
+    <folder name="60daya">
+      <folder name="edge_includes">
+        <file name="edge.4.0.0.min.js" crc="4277870922" mt="1442040187000"/>
+        <file name="jquery-2.0.3.min.js" crc="4065232848" mt="1442040187000"/>
+      </folder>
+      <folder name="images">
+        <file name="icon.png" crc="168494578" mt="1442040187000"/>
+        <file name="Migration Process-52.png" crc="280152076" mt="1442040187000"/>
+        <file name="Poster.png" crc="168494578" mt="1442040187000"/>
+      </folder>
+      <file name="60daya_edge.js" crc="377692918" mt="1442040187000"/>
+      <file name="60daya_edgeActions.js" crc="80988673" mt="1442040187000"/>
+      <file name="60daya_edgePreload.js" crc="133884666" mt="1442040187000"/>
+      <file name="60daya.html" crc="442892805" mt="1442040187000"/>
     </folder>
     <folder name="office">
       <folder name="edge_includes">
@@ -250,7 +250,7 @@
     <file name="migration process-53.png" crc="447333770" seo="true" ref="phone>index:index"/>
     <file name="migration process-54.png" crc="437845034" seo="true" ref="phone>index:index"/>
     <file name="migration pro-30.png" crc="146725936" seo="true" ref="phone>index:index"/>
-    <file name="migration proces-17.png" crc="492965902" seo="true" ref="phone>index:index"/>
+    <file name="migration proces-17.png" crc="394366855" seo="true" ref="phone>index"/>
     <file name="migration hm-24.png" crc="249111477" seo="true" ref="phone>index:index"/>
     <file name="migration hm-25.png" crc="3957595307" seo="true" ref="phone>index:index"/>
     <file name="migration hm-23.png" crc="4169506593" seo="true" ref="phone>index:index"/>
@@ -267,12 +267,13 @@
     <file name="migration process-56.png" crc="413512395" seo="true" ref="index"/>
     <file name="migration hm-30.png" crc="242152741" seo="true" ref="index"/>
     <file name="migration process-17.png" crc="4068950184" seo="true" ref="index"/>
+    <file name="migration processp-18.png" crc="415806178" seo="true" ref="index"/>
   </folder>
   <folder name="phone">
     <folder name="css">
-      <file name="index.css" crc="3909764359" ref="phone>index"/>
+      <file name="index.css" crc="226575939" ref="phone>index"/>
     </folder>
-    <file name="index.html" crc="135456817" seo="true" mt="1442552298974" redirect="true"/>
+    <file name="index.html" crc="119714018" seo="true" mt="1442369508708" redirect="true"/>
   </folder>
-  <file name="index.html" crc="30318008" seo="true" mt="1442552216173" redirect="true"/>
+  <file name="index.html" crc="4260657056" seo="true" mt="1442369361846" redirect="true"/>
 </manifest>
