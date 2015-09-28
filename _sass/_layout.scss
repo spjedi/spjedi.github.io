@@ -2540,3 +2540,263 @@
         }
     }
 }
+
+
+/**************  Services  ****************/
+.service-page .banner-main {
+    position: relative;
+}
+.bannerService::before {
+    background: url("../img/ico-hand-line.png") no-repeat scroll 50% 0;
+    content: "";
+    height: 558px;
+    left: 49.5%;
+    margin: 0 0 0 -400px;
+    position: absolute;
+    top: 167px;
+    width: 799px;
+}
+.bannerService::after {
+    background: url("../img/ico-hand.png") no-repeat scroll 50% 0;
+    content: "";
+    height: 558px;
+    left: 50%;
+    margin: 0 0 0 -400px;
+    position: absolute;
+    top: 173px;
+    width: 799px;
+}
+.bannerService {
+    background: url("../img/slider-ourService.jpg") no-repeat scroll 50% 0 / cover;
+    color: #fff;
+    height: 730px;
+    position: relative;
+    text-align: center;
+}
+.service-page .banner-main .bannerCaption {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.service-page .banner-main .bannerCaption .container {
+    position: relative;
+}
+.cellSubscript {
+    color: #fff;
+    text-align: left;
+}
+.service-page .fix-tl {
+    left: 0;
+    position: absolute;
+    top: 120px;
+}
+.service-page .fix-tr {
+    position: absolute;
+    right: 0;
+    top: 120px;
+    width: auto;
+}
+.service-page .fix-bl {
+    left: 0;
+    position: absolute;
+    top: 420px;
+}
+.service-page .fix-br {
+    position: absolute;
+    right: 0;
+    top: 420px;
+}
+.service-page .fix-tr,
+.service-page .fix-br {
+    text-align: right;
+}
+.cellSubscript h3 {
+    font-family: "ralewaysemibold", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    clear: both;
+}
+.service-page .ico-webDesign {
+    background: url("../img/office365.png") no-repeat scroll center center;
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+.service-page .ico-eCommerce {
+    background: url("../img/installation_icon.png") no-repeat scroll center center;
+    float: right;
+    height: 100px;
+    width: 100px;
+}
+.service-page .ico-molApp {
+    background: url("../img/upgrade_icon.png") no-repeat scroll center center;
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+.service-page .ico-dglMarketing {
+    background: url("../img/cloud_icon.png") no-repeat scroll center center;
+    float: right;
+    height: 100px;
+    width: 100px;
+}
+.service-page .cellSubscript.fix-tr li,
+.service-page .cellSubscript.fix-br li {
+    background: url("../img/listStyle-white.png") no-repeat scroll 100% 7px;
+    line-height: 20px;
+    padding: 0 20px 0 0;
+}
+.cellSubscript li {
+    background: url("../img/listStyle-white.png") no-repeat scroll 0 7px;
+    line-height: 20px;
+    padding: 0 0 0 20px;
+}
+.cellSubscript ul {
+    font-size: 15px;
+    margin-bottom: 15px;
+    list-style: none;
+}
+.service-page a.readmore-link {
+    background: url("../img/arrow_more.png") no-repeat scroll 100% 0;
+    color: #4fb7ff;
+    display: inline-block;
+    font-size: 16px;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 30px 0 0;
+    text-transform: uppercase;
+}
+.service-page a.readmore-link:hover {
+    color: #f68e55;
+    background: url("../img/arrow_more_hover.png") no-repeat scroll 100% 0;
+    text-decoration: none;
+}
+.bannerService h1 {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    margin: 0;
+    padding: 75px 0 50px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1000px) {
+    .service-page .banner-main .bannerCaption {
+        background: #393939;
+        position: relative;
+    }
+    .fix-tl,
+    .fix-tr,
+    .fix-bl,
+    .fix-bm,
+    .fix-br {
+        padding: 20px 20px;
+        position: inherit;
+        width: 48%;
+    }
+    .fix-tl,
+    .service-page .fix-tl {
+        clear: both;
+        float: left;
+    }
+    .fix-tr,
+    .service-page .fix-tr {
+        float: right;
+    }
+    .fix-bl,
+    .service-page .fix-bl {
+        clear: both;
+        float: left;
+    }
+    .fix-bm,
+    .service-page .fix-br {
+        float: right;
+    }
+    .fix-br {
+        float: right;
+    }
+    .service-page .fix-br {
+        clear: none;
+    }
+    .service-page .fix-tl,
+    .service-page .fix-tr,
+    .service-page .fix-bl,
+    .service-page .fix-br {
+        position: relative;
+        top: 0;
+    }
+    .bannerService {
+        background: url("../img/slider-ourService.jpg") no-repeat scroll 50% 0 / cover;
+        color: #fff;
+        height: 500px;
+        position: relative;
+        text-align: center;
+    }
+    .bannerService:before {
+        display: none;
+    }
+    .bannerService:after {
+        background: url("../img/ico-hand.png") no-repeat scroll 50% 0;
+        content: "";
+        height: 558px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        top: 158px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .fix-tl,
+    .fix-tr,
+    .fix-bl,
+    .fix-bm,
+    .fix-br {
+        padding: 20px 0;
+        position: inherit;
+        width: 100%;
+    }
+    .fix-tl,
+    .service-page .fix-tl,
+    .fix-bl,
+    .service-page .fix-bl {
+        float: none;
+        text-align: center;
+    }
+    .service-page .fix-tr,
+    .service-page .fix-br {
+        float: none;
+        text-align: center;
+    }
+    .bannerService {
+        background: url("../img/slider-ourService.jpg") no-repeat scroll 50% 0 / cover;
+        color: #fff;
+        height: 715px;
+        position: relative;
+        text-align: center;
+    }
+    .cellSubscript li {
+        display: table;
+        margin: 0 auto;
+    }
+    .service-page .cellSubscript > div {
+        float: none;
+        margin: 0 auto;
+    }
+    .service-page .cellSubscript.fix-tr li,
+    .service-page .cellSubscript.fix-br li {
+        background: url("../img/listStyle-white.png") no-repeat scroll 0 7px;
+        padding: 0 0 0 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .bannerService h1 {
+        font-size: 40px;
+    }
+}
