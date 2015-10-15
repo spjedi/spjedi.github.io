@@ -1756,6 +1756,8 @@
                 p {
                     color: #fff;
                     font-size: 20px;
+                    line-height: 1.2;
+                    margin-top: 10px;
                     @media #{$xs} { 
                         font-size: 18px;
                     }
@@ -1880,9 +1882,10 @@
         }
         .mask-box {
             position: relative;
-            height: 100%;
+            height: 300px;
+            background-color: #019FB3;
             display: block;
-            border: 7px rgba(246, 142, 85, 0.51);
+            border: 7px rgba(246, 142, 85, 0.88);
             border-style: double;
             &:hover {
                 text-decoration: none; 
@@ -1917,7 +1920,7 @@
                 position: absolute;
                 top: 0;
                 width: 100%;
-                height: inherit;
+                height: 288px;
                 vertical-align: middle;
                 background-color: rgba(29, 52, 95, 0.21);
                 i {
