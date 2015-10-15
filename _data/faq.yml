@@ -29,10 +29,10 @@
   questions:
   - name: Which one is option 1?
     answer: > 
-	  Process improvement really depends on who you ask. 
+     Process improvement really depends on who you ask.
 
 - name: Staffing Assessment
-    questions:
+  questions:
   - name: Anim pariatur cliche reprehenderit?
     answer: >
      3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
@@ -43,7 +43,7 @@
      of them accusamus labore sustainable VHS.
 
 - name: Technology Assistance
-    questions:
+  questions:
   - name: Anim pariatur cliche reprehenderit?
     answer: >
      3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
