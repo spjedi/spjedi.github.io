@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why I don't use CSS Frameworks
+title: To Tier or Not To Tier SharePoint
 categories: blog
 sitemap: false
 ---

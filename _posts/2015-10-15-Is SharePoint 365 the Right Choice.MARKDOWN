@@ -29,7 +29,7 @@ Microsoft secures your data with Advanced Encryption Standard (AES) 128bit or AE
             -automatically update the affected systems
             -audit the state of the deployment to identify any anomalies
 
-##### What about hybrid connections to your local environment?
+#####  What about hybrid connections to your local environment?
 To successfully access your local network the takedown of Office 365 and then the takedown of your local firewall. Hybrid connections can only go through one port and it is recommended that you only make one way connection to Office 365 to avoid such an attack. 
 
 
@@ -37,14 +37,14 @@ To successfully access your local network the takedown of Office 365 and then th
 
  The reality is that is no longer the case. Here are some hidden costs people often forget in the comparison
  
-`Cost Area*` | Local Version | Office 365|  |
+`Cost Area*` | Local Version   | Office 365|  |
 ----- | ----- | ----- | -----
 SharePoint License | $3,100 | $0 | 
 Server Cost | $1,500 | $0 | 
 SQL Cost | $1,100 | $0 | 
 Maintenance | $750 | $500 | 
 User Cals** | $500 | $3,000 | 
-Degree in Licensing | 90k | No Need | 
+Degree in Licensing  | 90k | No Need | 
 Total Cost | $6,950 | $3,000 | 
 
 #### annual costs*

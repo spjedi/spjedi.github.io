@@ -15,7 +15,7 @@
 
   - name: Can I have a custom login page and Single Sign-On like On-Premise?
     answer: > 
-     Absolutely! Having a custom login page is around 1 hour of work. 
+     Absolutely! Having a custom login page is around 1 hour of work. [Quick User Guide][https://blogs.office.com/2015/02/17/sign-page-branding-cloud-user-self-service-password-reset-office-365/]
      Single Sign-On is a bit harder, but still under two days of work. This alleviates user frustration while 
      using the site and encouraging adoption of the platform 
 
@@ -23,7 +23,7 @@
     answer: > 
      Of course!!! There are plenty of templates that you can customize until you are blue in the face.
      Our Five levls of templates come to you customized after we provide you a sheet for your must have and 
-     do the customizations for you. 
+     do the customizations for you. [Branding][spjedi.com/Intranet]
      From Mobile Ready to Fully Customized for Large Enterprise we can provide the files within 10 days max.
 
 - name: SharePoint On-Premise
@@ -53,7 +53,7 @@
 
   - name: Is it safe to do a two server installation?
     answer: > 
-     Doing a two server instance is safe for a very small company. The recommended structure is a Three Tier system. Our blog 
+     Doing a two server instance is safe for a very small company. The recommended structure is a Three Tier system. Our [blog][spjedi.com/blog] 
      covers this process. If your company grows or even a server goes down it is hard to make your environment grow in this type
      of setup. IIS is the hardest portion of this setup. We offer free assistance on installs if you have any questions. Our chat
      team are our developers. They are all United States based and can help get SharePoint underway.
