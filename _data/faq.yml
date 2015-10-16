@@ -3,12 +3,18 @@
   - name: How long does it take to move from On-Premise to Online?
     answer: > 
      Generally a non-heavily customized environment the migration should take about 4-6 weeks including testing.
-	 If you are in a SharePoint 2013 environment the migration can be even faster. 
-	 Google Apps migration is actually about the same amount of time as SharePoint to SharePoint with our team.
+	 If you are in a SharePoint 2013 environment the migration can be even faster.  
+     Google Apps migration is actually about the same amount of time as SharePoint to SharePoint with our team.
 
   - name: What is the normal cost to migrate from On-Premise?
     answer: > 
-     Migrations start out around $4,500. If
+     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+     3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
+     Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
+     Ad vegan excepteur butcher vice lomo. 
+     Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
+     of them accusamus labore sustainable VHS.
 
   - name: Can I have a custom login page and Single Sign-On like On-Premise?
     answer: > 
