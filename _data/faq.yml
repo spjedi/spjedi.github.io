@@ -47,7 +47,6 @@
 
   - name: Is it better to install SharePoint by Powershell or the GUI?
     answer: > 
-	 SharePoint Wizards are no way as good as SharePoint Jedi's.
      It is always recommended to complete this by Powershell. You have more control on the outcome through Powershell such 
      as database naming conventions. You can install all servers in multiple tiers a lot faster and with less irregularities. 
      We have all Powershell scripts for each type of install. Please reach out if you need any assistance. 
