@@ -17,8 +17,9 @@
     answer: > 
      Absolutely! Having a custom login page is around 1 hour of work. 
 	 [reference guide][https://blogs.office.com/2015/02/17/sign-page-branding-cloud-user-self-service-password-reset-office-365/]
-	 Signle Sign-On is a bit harder, but still under two days of work. This alleviates user frustration while
+	 Single Sign-On is a bit harder, but still under two days of work. This alleviates user frustration while
 	 using the site and encouraging adoption of the platform
+
   - name: Are there templates out there to make SharePoint look better?
     answer: > 
      Of course!!! There are plenty of templates that you can customize until you are blue in the face. 
