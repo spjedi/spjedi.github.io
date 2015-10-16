@@ -14,19 +14,22 @@ Microsoft secures your data with Advanced Encryption Standard (AES) 128bit or AE
             -live site penetration testing
             -multi-factor authentication
             -perimeter vulnerability scanning
+
 #### 2. Detect Breach
             -security alerts
             -external signals
             -incorporate new patterns to trigger alerts
+
 ##### 3. Respond to Breach
             -ability to deny or stop access to sensitive data
             -diligent incident response process
+
 ##### 4. Recover from Breach
             -ability to change the security principals
             -automatically update the affected systems
             -audit the state of the deployment to identify any anomalies
 
-##### What about hybrid connections to your local environement?
+##### What about hybrid connections to your local environment?
 To successfully access your local network the takedown of Office 365 and then the takedown of your local firewall. Hybrid connections can only go through one port and it is recommended that you only make one way connection to Office 365 to avoid such an attack. 
 
 
@@ -44,10 +47,12 @@ User Cals** | $500 | $3,000 |
 Degree in Licensing | 90k | No Need | 
 Total Cost | $6,950 | $3,000 | 
 
-### annual costs*  
-### per 50 users**
+#### annual costs*
+
+#### per 50 users**
 
   Migrations to the cloud can now be done much easier. If you are still thinking about it look at our  
-## [Migration Page](http://spjedi.com/migration)
+  
+  [Migration Page](http://spjedi.com/migration)
 
 The need for on premise for safety is a dying conversation. The reality is you can have your cake and eat it too. The flexibility Office 365 offers far outways the limitations it once had. Let SPJedi walk you through how easy it can be to take the first step off of the plank. Your new environment is closer than it appears. 
