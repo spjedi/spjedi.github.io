@@ -63,20 +63,29 @@
   - name: What are the best ways to keep technology costs down?
     answer: > 
      In General you should have someone in place that can break down your cost of each user (computer, desk, software assigned, payroll, etc.)
-	 This is usually a non-technical person to avoid too biasness. The easiest way to have this is an Asset Management solution that captures
-	 computer, the software, and who it is assigned to. On average a company of 200 people spends over $8,000 on redundant licenses that each user
-	 is not always using. Asset management allows an inventory to inquire on the use of each software as it relates to the user and their role.
+     This is usually a non-technical person to avoid too biasness. The easiest way to have this is an Asset Management solution that captures
+     computer, the software, and who it is assigned to. On average a company of 200 people spends over $8,000 on redundant licenses that each user
+     is not always using. Asset management allows an inventory to inquire on the use of each software as it relates to the user and their role.
 
   - name: What is the difference between User Cals and Device Cals?
     answer: > 
-     Per Device means you have a license/CAL per device connecting to a Microsoft Windows Server/Application.
-	 Per User means that for example even if you have 20 devices and 300 users, you still would need 300 CALs if you were going to do Per User and each user had their own account.
-     For example, if I have 50 office PCs connected to a server and I have 100 users working two shifts and sharing use of the 50 PCs…then all I need is 50 device CALS.
-	 But if the reverse were true and I had 100 PCs and I had only one shift of 50 workers using those 100 computers…then all I need is 50 user CALS.
+     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+     3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
+     Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
+     Ad vegan excepteur butcher vice lomo. 
+     Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
+     of them accusamus labore sustainable VHS.
 
   - name: Do I need to put every patch released in place right away?
     answer: > 
-     It is always recommended by Microsoft to put them in place immediately, but it is even more important to understand what is in that release. Always check microsofts update site
+     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+     3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
+     Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
+     Ad vegan excepteur butcher vice lomo. 
+     Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
+     of them accusamus labore sustainable VHS.
 
 - name: Migration
   questions:
