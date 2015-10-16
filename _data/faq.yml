@@ -79,3 +79,20 @@
      It is always recommended by Microsoft to put them in place immediately, but it is even more important to understand what is in that release. 
      Always check microsofts update site first. 
      
+- name: Migration
+  questions:
+  - name: What is the average cost to Migrate Exchange to 365?
+    answer: > 
+     Coming Soon
+
+  - name: Do alias accounts need licenses for Exchange?
+    answer: > 
+     Coming Soon
+
+  - name: What is the best product to use for migration?
+    answer: > 
+     Coming Soon
+
+  - name: Do I need a Subject Matter Expert to migrate?
+    answer: > 
+     Coming Soon
