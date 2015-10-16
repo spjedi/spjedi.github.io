@@ -31,32 +31,39 @@
   - name: Why should I upgrade?
     answer: > 
      The support for older versions becomes lower and lower each day. Security patches are what helps keep your
-	 environment safe from attacks and older versions have smaller patches or larger holes for malware. Each release
-	 comes with more tools to help with user adoption and integration into SQL BI Reporting, Office Suite, and third
+	 environment safe from attacks and older versions have smaller patches or larger holes for malware. Each release 
+     comes with more tools to help with user adoption and integration into SQL BI Reporting, Office Suite, and third
 	 party tools.
 
   - name: When should I upgrade?
     answer: > 
-     If you are on an older version 2003 (impressive if you are) 2007/2010 the best time to upgrade is now
-	 SharePoint 2016 won't be out until Q3 of 2016. It will also offer an in place upgrade with zero downtime. 
-	 Making the move now won't slow that down and provide you access instantly to tools your department didn't have 
-	 before. 2013 had a 32% higher adoption rate than any of the past versions. The time is now to upgrade.
-	 A common misconception is that you can't move from one version without going to the other. If you approach the
-	 move with content then customizations then you can jump 2010. You also have the ability to move directly from any
-	 On-Premise version to Office 365.
+     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+     3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
+     Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
+     Ad vegan excepteur butcher vice lomo. 
+     Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
+     of them accusamus labore sustainable VHS.
 
   - name: Is it better to install SharePoint by Powershell or the GUI?
     answer: > 
-     It is always recommended to complete this by Powershell. You have more control on the outcome through Powershell such
-	 as database naming conventions. You can install all servers in multiple tiers a lot faster and with less irregularities. 
-     We have all Powershell scripts for each type of install. Please reach out if you need any assistance.
+     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+     3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
+     Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
+     A common misconception is that you can't move from one version without going to the other. If you approach the
+	 move with content then customizations then you can jump 2010. You also have the ability to move directly from any
+	 On-Premise version to Office 365.
 
   - name: Is it safe to do a two server installation?
     answer: > 
-     Doing a two server instance is safe for a very small company. The recommended structure is a Three Tier system. Our blog
-	 covers this process. If your company grows or even a server goes down it is hard to make your environment grow in this type 
-	 of setup. IIS is the hardest portion of this setup. We offer free assistance on installs if you have any questions. Our chat
-	 team are our developers. They are all United States based and can help get SharePoint underway. 
+     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+     3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
+     Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
+     Ad vegan excepteur butcher vice lomo. 
+     Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
+     of them accusamus labore sustainable VHS.
 
 - name: Technology Assistance
   questions:
