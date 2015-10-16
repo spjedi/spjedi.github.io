@@ -2,23 +2,16 @@
   questions:
   - name: How long does it take to move from On-Premise to Online?
     answer: > 
-     123Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
-     3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
-     Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
-     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
-     Ad vegan excepteur butcher vice lomo. 
-     Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
-     of them accusamus labore sustainable VHS.
+     Generally a non-heavily customized environment the migration should take about 4-6 weeks including testing. 
+     If you are in a SharePoint 2013 environment the migration can be even faster. 
+     Google Apps migration is actually about the same amount of time as SharePoint to SharePoint with our team. 
 
   - name: What is the normal cost to migrate from On-Premise?
     answer: > 
-     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
-     3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
-     Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
-     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
-     Ad vegan excepteur butcher vice lomo. 
-     Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
-     of them accusamus labore sustainable VHS.
+     Migrations start out around $4,500. Many companies start out migrations around $10,000 but the reality is
+     they overcharge and take up more of the companies time talking in large groups. We have a team that is a 
+     3 person contact approach: 1. Business Analyst/PM 2. Lead Developer 3. Testing Coordinator. We provide a 
+     project portal so you are able to see all tasks at all times to avoid multiple weekly meetings unless requested. 
 
   - name: Can I have a custom login page and Single Sign-On like On-Premise?
     answer: > 
