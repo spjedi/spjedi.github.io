@@ -82,58 +82,9 @@
      Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
      of them accusamus labore sustainable VHS.
 
-- name: Migration
-  questions:
-  - name: Why should I upgrade?
-    answer: > 
-     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
-     3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
-     Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
-     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
-     Ad vegan excepteur butcher vice lomo. 
-     Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
-     of them accusamus labore sustainable VHS.
-
-  - name: When should I upgrade?
-    answer: > 
-     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
-     3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
-     Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
-     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
-     Ad vegan excepteur butcher vice lomo. 
-     Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
-     of them accusamus labore sustainable VHS.
-
-  - name: Is it better to install SharePoint by Powershell or the GUI?
-    answer: > 
-     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
-     3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
-     Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
-     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
-     Ad vegan excepteur butcher vice lomo. 
-     Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
-     of them accusamus labore sustainable VHS.
-
-- name: Staffing Assessment
-  questions:
-  - name: Which one is option 1?
-    answer: > 
-     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
-     3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
-     Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
-     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
-     Ad vegan excepteur butcher vice lomo. 
-     Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
-     of them accusamus labore sustainable VHS.
-
-  - name: Which one is option 2?
-    answer: >
-     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-
-
 - name: Technology Assistance
   questions:
-  - name: How long does it take to move from On-Premise to Online?
+  - name: What are the best ways to keep technology costs down?
     answer: > 
      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
      3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
@@ -143,7 +94,7 @@
      Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
      of them accusamus labore sustainable VHS.
 
-  - name: What is the normal cost to migrate from On-Premise?
+  - name: What is the difference between User Cals and Device Cals?
     answer: > 
      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
      3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
@@ -153,7 +104,7 @@
      Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
      of them accusamus labore sustainable VHS.
 
-  - name: Can I have a custom login page and Single Sign-On like On-Premise?
+  - name: Do I need to put every patch released in place right away?
     answer: > 
      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
      3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
@@ -163,7 +114,39 @@
      Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
      of them accusamus labore sustainable VHS.
 
-  - name: Are there templates out there to make SharePoint look better?
+- name: Migration
+  questions:
+  - name: What is the average cost to Migrate Exchange to 365?
+    answer: > 
+     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+     3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
+     Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
+     Ad vegan excepteur butcher vice lomo. 
+     Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
+     of them accusamus labore sustainable VHS.
+
+  - name: Do alias accounts need licenses for Exchange?
+    answer: > 
+     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+     3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
+     Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
+     Ad vegan excepteur butcher vice lomo. 
+     Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
+     of them accusamus labore sustainable VHS.
+
+  - name: What is the best product to use for migration?
+    answer: > 
+     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+     3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
+     Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+     Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
+     Ad vegan excepteur butcher vice lomo. 
+     Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard 
+     of them accusamus labore sustainable VHS.
+
+  - name: Do I need a Subject Matter Expert to migrate?
     answer: > 
      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
      3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
