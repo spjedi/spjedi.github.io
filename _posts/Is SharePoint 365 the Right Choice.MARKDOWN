@@ -10,18 +10,18 @@ SharePoint 365 has come a long way from it's start in 2010. Most people resistin
 
 Microsoft secures your data with Advanced Encryption Standard (AES) 128bit or AES 256bit encryption on servers that hold all messaging data including emails and IM conversations, content stored in SharePoint Online and OneDrive for Business. Thhe Microsoft 365 security strategy is built on four pillars:
 
-#####          1. Prevent Breach 
+#### 1. Prevent Breach 
             -live site penetration testing
             -multi-factor authentication
             -perimeter vulnerability scanning
-#####          2. Detect Breach
+#### 2. Detect Breach
             -security alerts
             -external signals
             -incorporate new patterns to trigger alerts
-#####          3. Respond to Breach
+##### 3. Respond to Breach
             -ability to deny or stop access to sensitive data
             -diligent incident response process
-#####    4. Recover from Breach
+##### 4. Recover from Breach
             -ability to change the security principals
             -automatically update the affected systems
             -audit the state of the deployment to identify any anomalies
@@ -41,12 +41,12 @@ Server Cost | $1,500 | $0 |
 SQL Cost | $1,100 | $0 | 
 Maintenance | $750 | $500 | 
 User Cals** | $500 | $3,000 | 
-Master Degree in Licensing | 90k | No Need | 
+Degree in Licensing | 90k | No Need | 
 Total Cost | $6,950 | $3,000 | 
 
-##### annual costs*  
-##### per 50 users**
-___
+### annual costs*  
+### per 50 users**
+
   Migrations to the cloud can now be done much easier. If you are still thinking about it look at our  
 ## [Migration Page](http://spjedi.com/migration)
 
