@@ -33,7 +33,7 @@
      The support for older versions becomes lower and lower each day. Security patches are what helps keep your
      environment safe from attacks and older versions have smaller patches or larger holes for malware. Each release 
      comes with more tools to help with user adoption and integration into SQL BI Reporting, Office Suite, and third 
-     party tools.
+     party tools. Why is the easy answer; when is sometimes the harder. 
 
   - name: When should I upgrade?
     answer: > 
