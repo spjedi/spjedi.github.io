@@ -1,4 +1,9 @@
-
+---
+layout: post
+title: Why I don't use CSS Frameworks
+categories: blog
+sitemap: false
+---
 CSS Frameworks seem like an awesome advancement at first glance: speed up your development, normalize your code base, and eliminate those nasty browser bugs!  Hot damn, where do I sign up?  Unfortunately there's some pretty strong caveats that go with those statements.
 
 ## The frameworks themselves are very good
