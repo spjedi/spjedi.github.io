@@ -56,7 +56,7 @@
      Doing a two server instance is safe for a very small company. The recommended structure is a Three Tier system. Our <a href="http://spjedi.com/blog" title="blog">blog</a>
      covers this process. If your company grows or even a server goes down it is hard to make your environment grow in this type
      of setup. IIS is the hardest portion of this setup. We offer free assistance on installs if you have any questions. Our chat
-     team are our developers. They are all United States based and can help get SharePoint underway.
+     team are our developers. They are all United States based and can help get SharePoint underway. 
 
 - name: Technology Assistance
   questions:
