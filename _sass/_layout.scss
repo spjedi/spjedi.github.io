@@ -98,6 +98,7 @@
                                 font-weight: 400;
                                 background-color: #fff;
                                 cursor: pointer;
+                                text-decoration: none;
                                 @media #{$xs}  { 
                                     color: #fff;
                                 }
@@ -140,6 +141,15 @@
                     li {
                         background-color: rgba(0, 0, 0, 0.31);
                         font-weight: 600;
+                        a {
+                            text-decoration: none;
+                            &:visited {
+                                text-decoration: none;
+                            }
+                            &:link {
+                                text-decoration: none;
+                            }
+                        }
                     }
                     li:first-child {
                         margin-top: 16px;
@@ -195,6 +205,7 @@
                     i {
                         color: #fff;
                         font-size: 15px;
+                        line-height: 25px;
                     }
                 }
             }
@@ -229,19 +240,15 @@
             -moz-transition: all 0.2s;
             transition: all 0.2s;
             .logo-img {
-                padding: 4px 0;
-                width: 65%;
                 @media #{$sm} {
-                    width: 155px;
-                    padding: 0 15px;
-                }
-                @media #{$xs} {
-                    width: 190px;
-                    padding: 4px 0 0 0;
+                    width: 111px;
+                    padding: 0;
                 }
                 img {
+                    padding: 0;
+                    width: 110px;
                     @media #{$sm} { 
-                        padding: 6px 0;
+                        padding: 0;
                     }
                     @media #{$xs} { 
                         padding: 0;
@@ -251,7 +258,7 @@
             .main-menu {
                 margin: 0 15px 0 0;
                 li a {
-                    padding: 15px 6px;
+                    padding: 15px 4px;
                     cursor: pointer;
                 }
             }
@@ -260,6 +267,17 @@
             }
             .sub-menu {
                 top: 47px;
+                li {
+                    a {
+                        text-decoration: none;
+                        &:visited {
+                            text-decoration: none;
+                        }
+                        &:link {
+                            text-decoration: none;
+                        }
+                    }
+                }
             }
             .navbar-toggle {
                 margin-top: 12px;
@@ -269,6 +287,9 @@
             margin-right: 0;
             margin-top: 12px;
         }
+        .navbar-nav > li > a {
+            text-decoration: none;
+        }  
 
         .icon-bar {
             background-color: rgba(0, 159, 180, 0.68);
@@ -284,12 +305,15 @@
                 padding-left: 10px;
             }
             img {
-                padding: 6px 0;
+                padding: 0;
+                width: 186px;
                 @media #{$sm} {
-                    padding: 15px 0;
+                    padding: 4px 0;
+                    width: 173px;
                 }
                 @media #{$xs} {
                     padding: 0;
+                    width: 141px;
                 }
             }
         }
@@ -348,10 +372,10 @@
                 a {
                     color: #B2B2B2;
                     display: block;
-                    padding: 12px;
+                    padding: 19px 12px;
 
                     @media #{$sm} {
-                        padding: 15px 5px;
+                        padding: 15px 4px;
                     }
 
                     &:focus, &:hover {
@@ -390,6 +414,7 @@
                     padding: 10px;
                     font-size: 15px;
                     color: #B2B2B2;
+                    text-decoration: none;
 
                     @media #{$sm} {
                         font-size: 13px;
@@ -1781,13 +1806,11 @@
 
 
     }
-
-
-
-
-
     .migration-approach {
         background-color: #f8f8f8;
+        -webkit-box-shadow: 0px 1px 31px -4px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 1px 31px -4px rgba(0,0,0,0.75);
+        box-shadow: 0px 1px 31px -4px rgba(0,0,0,0.75);
     }
     .approach-box {
         margin: 15px 0;
@@ -1867,6 +1890,27 @@
                 span {
                     font-weight: 400;
                 }
+            }
+        }
+    }
+    .migration-process {
+        margin-bottom: 20px;
+
+        img {
+            min-width: 100%;
+        }
+        p {
+            font-size: 20px;
+        }
+        a {
+            display: block;
+            position: relative;
+            bottom: 0;
+            text-decoration: none;
+            color: #F68E55;
+            padding-right: 15px;
+            i {
+                margin-left: 5px;
             }
         }
     }
