@@ -1893,25 +1893,26 @@
             }
         }
     }
-    .migration-process {
-        margin-bottom: 20px;
+}
+.migration-process {
+    margin-bottom: 20px;
 
-        img {
-            min-width: 100%;
-        }
-        p {
-            font-size: 20px;
-        }
-        a {
-            display: block;
-            position: relative;
-            bottom: 0;
-            text-decoration: none;
-            color: #F68E55;
-            padding-right: 15px;
-            i {
-                margin-left: 5px;
-            }
+    img {
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 20px;
+    }
+    a {
+        display: block;
+        position: relative;
+        bottom: 0;
+        text-decoration: none;
+        color: #F68E55;
+        padding-right: 15px;
+        i {
+            margin-left: 5px;
         }
     }
 }
