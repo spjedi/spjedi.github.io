@@ -1148,6 +1148,7 @@
         margin: 20px 0;
         color: #646464;
         font-weight: 400;
+        padding-bottom: 15px;
     }
     .group { 
         position:relative; 
@@ -1182,7 +1183,7 @@
 
     /* active state */
     input:focus ~ label, input:valid ~ label {
-        top: -17px;
+        top: -23px;
         font-size: 17px;
         color: #52BBD0;
     }
