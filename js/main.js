@@ -244,9 +244,12 @@ $(function() {
 		});
 	}
 
+	var buttonClasses = 'btn-primary btn-success btn-danger btn-info';
+
 	function waitingPayment($button) {
 		$button
 			.prop('disabled', true)
+			.removeClass(buttonClasses)
 			.addClass('btn-info')
 			.text('Processing payment');
 	}
@@ -254,7 +257,7 @@ $(function() {
 	function successfulPayment($button) {
 		$button
 			.prop('disabled', false)
-			.removeClass('btn-info')
+			.removeClass(buttonClasses)
 			.addClass('btn-success')
 			.text('Payment successful');
 	}
@@ -262,7 +265,7 @@ $(function() {
 	function failedPayment($button) {
 		$button
 			.prop('disabled', false)
-			.removeClass('btn-info')
+			.removeClass(buttonClasses)
 			.addClass('btn-danger')
 			.text('Payment failed');
 	}
