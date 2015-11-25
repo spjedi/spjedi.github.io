@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "SPJedi"
+  },
+  "products": {
+    "sku_001": {
+      "amount": 130000
+    }
+  },
+  "server": {
+    "host": "https://boiling-waters-2615.herokuapp.com"
+  },
+  "stripe": {
+    "publishableKey": "pk_test_5ewmvLjavRkbQK9vQdto4GB9"
+  }
+}
