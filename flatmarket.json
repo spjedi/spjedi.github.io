@@ -11,6 +11,6 @@
     "host": "https://boiling-waters-2615.herokuapp.com"
   },
   "stripe": {
-    "publishableKey": "pk_test_5ewmvLjavRkbQK9vQdto4GB9"
+    "publishableKey": "pk_live_ImQYcokePItZe0N1YeaHu9eB"
   }
 }
