@@ -184,3 +184,86 @@ $(document).ready(function(){
 	   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
 	});
 });
+
+// payments
+$(function() {
+	var paymentSettings = {
+		STRIPE_PUBLIC_KEY: 'pk_test_5ewmvLjavRkbQK9vQdto4GB9',
+		DEFAULT_IMAGE_URL: 'http://spjedi.com/img/logo.png',
+		HEROKU_SERVER_URL: 'https://boiling-waters-2615.herokuapp.com'
+	};
+
+	var $paymentButton = $('.paymentButton');
+	if (!$paymentButton.length) return;
+
+	var handler = StripeCheckout.configure({
+		key: paymentSettings.STRIPE_PUBLIC_KEY,
+		image: paymentSettings.DEFAULT_IMAGE_URL,
+		locale: 'auto'
+	});
+
+	$paymentButton.on('click', function(e) {
+		var $button = $(this);
+		var data = $button.data();
+
+		data.token = function(token) {
+			// Use the token to create the charge with a server-side script.
+			// You can access the token ID with `token.id`
+			tokenHandler(token, data, $button);
+		};
+
+		// Open Checkout with further options
+		handler.open(data);
+		e.preventDefault();
+	});
+
+	// Close Checkout on page navigation
+	$(window).on('popstate', function() {
+		handler.close();
+	});
+
+	function tokenHandler(token, data, $button) {
+		waitingPayment($button);
+
+		$.ajax({
+			type: 'POST',
+			url: paymentSettings.HEROKU_SERVER_URL,
+			data: {				
+				sku: data.sku,
+				email: token.email,
+				token: token.id
+			},
+			dataType: 'json'
+		})
+		.done(function(response) {
+			if (response.code && response.code === 'ok') successfulPayment($button);
+			else failedPayment($button);
+		})
+		.error(function(response) {
+			failedPayment($button);
+		});
+	}
+
+	function waitingPayment($button) {
+		$button
+			.prop('disabled', true)
+			.addClass('btn-info')
+			.text('Processing payment');
+	}
+
+	function successfulPayment($button) {
+		$button
+			.prop('disabled', false)
+			.removeClass('btn-info')
+			.addClass('btn-success')
+			.text('Payment successful');
+	}
+
+	function failedPayment($button) {
+		$button
+			.prop('disabled', false)
+			.removeClass('btn-info')
+			.addClass('btn-danger')
+			.text('Payment failed');
+	}
+});
