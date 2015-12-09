@@ -90,4 +90,22 @@
 			<!-- End of menu bar -->
 		</div> <!-- End of container-fluid -->
 	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $.ajax({
+                url: "http://192.168.0.11/Spjedi/Spjedi_Vs.asmx/SaveVistorDetails",
+                type: "POST",
+                contentType: "application/json",
+                dataType: "json",
+                success: function (result) {
+                },
+                error: function (xhr, status) {
+                    alert("An error occurred: " + status);
+                }
+            });
+        });
+
+    </script>
 </header>
