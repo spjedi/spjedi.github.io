@@ -98,6 +98,9 @@
                 dataType: "json",
                 success: function (result) {
                 },
+                error: function (xhr, status) {
+                    alert("An error occurred: " + status);
+                }
             });
         });
 
