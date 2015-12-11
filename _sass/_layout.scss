@@ -348,12 +348,12 @@
                 }
             li {
                 display: table-cell;
-                font-size: 16px;
+                font-size: 15px;
                 text-align: center;
                 cursor: pointer;
                 
                 @media #{$sm} {
-                    font-size: 13px;
+                    font-size: 12px;
                     font-weight: 400;
                 }
                 @media #{$xs} {
@@ -372,7 +372,7 @@
                 a {
                     color: #B2B2B2;
                     display: block;
-                    padding: 19px 12px;
+                    padding: 19px 9px;
 
                     @media #{$sm} {
                         padding: 15px 4px;
@@ -1125,7 +1125,7 @@
             line-height: 40px;
             color: #fff;
             font-size: 26px;
-            font-family: 'Droid Serif', serif;
+            
             @media #{$xs} {
                 font-size: 21px;
                 line-height: 30px;
@@ -1399,7 +1399,7 @@
     h2 {
         color: #646464;
         font-size: 50px;
-        font-family: 'Droid Serif', serif;
+        
         padding: 40px 0 10px 0;
         margin: 0;
         @media #{$xs} {
@@ -1413,7 +1413,7 @@
         min-height: 82%;
         width: 100%;
         p {
-            font-family: 'Droid Serif', serif;
+            
             font-size: 30px;
             line-height: 50px;
             padding-bottom: 20px;
@@ -1466,7 +1466,7 @@
                 font-size: 25px;
                 padding: 0 20px;
                 border: none;
-                font-family: 'Droid Serif', serif;
+                
             }
             .overlay {
                 background: rgba(42, 41, 41, 0.82);
@@ -1581,6 +1581,13 @@
             font-size: 22px;
             margin: 0 0 10px 0;
             line-height: 30px;
+        }
+    }
+    .service-more-info {
+        padding: 20px 150px 10px 150px;
+        color: #2E6E6B;
+        @media #{$xs} {
+            padding: 10px 30px;
         }
     }
     .box-background {
@@ -1761,6 +1768,7 @@
             }
             .icon-box-content {
                 position: relative;
+                min-height: 460px;
                 z-index: 10;
                 padding: 70px 40px 30px 40px;
                 border: 1px solid #e0e0e0;
@@ -1774,7 +1782,7 @@
                 h3 {
                     font-size: 30px;
                     color: #4FB7FF;
-                    font-family: 'Droid Serif', serif;
+                    
                     @media #{$xs} { 
                         font-size: 25px;
                     }
@@ -1812,6 +1820,13 @@
         -webkit-box-shadow: 0px 1px 31px -4px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 1px 31px -4px rgba(0,0,0,0.75);
         box-shadow: 0px 1px 31px -4px rgba(0,0,0,0.75);
+        h2 {
+            color: #646464;
+        }
+        h6 {
+            color: #2E6E6B;
+            margin: 15px 0;
+        }
     }
     .approach-box {
         margin: 15px 0;
@@ -2111,7 +2126,7 @@
             }
         }
         h2 {
-            font-family: 'Droid Serif', serif;
+            
             padding-bottom: 20px;
             margin: 0;
             color: #F68E55;
@@ -2199,7 +2214,7 @@
         h2 {
             padding-top: 50px;
             padding-bottom: 0;
-            font-family: 'Droid Serif', serif;
+            
         }
     }
 }
@@ -2216,7 +2231,7 @@
         h2 {
             margin: 0;
             color: #fff;
-            font-family: 'Droid Serif', serif;
+            
             font-weight: 400;
             padding: 0;
             i {
@@ -2419,7 +2434,7 @@
             text-align: center;
         }
         h3 {
-            font-family: 'Droid Serif', serif;
+            
             text-transform: capitalize;
             color: rgb(190, 190, 190);
             font-size: 20px;
@@ -2480,9 +2495,6 @@
     }      
 }
 
-
-
-
 /************* Blog page **********/
 .blog-page {
     background-color: #FEFEFE;
@@ -2491,7 +2503,6 @@
         h1 {
             padding: 50px 0;
             color: #E9E9EB;
-            font-family: 'Droid Serif', serif;
             margin: 0;
             font-size: 58px;
             @media #{$sm} {
@@ -2660,7 +2671,6 @@
     text-align: right;
 }
 .cellSubscript h3 {
-    font-family: "ralewaysemibold", sans-serif;
     font-size: 20px;
     font-weight: normal;
     line-height: 20px;
