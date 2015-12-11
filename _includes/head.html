@@ -3,6 +3,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1">
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+
+    {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
+
+    {% if page.url %}<link rel="canonical" href="{{ site.url }}">{% endif %}
 
     <title>{{ page.title }}</title>
     <link type="img/x-icon" rel="shortcut icon" href="/img/favicon.ico">
