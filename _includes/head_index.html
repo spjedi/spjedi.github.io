@@ -7,7 +7,7 @@
 
   {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
 
-  {% if page.url %}<link rel="canonical" href="{{ site.url }}">{% endif %}
+  {% if page.url %}<link rel="canonical" href="{{ site.url }}{{ page.url }}">{% endif %}
 
   <title>{{ page.title }}</title>
   <link type="img/x-icon" rel="shortcut icon" href="/img/favicon.ico">
