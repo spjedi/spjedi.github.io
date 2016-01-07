@@ -48,11 +48,21 @@
     height: 3px;
     width: 60px;
     text-align: center;
-    margin: 25px 0;
     background-color: #52BBD0;
     display: block;
     position: relative;
     left: 50%;
+    margin-left: -30px;
+}
+.head-line {
+    height: 3px;
+    width: 85%;
+    text-align: center;
+    margin: 25px 0;
+    background-color: #52BBD0;
+    display: block;
+    position: relative;
+    left: 10%;
     margin-left: -30px;
 }
 
@@ -1933,6 +1943,139 @@
     }
 }
 
+/******** branding page ********/
+.branding-page {
+  background-image: url(../img/brillant.png); }
+  .branding-page .branding-hub-img > div {
+    margin-top: 15px;
+    bottom: 15px; }
+  .branding-page .branding-hub-img .mask-box {
+    position: relative;
+    height: 300px;
+    display: block;
+    border: 7px rgba(246, 142, 85, 0.88);
+    border-style: double; }
+    .branding-page .branding-hub-img .mask-box:hover {
+      text-decoration: none; }
+      .branding-page .branding-hub-img .mask-box:hover .mask {
+        display: table-cell; }
+    .branding-page .branding-hub-img .mask-box img {
+      width: 100%;
+      height: 275px; }
+    .branding-page .branding-hub-img .mask-box h4 {
+      font-size: 25px;
+      position: relative;
+      bottom: -1px;
+      text-decoration: none;
+      margin: 0;
+      background-color: rgba(0, 159, 180, 0.84);
+      color: #fff;
+      font-weight: 400; }
+      .branding-page .branding-hub-img .mask-box h4 small {
+        display: block;
+        padding: 5px 0;
+        font-size: 16px;
+        font-style: italic;
+        color: #fff;
+        font-weight: 400; }
+    .branding-page .branding-hub-img .mask-box .mask {
+      display: none;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 288px;
+      vertical-align: middle;
+      background-color: rgba(29, 52, 95, 0.21); }
+      .branding-page .branding-hub-img .mask-box .mask i {
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        display: inherit;
+        vertical-align: middle;
+        position: relative;
+        top: 40%; }
+  .branding-page .application-overview {
+    border: 1px solid #D2D2D2;
+    border-top: 3px solid #27adbe;
+    padding: 15px;
+    text-align: center;
+    margin-top: 15px;
+    background-color: #fff; }
+    .branding-page .application-overview h4 {
+      font-size: 22px; }
+    .branding-page .application-overview p {
+      color: #919191; }
+    .branding-page .application-overview button {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px; }
+      .branding-page .application-overview button:hover {
+        background-color: #009FB4;
+        color: #fff;
+        -webkit-transition: background .5s ease-in;
+        -moz-transition: background .5s ease-in;
+        -o-transition: background .5s ease-in;
+        -ms-transition: background .5s ease-in;
+        transition: background .5s ease-in;
+        transition: 0.6s ease;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -o-transition: 0.5s ease; }
+      .branding-page .application-overview button i {
+        margin-right: 10px; }
+    .branding-page .application-overview .top-header {
+      margin-top: 10px;
+      text-align: right;
+      background-color: #fff; }
+  .branding-page .application-overview-2 button {
+    margin-top: 15px; }
+    .branding-page .application-overview-2 button:hover {
+      background-color: #F68E55;
+      -webkit-transition: background .5s ease-in;
+      -moz-transition: background .5s ease-in;
+      -o-transition: background .5s ease-in;
+      -ms-transition: background .5s ease-in;
+      transition: background .5s ease-in;
+      transition: 0.6s ease;
+      -webkit-transition: 0.5s ease;
+      -moz-transition: 0.5s ease;
+      -o-transition: 0.5s ease; }
+  .branding-page .application-overview-2 h5 {
+    display: inline-block;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400; }
+  .branding-page .application-overview-2 .row {
+    border-bottom: 1px solid #eee;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left; }
+    .branding-page .application-overview-2 .row a {
+      border: 1px solid #eee;
+      padding: 5px;
+      text-decoration: none;
+      color: #009FB4;
+      display: inline-block;
+      margin-top: 5px; }
+  .branding-page .related-applications {
+    background-image: url(../img/blur-lead.jpg);
+    padding: 30px 0;
+    margin-top: 20px; }
+    .branding-page .related-applications a {
+      text-decoration: none; }
+      .branding-page .related-applications a img {
+        border: 2px solid #f68e55; }
+    .branding-page .related-applications h4 {
+      color: #fff;
+      font-weight: 700;
+      margin: 5px 0; }
+    .branding-page .related-applications h4 + p {
+      color: #fff;
+      font-style: italic;
+      margin: 0; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .branding-page .related-applications .row > div {
+        height: 275px; } }
 
 /******** Project page ********/
 .project-page {
