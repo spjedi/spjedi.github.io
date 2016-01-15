@@ -539,8 +539,10 @@ textarea
 {
 	cursor: pointer;
 }
-
-p,h1,h3,h4,h5,ol,ul,span.actAsPara /* disable Android font boosting */
+p {
+	font-size: 10pt;
+}
+,h1,h3,h4,h5,ol,ul,span.actAsPara /* disable Android font boosting */
 {
 	font-size: 11pt;
 }
