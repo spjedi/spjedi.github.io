@@ -2,10 +2,29 @@
 .orange-button {
     background-color: #F68E55;
      @extend .button-styles;
+     a {
+        &:visited, &:active {
+           color: #fff;
+        }
+        &:hover {
+            color: #296F7D;
+            text-decoration: none;
+        }
+    }
 }
 .blue-button {
     background-color: #009FB4;
-     @extend .button-styles;
+    @extend .button-styles;
+    a {
+        color: #fff;
+        &:visited, &:active {
+           color: #fff;
+        }
+        &:hover {
+            color: #663216;
+            text-decoration: none;
+        }
+    }
 }
 .button-styles {
     padding: 5px 15px;
@@ -53,6 +72,7 @@
     position: relative;
     left: 50%;
     margin-left: -30px;
+    margin-bottom: 15px;
 }
 .head-line {
     height: 3px;
@@ -638,6 +658,7 @@
         }
         h2 {
             margin-top: 10px;
+            color: #6A6768;
         }
         .info-box {
             background-color: #fff;
@@ -969,6 +990,9 @@
         @media #{$xs}, #{$sm} {
             padding: 35px 30px;
             height: auto;
+        }
+        h2 {
+            color: #6A6768;
         }
     }
     .slick-list {
@@ -1409,9 +1433,7 @@
     h2 {
         color: #646464;
         font-size: 50px;
-        
-        padding: 40px 0 10px 0;
-        margin: 0;
+        padding: 40px 0 0 0;
         @media #{$xs} {
             font-size: 30px;
             padding: 30px 0;
@@ -1424,8 +1446,8 @@
         width: 100%;
         p {
             
-            font-size: 30px;
-            line-height: 50px;
+            font-size: 25px;
+            line-height: 40px;
             padding-bottom: 20px;
             margin: 0;
             @media #{$xs} {
@@ -1435,8 +1457,7 @@
         }
         h2 {
             padding-top: 30px;
-            margin: 0;
-            padding-bottom: 0;
+            margin-bottom: 15px;
         }
         h2, p {
             color: #DFDFDF;
@@ -2741,6 +2762,67 @@
             border: 1px solid #eee;
             border-bottom: 4px solid #009FB4;
             border-radius: 5px;
+        }
+    }
+}
+
+
+/************** Payment portal *************/
+.payment-portal {
+    padding-bottom: 30px;
+    background-color: #fff;
+    .payment-background {
+        padding: 15px 0;
+        background-color: #fbfbfb;
+        margin-bottom: 30px;
+        -webkit-box-shadow: -2px 6px 22px -10px rgba(75,79,79,1);
+        -moz-box-shadow: -2px 6px 22px -10px rgba(75,79,79,1);
+        box-shadow: -2px 6px 22px -10px rgba(75,79,79,1);
+    }
+    .payment-box {
+        min-height: 360px;
+        @media #{$xs} {
+            min-height: auto;
+        }
+    }
+    h1 {
+        color: #E67A3F;
+        font-weight: 400;
+        font-size: 30px;
+        margin: 15px;
+    }
+    p {
+        font-size: 17px;
+        color: #939393;
+        margin: 10px;
+    }
+    img {
+        height: 200px;
+    }
+    button {
+        background-color: #52BBD0;
+        border-color: transparent;
+        padding: 8px 30px;
+        font-size: 16px;
+        &:hover {
+            background-color: #F68E55;
+            border-color: transparent;
+            -webkit-transition: background 0.7s ease-in-out;
+            -moz-transition: background 0.7s ease-in-out;
+            -o-transition: background 0.7s ease-in-out;
+            -ms-transition: background 0.7s ease-in-out;
+            transition: background 0.7s ease-in-out;
+        }
+    }
+    .payment-box {
+        padding: 20px 0;
+        background-color: rgba(91, 201, 195, 0.08);
+        border: 2px solid #fff;
+    }
+    .invoice-heading {
+        margin-top: 30px;
+        h2, h3 {
+            color: #E67A3F;
         }
     }
 }
