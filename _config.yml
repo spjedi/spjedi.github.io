@@ -5,6 +5,10 @@ description: SP Jedi's provides SharePoint builds, Top-Notch Websites, Operation
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://spjedi.com" # the base hostname & protocol for your site
 
+# Payments
+stripePublicKey: pk_test_5ewmvLjavRkbQK9vQdto4GB9 # this one is for testing
+# stripePublicKey: pk_live_ImQYcokePItZe0N1YeaHu9eB # this one is for live payments
+
 # Build settings
 markdown: kramdown
 gems: ["jekyll-sitemap"]
