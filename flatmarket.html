@@ -7,7 +7,7 @@ permalink: /flatmarket.json
   },
   "products": {
   {% for payment in site.data.payment %}
-    "sku_{{ payment.sku }}": {
+    "{{ payment.sku }}": {
       "amount": {{ payment.price | times: 100 }}
     }{% if forloop.last != true %},{% endif %}
   {% endfor %}
