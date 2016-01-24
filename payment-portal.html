@@ -19,10 +19,10 @@ title: Payment Portal
 							class="paymentButton btn btn-primary"
 							data-name="University of Utah"
 							data-image="http://spjedi.com/img/logo.png"
-							data-sku="sku_001"
-							data-amount="130000"
+							data-sku="{{ payment.sku }}"
+							data-amount="{{ payment.price | times: 100 }}"
 							data-description="Partial migration payment">
-							Buy now {{ payment.price }}
+							Buy now {{ payment.price}}$
 						</button>
 					</div>
 				</div>

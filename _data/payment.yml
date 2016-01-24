@@ -1,18 +1,24 @@
 - image: /img/cat.jpg
   description: This product is ready to control Projects This product 
-  price: 1850$
+  price: 1850
+  sku: 002
 - image: /img/cat.jpg
   description: This product is ready to control Projects
-  price: 2850$
+  price: 2850
+  sku: 003
 - image: /img/cat.jpg
   description: This product is ready to control Projects
-  price: 3850$
+  price: 3850
+  sku: 004
 - image: /img/cat.jpg
   description: This product is ready to control Projects
-  price: 1950$
+  price: 1950
+  sku: 005
 - image: /img/cat.jpg
   description: This product is ready to control Projects
-  price: 1750$
+  price: 1750
+  sku: 006
 - image: /img/cat.jpg
   description: This product is ready to control Projects
-  price: 2340$
+  price: 2340
+  sku: 007

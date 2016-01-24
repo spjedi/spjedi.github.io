@@ -6,12 +6,14 @@ permalink: /flatmarket.json
     "name": "SPJedi"
   },
   "products": {
-    "sku_001": {
-      "amount": 130000
-    }
+  {% for payment in site.data.payment %}
+    "sku_{{ payment.sku }}": {
+      "amount": {{ payment.price | times: 100 }}
+    },
+  {% endfor %}
   },
   "server": {
-    "host": "https://boiling-waters-2615.herokuapp.com"
+    "host": "{{ site.paymentsServer }}"
   },
   "stripe": {
     "publishableKey": "{{ site.stripePublicKey }}"
