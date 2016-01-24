@@ -35,5 +35,13 @@
         ga('send', 'pageview');
 
     </script>
+
+    <script>
+        var paymentSettings = {
+            STRIPE_PUBLIC_KEY: '{{ site.stripePublicKey }}',
+            DEFAULT_IMAGE_URL: '{{ site.defaultImage }}',
+            HEROKU_SERVER_URL: '{{ site.paymentsServer }}'
+        };
+    </script>
     <!-- End Google Analytics -->
 </head>

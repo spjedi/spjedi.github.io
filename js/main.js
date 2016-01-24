@@ -187,12 +187,6 @@ $(document).ready(function(){
 
 // payments
 $(function() {
-	var paymentSettings = {
-		STRIPE_PUBLIC_KEY: 'pk_live_ImQYcokePItZe0N1YeaHu9eB',
-		DEFAULT_IMAGE_URL: 'http://spjedi.com/img/logo.png',
-		HEROKU_SERVER_URL: 'https://boiling-waters-2615.herokuapp.com'
-	};
-
 	var $paymentButton = $('.paymentButton');
 	if (!$paymentButton.length) return;
 
