@@ -42,15 +42,15 @@ title: Payment Portal
 					<div class="text-center">
 						<img src="{{ invoice.image | prepend: site.baseurl }}">
 						<p>{{ invoice.description }}</p>
-						<!-- <button 
+						<button 
 							class="paymentButton btn btn-primary"
 							data-name="University of Utah"
-							data-image="http://spjedi.com/img/logo.png"
-							data-sku="sku_001"
-							data-amount="130000"
+							data-image="https://spjedi.com/img/logo.png"
+							data-sku="{{ invoice.sku }}"
+							data-amount="{{ invoice.price | times: 100 }}"
 							data-description="Partial migration payment">
 							Buy now
-						</button> -->
+						</button>
 					</div>
 				</div>
 			{% endfor %}

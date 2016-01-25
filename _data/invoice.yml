@@ -1,6 +1,12 @@
 - image: /img/cat.jpg
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+  sku: 011
+  price: 2000$
 - image: /img/cat.jpg
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+  sku: 012
+  price: 2000$
 - image: /img/cat.jpg
   description: Lorem ipsum dolor sit amet
+  sku: 013
+  price: 2000$
