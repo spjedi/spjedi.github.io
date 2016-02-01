@@ -1,12 +1,12 @@
-- image: /img/cat.jpg
+- image: /img/sundt.png
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit
   sku: 011
-  price: 2000$
-- image: /img/cat.jpg
+  price: 4100$
+- image: /img/Utah.jpg
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit
   sku: 012
-  price: 2000$
-- image: /img/cat.jpg
+  price: 1300$
+- image: /img/ncdp.png
   description: Lorem ipsum dolor sit amet
   sku: 013
-  price: 2000$
+  price: 3500$

@@ -17,8 +17,8 @@ title: Payment Portal
 						<p>{{ payment.description }}</p>
 						<button 
 							class="paymentButton btn btn-primary"
-							data-name="University of Utah"
-							data-image="https://spjedi.com/img/logo.png"
+							data-name="National DCP"
+							data-image="https://spjedi.com/img/Jedi Logo.png"
 							data-sku="{{ payment.sku }}"
 							data-amount="{{ payment.price | times: 100 }}"
 							data-description="Partial migration payment">
@@ -42,15 +42,14 @@ title: Payment Portal
 					<div class="text-center">
 						<img src="{{ invoice.image | prepend: site.baseurl }}">
 						<p>{{ invoice.description }}</p>
-						<button 
-							class="paymentButton btn btn-primary"
-							data-name="University of Utah"
-							data-image="https://spjedi.com/img/logo.png"
-							data-sku="{{ invoice.sku }}"
-							data-amount="{{ invoice.price | times: 100 }}"
-							data-description="Partial migration payment">
-							Buy now
-						</button>
+                        <button class="paymentButton btn btn-primary"
+                                data-name="Customer Invoice"
+                                data-image="https://spjedi.com/img/Jedi Logo.png"
+                                data-sku="{{ invoice.sku }}"
+                                data-amount="{{ invoice.price | times: 100 }}"
+                                data-description="Partial migration payment">
+                            Buy now
+                        </button>
 					</div>
 				</div>
 			{% endfor %}
