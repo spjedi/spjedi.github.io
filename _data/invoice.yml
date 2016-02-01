@@ -1,12 +1,12 @@
-- image: /img/sundt.png
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+- image: /img/sundt.jpg
+  description: Training Portal Build Out
   sku: 011
   price: 4100$
 - image: /img/Utah.jpg
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+  description: Migration Finalization
   sku: 012
   price: 1300$
-- image: /img/ncdp.png
-  description: Lorem ipsum dolor sit amet
+- image: /img/ndcp.png
+  description: Project Portal
   sku: 013
   price: 3500$
