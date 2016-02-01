@@ -17,11 +17,11 @@ title: Payment Portal
 						<p>{{ payment.description }}</p>
 						<button 
 							class="paymentButton btn btn-primary"
-							data-name="National DCP"
-							data-image="https://spjedi.com/img/Jedi Logo.png"
+							data-name="Packages"
+							data-image="/img/Jedi Logo.png"
 							data-sku="{{ payment.sku }}"
 							data-amount="{{ payment.price | times: 100 }}"
-							data-description="Partial migration payment">
+							data-description="Base Product Package">
 							Buy now {{ payment.price}}$
 						</button>
 					</div>
@@ -44,7 +44,7 @@ title: Payment Portal
 						<p>{{ invoice.description }}</p>
                         <button class="paymentButton btn btn-primary"
                                 data-name="Customer Invoice"
-                                data-image="https://spjedi.com/img/Jedi Logo.png"
+                                data-image="/img/Jedi Logo.png"
                                 data-sku="{{ invoice.sku }}"
                                 data-amount="{{ invoice.price | times: 100 }}"
                                 data-description="Customer Invoice">
