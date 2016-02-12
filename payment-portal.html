@@ -17,11 +17,11 @@ title: Payment Portal
 						<p>{{ payment.description }}</p>
 						<button 
 							class="paymentButton btn btn-primary"
-							data-name="Packages"
-							data-image="/img/jedi.png"
+							data-name="University of Utah"
+							data-image="{{ payment.image }}"
 							data-sku="{{ payment.sku }}"
 							data-amount="{{ payment.price | times: 100 }}"
-							data-description="Base Product Package">
+							data-description="{{ payment.description }}">
 							Buy now {{ payment.price}}$
 						</button>
 					</div>
@@ -32,7 +32,7 @@ title: Payment Portal
 
 	<div class="text-center invoice-heading payment-background ">
 		<h2>Customer Invoices</h2>
-		<h3>Existing Customers Only </h3>
+		<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
 	</div>
 
 	<div class="container box-shadow">
@@ -42,14 +42,15 @@ title: Payment Portal
 					<div class="text-center">
 						<img src="{{ invoice.image | prepend: site.baseurl }}">
 						<p>{{ invoice.description }}</p>
-                        <button class="paymentButton btn btn-primary"
-                                data-name="Customer Invoice"
-                                data-image="/img/jedi.png"
-                                data-sku="{{ invoice.sku }}"
-                                data-amount="{{ invoice.price | times: 100 }}"
-                                data-description="Customer Invoice">
-                            Pay Now
-                        </button>
+						<button 
+							class="paymentButton btn btn-primary"
+							data-name="University of Utah"
+							data-image="{{ invoice.image }}"
+							data-sku="{{ invoice.sku }}"
+							data-amount="{{ invoice.price | times: 100 }}"
+							data-description="{{ invoice.description }}">
+							Buy now
+						</button>
 					</div>
 				</div>
 			{% endfor %}
