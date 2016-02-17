@@ -1,0 +1,16 @@
+- image: /img/FamLeague_25th.png
+  description: Branding Solution
+  sku: 011
+<<<<<<< HEAD
+  price: 2250$
+=======
+  price: 2530
+>>>>>>> origin/master
+- image: /img/Utah.jpg
+  description: Migration Finalization
+  sku: 012
+  price: 900
+- image: /img/ndcp.png
+  description: Project Portal
+  sku: 013
+  price: 3500
