@@ -1,8 +1,7 @@
-<<<<<<< HEAD
-  price: 2250$
-=======
-  price: 2530
->>>>>>> origin/master
+image: /img/sundt.jpg
+  description: Branding Solution
+  sku: 011
+  price: 2250
 - image: /img/Utah.jpg
   description: Migration Finalization
   sku: 012
