@@ -264,3 +264,64 @@ $(function() {
 			.text('Payment failed');
 	}
 });
+
+
+// Trainings
+
+if ($('.training-page').length) {
+	
+	$.getJSON('/training_data.json', function (json) {	
+		var i, thisWeek = null, nextWeek = null, previous = [];
+		var week = getWeekBounds();
+
+		console.log(+week.this.start);
+
+		for (i in json) {
+			var training = json[i];
+			var date = training.date.split('.');
+			var time = training.time.split(':');
+			training.datetime = new Date(parseInt(date[2]), parseInt(date[0]) - 1, parseInt(date[1]), parseInt(time[0]), parseInt(time[1]));
+
+			console.log(+training.datetime);
+
+			if (+training.datetime >= +week.this.start && +training.datetime <= +week.this.end) {
+				thisWeek = training;
+			}
+
+			if (+training.datetime >= +week.next.start && +training.datetime <= +week.next.end) {
+				nextWeek = training;
+			}
+
+			if (+training.datetime < +week.this.start) {
+				previous.push(training);
+			}
+		}
+
+		console.log(+week.this.end);
+
+		console.log(thisWeek, nextWeek, previous);
+	});
+}
+
+function getWeekBounds() {
+	var curr = new Date(); // get current date
+	var first = curr.getDate() - curr.getDay() + 1; // First day is the day of the month - the day of the week
+
+	return {
+		this: {
+			start: setDate(curr, first, 'start'),
+			end: setDate(curr, first + 6, 'end')
+		},
+		next: {
+			start: setDate(curr, first + 7, 'start'),
+			end: setDate(curr, first + 13, 'end')
+		}
+	};
+}
+
+function setDate(curr, date, type) {
+	var d = new Date(curr.setDate(date));
+	if (type == 'start') d.setHours(0, 0, 0);
+	if (type == 'end') d.setHours(23, 59, 59);
+	return d;
+}

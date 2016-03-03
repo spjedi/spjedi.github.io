@@ -2267,6 +2267,69 @@
     }
 }
 
+/************ Training Center ************/
+.training-page {
+    background-color: rgba(240, 248, 255, 0.86);
+    padding: 30px 0;
+    h1 {
+        color: #F68E55;
+        margin: 0 0 30px 0;
+    }
+    .week-training {
+        border: 1px solid #E2E2E2;
+        padding: 20px;
+        background-color: #fff;
+        margin-bottom: 25px;
+        h2 {
+            color: #2E6E6B;
+            margin: 0 0 10px 0;
+        }
+        small {
+            color: #27adbe;
+        }
+        p {
+            margin: 5px 0;
+            color: #909090;
+        }
+    }
+    .button-styles {
+        width: 100%;
+        padding: 17px;
+        margin-bottom: 20px;
+        color: #fff;
+        font-size: 20px;
+        &:hover {
+            color: #fff;
+        }
+    }
+    .previous-events{
+        border: 1px solid #E2E2E2;
+        padding: 15px;
+        background-color: #fff;
+        margin-top: 35px;
+        .week-training{
+            min-height: 250px;
+        }
+        .embed-responsive-16by9 {
+            min-height: 250px;
+        }
+        .row {
+            margin-top: 25px;
+        }
+        h2 {
+            margin: 20px 0;
+            color: #F68E55;
+        }
+        h3 {
+            color: #2E6E6B;
+        }
+        a {
+            color: #F68E55;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    }
+}
 
 /******* Remote Support page *********/
 .remote-support-page {
