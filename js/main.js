@@ -274,38 +274,40 @@ if ($('.training-page').length) {
 		var i, thisWeek = null, nextWeek = null, previous = [];
 		var week = getWeekBounds();
 
-		console.log(+week.this.start);
-
 		for (i in json) {
 			var training = json[i];
 			var date = training.date.split('.');
 			var time = training.time.split(':');
 			training.datetime = new Date(parseInt(date[2]), parseInt(date[0]) - 1, parseInt(date[1]), parseInt(time[0]), parseInt(time[1]));
 
-			console.log(+training.datetime);
-
-			if (+training.datetime >= +week.this.start && +training.datetime <= +week.this.end) {
+			if (training.datetime >= week.this.start && training.datetime <= week.this.end) {
 				thisWeek = training;
+				thisWeek.heading = 'This Week Training';
 			}
 
-			if (+training.datetime >= +week.next.start && +training.datetime <= +week.next.end) {
+			if (training.datetime >= week.next.start && training.datetime <= week.next.end) {
 				nextWeek = training;
+				nextWeek.heading = 'Next Week Training';
 			}
 
-			if (+training.datetime < +week.this.start) {
+			if (training.datetime < week.this.start) {
 				previous.push(training);
 			}
 		}
 
-		console.log(+week.this.end);
+		var weekTemplate = $.templates("#week-training-template");
+		var previousEventsTemplate = $.templates("#previous-events-template");
 
-		console.log(thisWeek, nextWeek, previous);
+		$("#week-container").append(weekTemplate.render(thisWeek), weekTemplate.render(nextWeek));
+		$("#previous-events-container").append(previousEventsTemplate.render(previous));
 	});
 }
 
 function getWeekBounds() {
-	var curr = new Date(); // get current date
-	var first = curr.getDate() - curr.getDay() + 1; // First day is the day of the month - the day of the week
+	var curr = new Date();
+	var currDay = curr.getDay();
+	var dayOfWeek = currDay == 0 ? 6 : currDay - 1;
+	var first = curr.getDate() - dayOfWeek;
 
 	return {
 		this: {
@@ -320,6 +322,7 @@ function getWeekBounds() {
 }
 
 function setDate(curr, date, type) {
+	curr = new Date(curr);
 	var d = new Date(curr.setDate(date));
 	if (type == 'start') d.setHours(0, 0, 0);
 	if (type == 'end') d.setHours(23, 59, 59);

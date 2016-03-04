@@ -9,17 +9,18 @@ title: Training center
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-sm-8 col-xs-12">
-      {% assign training = site.data.training | sort: 'listing-priority' %}
-      {% for training in site.data.training limit:2 %}
-          <div class="week-training">
-            <h2>This Week Training</h2>
-            <p>Date: <small>{{ training.date | date_to_string }}</small></p>  
-            <p>Time: <small>{{ training.time}}</small></p>
-            <p>{{ training.description }}</p>
-          </div>
-      {% endfor %}
-      </div>
+      <div class="col-md-8 col-sm-8 col-xs-12" id="week-container"></div>
+
+      {% raw %}
+      <script type="text/x-jsrender" id="week-training-template">
+        <div class="week-training">
+          <h2>{{:heading}}</h2>
+          <p>Date: <small>{{:date}}</small></p>  
+          <p>Time: <small>{{:time}}</small></p>
+          <p>{{:description}}</p>
+        </div>
+      </script>
+      {% endraw %}
 
       <div class="col-md-4 col-sm-4 col-xs-12">
         <div><a class="blue-button button-styles btn">Get Invite For<br>This Weeks Trainings</a></div>
@@ -27,69 +28,38 @@ title: Training center
       </div>
     </div>
 
-    <div class="previous-events">
+    <div class="previous-events" id="previous-events-container">
       <h2 class="text-center">Previous Training with Document</h2>
       <div class="header-line"></div>
+    </div>
 
+    {% raw %}
+    <script type="text/x-jsrender" id="previous-events-template">
       <div class="row">
+        {{if video}}
         <div class="col-md-5 col-sm-5 col-xs-12">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PYOSKYWg-5E"></iframe>
+            <iframe class="embed-responsive-item" src="{{:video}}"></iframe>
           </div>
         </div>
+        {{/if}}
 
         <div class="col-md-7 col-sm-7 col-xs-12">
           <div class="week-training">
-            <h3>Week Training</h3>
-            <p>Date: <small>12.04.05</small></p>  
-            <p>Time: <small>16:00 AM</small></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-            <a href="/">Publish a Document</a>
+            <h3>{{:title}}</h3>
+            <p>Date: <small>{{:date}}</small></p>  
+            <p>Time: <small>{{:time}}</small></p>
+            <p>{{:description}}</p>
+            {{if document}}
+              <a href="{{:document}}" target="_blank">Publish a Document</a>
+            {{/if}}
           </div>
         </div>
-      </div>
-    </div>
+      </div>      
+    </script>
+    {% endraw %}
 
   </div>
 
 
 </div>
-
-<!-- {% if site.data.theme.show_post_navs %}
-  {% if page.previous or page.next %}
-    <div class="post-navs">
-      {% if page.previous %}
-        <div class="col-md-6 post-nav post-nav-first">
-          <div class="image-position">
-            <a href="{{ page.previous.url | prepend:site.baseurl}}/">
-              {% if page.previous.image %}
-                <div class="blog-next-image" style="background: url('{{ page.previous.image }}') center/cover;"></div>
-                <img src="{{ page.previous.image }}" alt="{{ page.previous.description }}">
-              {% endif %}
-            </a>
-          </div>
-          <h2 class="post-title-link post-next-link"><a href="{{ page.previous.url | prepend:site.baseurl }}/">{{ page.previous.title }}</a></h2>
-          <h3>{{ page.previous.summary }}</h3>
-          {{ page.previous.excerpt | markdownify | truncatewords: 100 }}
-          <p class="text-right"><a href="{{ page.previous.url | prepend:site.baseurl }}/">Continue Reading &rarr;</a></p>
-        </div>
-      {% endif %}
-      {% if page.next %}
-        <div class="col-md-6 post-nav">
-          <div class="image-position">
-            <a href="{{ page.next.url | prepend:site.baseurl}}/">
-              {% if page.next.image %}
-                <div class="blog-next-image" style="background: url('{{ page.next.image }}') center/cover;"></div>
-                <img src="{{ page.next.image }}" alt="{{ page.next.description }}">
-              {% endif %}
-            </a>
-          </div>
-          <h2 class="post-title-link post-next-link"><a href="{{ page.next.url | prepend:site.baseurl }}/">{{ page.next.title }}</a></h2>
-          <h3>{{ page.next.summary }}</h3>
-          {{ page.next.excerpt | markdownify | truncatewords: 100 }}
-          <p class="text-right"><a href="{{ page.next.url | prepend:site.baseurl }}/">Continue Reading &rarr;</a></p>
-        </div>
-      {% endif %}
-    </div>
-  {% endif %}
-{% endif %} -->
