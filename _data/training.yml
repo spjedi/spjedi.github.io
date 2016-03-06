@@ -1,14 +1,14 @@
-- title: SharePoint Training-Placeholder
-  date: "03.02.2016"
-  time: "11:00AM EST"
-  description: If you want to learn about owls this is the place. It's a hoot, but I assure you the rest will be about SharePoint and Microsoft Products.
+- title: SharePoint Training
+  date: "11.22.2014"
+  time: "14:45"
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   video: https://www.youtube.com/embed/PYOSKYWg-5E
   document: /documents/Smart_Kitten_Cat_Buyers_Guide_July2013_web.pdf
 - header: How to adopt a cat
-  date: "03.16.2016"
-  time: "11:00AM EST"
+  date: "03.04.2016"
+  time: "09:30"
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 - header: SharePoint Online
-  date: "03.23.2016"
-  time: "11:00AM EST"
+  date: "03.12.2016"
+  time: "10:00"
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
