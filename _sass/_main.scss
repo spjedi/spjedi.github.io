@@ -1,0 +1,220 @@
+.home-background {
+	background-image: url(/image/broken_noise.png);
+}
+#home-page {
+	height: 100%;
+	position: relative;
+
+	.homepage-header {
+		background-image: url(/image/star_wars_kyloren_ren.gif);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+		h1 {
+			padding-top: 200px;
+			color: transparent;
+			font-size: 55px;
+			line-height: 1.5;
+			 @media #{$xs} {
+            	font-size: $font-size-h1-mobile;
+            	padding-top: 120px;
+        	}
+		}
+		.arrow-down {
+			bottom: 45px;
+			position: absolute;
+			left: 50%;
+			margin-left: -16px;
+			cursor: pointer;
+			&:after {
+				content:url(/image/round-1.png);
+				opacity: 0;
+				position: absolute;
+				left: 50%;
+				margin-left: -32px;
+				margin-top: -48px;
+				transition: opacity 0.2s ease 0s;
+
+			}
+			&:hover:after {
+				opacity: 1;
+			}
+			span {
+				&:after {
+					content:url(/image/round-2.png);
+					opacity: 0;
+					position: absolute;
+					left: 50%;
+					margin-left: -46px;
+					margin-top: -62px;
+					transition: opacity 0.8s ease 0s;
+				}
+			}
+			&:hover span:after {
+				opacity: 1;
+			}
+		}
+	}
+
+	.header-layer {
+		background-color: rgba(0, 0, 0, 0.48);
+		position: relative;
+		top: 0;
+		height: 100%;
+	}
+
+	.get-started-now {
+		padding-bottom: 100px;
+		.purple-header {
+			background-color: $orange-color;
+			padding: 30px;
+		}
+		.row {
+			padding: 15px;
+			text-align: center;
+		}
+	}
+
+	.our-services{
+		padding-bottom: 100px;
+		.provided-services{
+			padding: 15px;
+			height: 415px;
+			text-align: center;
+			h3 {
+				text-align: center;
+				color: $dark-purple-color;
+				position: relative;
+				top: 110px;
+				font-size: 19px;
+				color: $yellow-color;
+			}
+			p {
+				position: absolute;
+				top: 300px;
+				text-align: center;
+			}
+			.service-bar {
+				cursor: pointer;
+				img {
+					height: 200px;
+					width: 200px;
+				}
+				&:after {
+					background-image:url(/image/big-round-1.png);
+					content: "";
+					opacity: 0;
+					transition: opacity 0.2s ease 0s;
+					position: relative;
+					bottom: 532px;
+					right: 0px;
+					display: inline-block;
+					height: 250px;
+					width: 250px;
+					background-size: 250px 250px;
+				}
+				&:hover:after {
+					opacity: 1;
+				}
+				span {
+					&:after {
+						background-image:url(/image/big-round-1.png);
+						opacity: 0;
+						position: relative;
+						content: "";
+						bottom: 250px;
+						right: 0px;
+						transition: opacity 0.8s ease 0s;
+						display: inline-block;
+						height: 300px;
+						width: 300px;
+						background-size: 300px 300px;
+					}
+				}
+				&:hover span:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	.testimonials {
+		margin-top: 100px;
+		.testimonial-text {
+			border: none;
+			margin: 0; 
+			padding: 10px 50px;
+			position: relative;
+			font-size: 15px;
+			border-radius: 5px;
+			font-style: italic;
+			& + .v-center {
+				margin-left: 50px;
+			}
+			&:before {
+				position: absolute;
+				bottom: 6px;
+				left: 82px;
+				width: 0;
+				height: 0;
+				border-left: 8px solid transparent;
+				border-right: 8px solid transparent;
+				border-top: 10px solid $blue-color;
+				content: "";
+				-moz-transform: scale(.9999);
+			}
+			&:after {
+				position: absolute;
+				bottom: 8px;
+				left: 83px;
+				width: 0;
+				height: 0;
+				border-left: 7px solid transparent;
+				border-right: 7px solid transparent;
+				border-top: 8px solid #1B1B1B;
+				content: "";
+			}
+		}
+		.testimonials-box {
+			text-align: left;
+			p {
+				margin: 20px 0 5px 0;
+				font-size: 17px;
+				font-style: italic;
+				padding: 10px;
+				border: 1px solid $blue-color;
+			}
+			.testimonial-info {
+				padding-left: 25px;
+				color: $white-color;
+				font-size: 16px;
+				font-weight: 400;
+				a {
+					text-decoration: none;
+					color: $blue-color;
+				} 
+			}
+		}
+		img {
+			display: inline-block;
+			border-radius: 2px;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+		}
+	}
+	.clients-slider {
+		margin-top: 50px;
+		span {
+			border: 1px solid $green-color;
+			padding: 10px;
+			display: inline-block;
+		}
+		img {
+			-webkit-filter: grayscale(60%);
+			height: 80px;
+			width: 160px;
+		}
+	}
+}
