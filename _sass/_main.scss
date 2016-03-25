@@ -1,10 +1,19 @@
 .home-background {
-	background-image: url(/image/broken_noise.png);
+	background-image: url(/images/grille.jpg);
+	background-color: rgba(0, 0, 0, 0.48);
+}
+.background-testimonials {
+	background-color: rgb(11, 10, 10);
 }
 #home-page {
 	height: 100%;
 	position: relative;
-
+	h2 {
+		color: $blue-color;
+	}
+	h4 {
+		color: $green-color;
+	}
 	.homepage-header {
 		// background-image: url(/image/star_wars_kyloren_ren.gif);
 		// background-position: center center;
@@ -66,6 +75,7 @@
 
 	.get-started-now {
 		padding-bottom: 100px;
+		background-color: rgba(0, 0, 0, 0.48);
 		.purple-header {
 			background-color: $orange-color;
 			padding: 30px;

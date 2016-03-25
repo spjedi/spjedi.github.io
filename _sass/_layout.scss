@@ -1440,7 +1440,16 @@
 
 /******** Branding page **********************/
     .branding-page {
-        background-image: url(../img/brillant.png); }
+        background-image: url(../img/brillant.png); 
+        h1 {
+            color: #F68E55;
+            padding: 20px 0;
+            margin: 0;
+        }
+        h3, h4, h5 {
+            color: #B2B2B2;
+        }
+    }
     .branding-page .branding-hub-img > div {
         margin-top: 15px;
         bottom: 15px; }
@@ -1578,6 +1587,19 @@
 
 /******** Project page ***********************/
     .project-page {
+        h1 {
+            color: #F68E55;
+            padding: 20px 0;
+        }
+        h2 {
+            color: #F68E55;
+            padding: 20px 0;
+            margin: 0;
+        }
+        h3 {
+            margin-bottom: 10px;
+            color: #B2B2B2;
+        }
         background-image: url(../img/gray_jean.png);
         .project-hub-img {
             & > div {
@@ -1989,6 +2011,17 @@
         background-color: #f8f8f8;
         h2 {
             padding-top: 20px;
+        }
+        h1 {
+            color: #F68E55;
+        }
+        h3 {
+            color: #27adbe;
+            margin-bottom: 15px;
+        }
+        p, strong {
+            color: #909090;
+            padding-bottom: 10px;
         }
         .six-sigma-header {
             background: url(/img/blur-lead.jpg);
