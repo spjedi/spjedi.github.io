@@ -137,7 +137,7 @@ a.nontext /* used to override default properties of 'a' tag */
 
 .whiteopens
 {
-	color: #3C5912;
+	color: white;
 	font-family: open-sans, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
