@@ -217,7 +217,6 @@ Additional Styles (required)
   	height:auto;
 	max-width:50%;
 }
-body { background:url(../images/site_bg.png) repeat center center; font-family: 'Trebuchet MS' !important;}
 
 ul { margin-bottom: 0;}
 a:hover { text-decoration: none;}
