@@ -344,6 +344,45 @@ footer.about_footer .addr_social .footer_email_social .email_footer a { color: #
 
 #immersive_slider_2.immersive_slider .is-slide .image { float: left;}
 
+/*  */
+.membership_wrp {background: url(/images/grille.jpg); margin: 0 auto;}
+.membership_wrp .owl-carousel.owl-theme { margin: 20px auto;}
+.membership_wrp .plan_box { text-align: center; }
+.membership_wrp .plan_box h2 { font-size: 26px; color: #3F7FB9;display: inline-block; margin: 0 auto;}
+.membership_wrp .plan_box i.plan_1 { display: inline-block;  margin-left: 8px; vertical-align: middle;}
+.membership_wrp .plan_box .heading_plan { margin-top: 10px; background-color: #dedede; padding: 5px 0; height: 45px;}
+.membership_wrp .plan_box .plan_detail { background-color: #fff; padding: 10px 0; border:1px solid #dedede; border-bottom-width: 2px;}
+.membership_wrp .plan_box .plan_detail p { font-size: 16px; color: #333; margin-bottom: 0; padding: 5px 0;}
+.membership_wrp .plan_box .plan_detail span { display: block; font-size: 24px; color: #10172C; margin: 5px auto;}
+.membership_wrp .plan_box .plan_detail a { background-color: #5B9BD5; color: #fff; font-size: 16px; padding: 8px 15px; display: inline-block;}
+.membership_wrp .plan_box .plan_detail a:hover {text-decoration: none; background-color: #4585bf;}
+.membership_wrp .owl-carousel .owl-controls { display: none;}
+.membership_wrp .plan_box .plan_detail p:nth-child(2n+2) { background-color: #f5f5f5;}
+.membership_wrp .plan_box .plan_detail p:nth-child(2n+1) { background-color: #fafafa;}
+.branding_process .brandheading_process { width: 33.18%; display: inline-block;}
+
+#toggle_open, .plan_detail_2 { display: none;}
+.plan_fulldetail .plan_detail_1 .plan_col-1 { display: inline-block; width: 48%; vertical-align: top; min-height: 350px; background-color: #e3e3e3; margin: 10px auto;}
+.plan_fulldetail .plan_detail_2 .plan_col-1 { display: inline-block; width: 48%; vertical-align: top; min-height: 350px; background-color: #e3e3e3; margin: 10px auto; padding: 10px;}
+
+
+.sharepoint_wrp { width: 100%; display: inline-block; margin: 10px auto;}
+.sharepoint_wrp .share_left { display: inline-block; width: 24.5%; text-align: left;}
+.sharepoint_wrp .share_box { margin: 0 2px; vertical-align: middle; width: 50%; display: inline-block;}
+.sharepoint_wrp .share_right { float: none; width: 24.5%; text-align: right; display: inline-block;}
+.sharepoint_wrp .share_box .sharepoint_box { background-color: #101B2D; border-radius: 20px;padding: 5px 15px; text-align: center; }
+.sharepoint_wrp .share_box .sharepoint_box h5 { font-size: 24px; font-weight: bold; color: #BE1E2D; text-align: center;}
+.sharepoint_wrp .share_box .sharepoint_box span { color: #fff; font-size: 24px; display: inline-block; text-align: center;
+  vertical-align: middle; width: 80%;}
+.sharepoint_wrp .share_box .sharepoint_box i { display: inline-block;}
+
+.owl-carousel .plan_box {  -webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out;-o-transition: all 0.6s ease-in-out;
+     -ms-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; cursor: pointer;}
+.zoom_box, .owl-carousel .plan_box:hover {  -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1);
+  -ms-transform: scale(1.1); transform: scale(1.1);  box-shadow: 0 2px 5px 0 #eaeaea;}
+
+
+
 /* Reponsive */
 @media (min-width: 980px) and (max-width: 1200px) {
 	.our_process_box { width: 100%;}
@@ -374,6 +413,8 @@ footer.about_footer .addr_social .footer_email_social .email_footer a { color: #
 	.slider_detail { height: 89%;}
 	.immersive_slider .is-slide .content p { font-size: 24px;}
 	.immersive_slider .is-slide .image img { height: 400px; width: auto;}
+
+  .membership_wrp { width: 100%;}
 }
 @media (min-width: 768px) and (max-width: 979px) {
 	.our_process_box { width: 100%;}
@@ -412,6 +453,7 @@ footer.about_footer .addr_social .footer_email_social .email_footer a { color: #
 	.slider_detail .btn_login a { font-size: 20px}
 
 	.hr_home_bock .slide a img { width: 100%;}
+  .membership_wrp { width: 100%;}
 }
 @media (max-width: 767px) { .site_header { position: relative;}
 	.our_process_box { width: 100%;}	
@@ -471,6 +513,9 @@ footer.about_footer .addr_social .footer_email_social .email_footer a { color: #
 	.hr_home_bock .hr_knowled_heading h2 { font-size: 33px;}
 	.hr_home_bock .hr_knowled_heading span { font-size: 20px;}
 	.immersive_slider .is-slide .content { width: 100% !important;}
+
+  .membership_wrp { width: 100%;}
+  .plan_fulldetail .plan_detail_1 .plan_col-1 { width: 100%;}
 }
 @media (max-width: 640px) {
 	.about_contact_footer .footer_about { width: 100%;}
