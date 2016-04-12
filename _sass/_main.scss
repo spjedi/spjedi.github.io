@@ -1,14 +1,13 @@
 .home-background {
 	background-image: url(/images/grille.jpg);
-	background-color: rgba(0, 0, 0, 0.48);
 }
 .background-testimonials {
 	background-color: rgb(11, 10, 10);
 }
-.site-header .top-header {margin-bottom:75px;}
 #home-page {
 	height: 100%;
 	position: relative;
+	background-color: rgba(0, 0, 0, 0.48);
 	h2 {
 		color: $blue-color;
 	}
@@ -24,12 +23,18 @@
 		h1 {
 			padding-top: 200px;
 			color: transparent;
-			font-size: 55px;
+			font-size: 45px;
 			line-height: 1.5;
-			 @media #{$xs} {
+			@media #{$xs} {
             	font-size: $font-size-h1-mobile;
             	padding-top: 120px;
         	}
+		}
+		.monitors {
+			padding-top: 200px;
+			@media #{$xs} {
+				padding-top: 0;
+			}
 		}
 		.arrow-down {
 			bottom: 45px;
@@ -68,7 +73,6 @@
 	}
 
 	.header-layer {
-		background-color: rgba(0, 0, 0, 0.48);
 		position: relative;
 		top: 0;
 		height: 100%;
@@ -89,6 +93,7 @@
 
 	.our-services{
 		padding-bottom: 100px;
+		background-color: rgba(0, 0, 0, 0.48);
 		.provided-services{
 			padding: 15px;
 			height: 415px;
