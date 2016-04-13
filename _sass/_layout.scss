@@ -530,9 +530,10 @@
         .portfolio-box {
             & > div {
                 padding: 0;
+				border-style:inset;
             }
             img {
-                height: 250px;
+                height: 350px;
             }
             a:hover .excerpt {
                 display: inline-block;
