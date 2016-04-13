@@ -359,7 +359,7 @@ footer.about_footer .addr_social .footer_email_social .email_footer a { color: #
 .membership_wrp .owl-carousel .owl-controls { display: none;}
 .membership_wrp .plan_box .plan_detail p:nth-child(2n+2) { background-color: #f5f5f5;}
 .membership_wrp .plan_box .plan_detail p:nth-child(2n+1) { background-color: #fafafa;}
-.branding_process .brandheading_process { width: 33.18%; display: inline-block;}
+.branding_process .brandheading_process { width: 33.1%; display: inline-block;}
 
 #toggle_open, .plan_detail_2 { display: none;}
 .plan_fulldetail .plan_detail_1 .plan_col-1 { display: inline-block; width: 48%; vertical-align: top; min-height: 350px; background-color: #e3e3e3; margin: 10px auto;}

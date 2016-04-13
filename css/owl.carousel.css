@@ -75,6 +75,7 @@
   position: relative;
   /* fix for flashing background */
   -webkit-transform: translate3d(0px, 0px, 0px);
+  width:100%;
 }
 .owl-carousel .owl-controls .owl-nav .owl-prev,
 .owl-carousel .owl-controls .owl-nav .owl-next,
