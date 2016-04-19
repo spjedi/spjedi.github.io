@@ -6,6 +6,11 @@ description: Get best information about our SharePoint configuration services, m
 keywords: SharePoint blog, custom SharePoint Development blog, migration services blog, SharePoint migration services blog, SharePoint Development solutions blog
 robots: all, index, follow
 ---
+<style> .body {color:black;}
+    .p {
+        color: black;
+    }
+</style>
 <div class="blog-page header-position">
 	<div class="blog-header">
 		<h1 class="text-center">SharePoint Blog</h1>
@@ -16,10 +21,6 @@ robots: all, index, follow
 				
 				{% for post in site.posts %}
 					<div class="blog-posts">
-						<div class="date-info">
-							<i class="fa fa-calendar-o"></i>
-							Posted on <time>{{ post.date | date: "%b %-d, %Y" }}</time>
-						</div>
 						<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 						<article>{{ post.excerpt }}</article>
 

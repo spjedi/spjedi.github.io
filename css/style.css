@@ -345,7 +345,7 @@ footer.about_footer .addr_social .footer_email_social .email_footer a { color: #
 #immersive_slider_2.immersive_slider .is-slide .image { float: left;}
 
 /*  */
-.membership_wrp {background: url(/images/grille.jpg); margin: 0 auto;}
+.membership_wrp {background-color:rgba(0, 0, 0, 0.48); margin: 0 auto;}
 .membership_wrp .owl-carousel.owl-theme { margin: 20px auto;}
 .membership_wrp .plan_box { text-align: center; }
 .membership_wrp .plan_box h2 { font-size: 26px; color: #3F7FB9;display: inline-block; margin: 0 auto;}
@@ -363,7 +363,7 @@ footer.about_footer .addr_social .footer_email_social .email_footer a { color: #
 
 #toggle_open, .plan_detail_2 { display: none;}
 .plan_fulldetail .plan_detail_1 .plan_col-1 { display: inline-block; width: 48%; vertical-align: top; min-height: 200px; background-color: #e3e3e3; margin: 10px auto;}
-.plan_fulldetail .plan_detail_2 .plan_col-1 { display: inline-block; width: 48%; vertical-align: top; min-height: 200px; background-color: #e3e3e3; margin: 10px auto; padding: 10px;}
+.plan_fulldetail .plan_detail_2 .plan_col-1 { display: inline-block; width: 48%; vertical-align: top; min-height: 200px; margin: 10px auto; padding: 10px;}
 
 
 .sharepoint_wrp { width: 100%; display: inline-block; margin: 10px auto;}
@@ -386,14 +386,14 @@ footer.about_footer .addr_social .footer_email_social .email_footer a { color: #
 .responsive-slider .slides ul li { width: 100%;}
 .slider_center h3 { white-space: normal; width: 50%; margin: 0 auto; font-size: 35px; font-family: "Trebuchet MS"; line-height: 45px;}
 .slider_center.slider_btn a { font-size: 23px; color: #fff; background: #1e9791; padding:10px 55px; border-radius: 20px; font-family: "Trebuchet MS";font-weight: normal;}
-.slider_center.slider_btn { width: 100%; padding-top:180px;}
+.slider_center.slider_btn { width: 100%; padding-top:250px;}
 .slider_center.slider_btn a:hover { background: #107c76; text-decoration: none;}
 .slider_width h2 { white-space: normal; width: 50%; color: #fff; font-size: 34px;}
 .slider_width { width: 1140px; background: none; text-align: left;}
 .slider_width .slider_text { white-space: normal; width: 80%; font-size: 16px; margin: 20px auto}
 .responsive-slider .slides ul li .slide-body .slider_width .caption.sub { bottom: -140px; text-align: left;}
 .responsive-slider .slides ul li .slide-body .caption.header.slider_width { top: 5%;}
-.slider_center .slider_sub.slider_text { width: 60%; white-space: normal; font-family: 'Lato'; font-size: 18px; margin:0 auto !important; left: 0; right: 0;}
+.slider_center .slider_sub.slider_text { width: 80%; white-space: normal; font-size: 18px; margin:0 auto !important; left: 0; right: 0;}
 .slider_center h2 { font-size: 36px;}
 .slider_center .heading_slider { background: #2cf3e7; width: 120px; height: 4px;}
 

@@ -9,15 +9,19 @@ layout: default
 			</div>
 		</div>
 	</div>
+    <style type="text/css">
+        .p {
+            color: black;
+        }
+        .body {
+            color: black;
+        }
+    </style>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">
 				<div class="blog-posts blog-posts_1">
 					<h1>{{ page.title }}</h1>
-					<div class="date-info">
-						<i class="fa fa-calendar-o"></i>
-						Published on <time>{{ page.date | date: "%b %-d, %Y" }}</time>
-					</div>
 					<article class="post-content">
 						{{ content }}
 					</article>

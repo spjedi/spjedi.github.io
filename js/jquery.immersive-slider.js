@@ -20,7 +20,7 @@
     cssBlur: false,
     pagination: true,
     loop: true,
-    autoStart: 4000
+    autoStart: 6000
 	};
   
   /*------------------------------------------------*/
