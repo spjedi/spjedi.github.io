@@ -4,6 +4,16 @@
 .background-testimonials {
 	background-color: rgb(11, 10, 10);
 }
+@font-face {
+  font-family: 'SFDistantGalaxyOutline';
+  src: 
+  	url('/fonts/SFDistantGalaxyOutline.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/SFDistantGalaxyOutline.woff') format('woff'), 
+	url('/fonts/SFDistantGalaxyOutline.ttf')  format('truetype'), 
+	url('/fonts/SFDistantGalaxyOutline.svg#SFDistantGalaxyOutline') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 #home-page {
 	height: 100%;
 	position: relative;
@@ -14,6 +24,7 @@
 	h4 {
 		color: $green-color;
 	}
+
 	.homepage-header {
 		// background-image: url(/image/star_wars_kyloren_ren.gif);
 		// background-position: center center;
@@ -21,9 +32,9 @@
 		// background-size: cover;
 		height: 100%;
 		h1 {
-			padding-top: 2px;
-			color: transparent;
-			font-size: 45px;
+			font-family: 'SFDistantGalaxyOutline';
+			color: $yellow-color;
+			font-size: 55px;
 			line-height: 1.5;
 			@media #{$xs} {
             	font-size: $font-size-h1-mobile;
@@ -31,7 +42,7 @@
         	}
 		}
 		.monitors {
-			padding-top: 200px;
+			padding-top: 150px;
 			@media #{$xs} {
 				padding-top: 75px;
 				padding-left: 50px;
