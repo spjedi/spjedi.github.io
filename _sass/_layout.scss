@@ -51,6 +51,7 @@
     }
     .v-center {
         display: table;
+		margin-left: -150px;
         @media #{$xs}  {
             display: block;
         }

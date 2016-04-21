@@ -21,7 +21,7 @@
 		// background-size: cover;
 		height: 100%;
 		h1 {
-			padding-top: 200px;
+			padding-top: 2px;
 			color: transparent;
 			font-size: 45px;
 			line-height: 1.5;
@@ -33,7 +33,10 @@
 		.monitors {
 			padding-top: 200px;
 			@media #{$xs} {
-				padding-top: 0;
+				padding-top: 75px;
+				padding-left: 50px;
+				margin-left: 60px;
+
 			}
 		}
 		.arrow-down {
