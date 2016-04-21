@@ -1,7 +1,7 @@
-- image: /img/FamLeague_25th.png
-  description: Branding Solution
-  sku: 011
-  price: 2250
+- image: /images/tipton.png
+  description: Carpenter Webparts
+  sku: 027
+  price: 4350
 - image: /img/sundt.jpg
   description: Training Portal
   sku: 016
