@@ -582,7 +582,11 @@ footer.about_footer .addr_social .footer_email_social .email_footer a { color: #
 	.immersive_slider .is-slide .content { width: 46%;}
 	.immersive_slider .is-slide .image { float: none !important; text-align: center !important; margin: 10px auto 0;}
 	.hr_home_bock .hr_knowled_heading { margin-top: 10px;}
-	.immersive_slider .slide a img { width: 100%;}
+    .immersive_slider .slide a img {
+        width: 100%;
+        min-height: 200px;
+        min-width: 300px;
+    }
 	.immersive_slider .is-slide .content { width: 50% !important; margin: 0 auto;}
 	.main { width: 100%; text-align: center;}
 
