@@ -17,7 +17,6 @@
 #home-page {
 	height: 100%;
 	position: relative;
-	background-color: rgba(0, 0, 0, 0.48);
 	h2 {
 		color: $blue-color;
 	}
@@ -37,7 +36,7 @@
 			font-size: 55px;
 			line-height: 1.5;
 			@media #{$xs} {
-            	font-size: $font-size-h1-mobile;
+            	font-size: 28px;
             	padding-top: 1px;
         	}
 		}
@@ -93,7 +92,6 @@
 	}
 
 	.get-started-now {
-		background-color: rgba(0, 0, 0, 0.48);
 		.purple-header {
 			background-color: $orange-color;
 			padding: 30px;
