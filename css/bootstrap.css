@@ -1600,6 +1600,7 @@ pre code {
   .container {
     width: 970px;
   }
+  .business_bock {margin-left: 15%; margin-right:15%;}
 }
 @media (min-width: 1200px) {
   .container {

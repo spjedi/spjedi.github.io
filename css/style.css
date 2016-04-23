@@ -615,7 +615,6 @@ footer.about_footer .addr_social .footer_email_social .email_footer a { color: #
 	.slider_detail .btn_login a {  font-size: 4px;}
 }
 /* business_bock */
-.business_bock { margin: 50px auto;}
 .business_bock .busine_box { border: 1px solid #004156; border-radius: 20px; padding: 40px; background: rgba(0,0,0,0.4);}
 .business_bock .busine_box li .busin_img { display: inline-block; vertical-align: middle; width: 250px;}
 .business_bock .busine_box li span { display: inline-block; vertical-align: middle; font-size: 20px; color: #fff; width: 70%;}
