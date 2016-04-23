@@ -33,6 +33,9 @@ li { list-style: none;}
 .explore_process .heading_process .heading_bg .process_icon img { width: 100%;}
 .explore_process .heading_process .heading_bg span { font-size: 14px; color: #324754;}
 
+#home-page { display:inline;}
+footer { display:inline-block;}
+
 /* spjedi_bock */
 .spjedi_bock { background: #244356; padding: 10px 0;}
 .spjedi_bock span { font-size: 19px; text-align: center; color: #fff; display: inline-block; font-family: 'Conv_gotham-bold';}
