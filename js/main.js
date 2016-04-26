@@ -306,7 +306,7 @@ if ($('.training-page').length) {
 		var weekTemplate = $.templates("#week-training-template");
 		var previousEventsTemplate = $.templates("#previous-events-template");
 
-		$("#week-container").append(weekTemplate.render(thisWeek), weekTemplate.render(nextWeek));
+		$("#week-container").append(!thisWeek || weekTemplate.render(thisWeek), !nextWeek || weekTemplate.render(nextWeek));
 		$("#previous-events-container").append(previousEventsTemplate.render(previous));
 	});
 }
