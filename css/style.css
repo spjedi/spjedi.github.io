@@ -603,8 +603,6 @@ footer.about_footer .addr_social .footer_email_social .email_footer a { color: #
 
 	.immersive_slider { height: 210px !important;}
 	.hr_knowled_bock { margin-bottom: 40px;}
-
-  .slider_center.slider_btn { display: none;}
 }
 @media (max-width: 360px) {
 	.our_process_box .assess_mess { width: 90%;}
