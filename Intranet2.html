@@ -54,7 +54,8 @@ robots: all, index, follow
                 <p><strong></strong> Employee Directory (Auto-Update)</p>
                 <p><strong></strong> Custom Announcement Webpart</p>
                 <span>$750</span>
-                <a href="mailto:info@spjedi.com?subject=Padawan%20Mockup%20Request&body =During business hours we respond within two hours" id="toggle_3">Request Demo Access</a>
+                <a class="btnSendEmail" id="toggle_3" subject="Padawan mockup request" body="During business hours we respond within two hours">Request Demo Access</a>
+                <!--<a href="mailto:info@spjedi.com?subject=Padawan%20Mockup%20Request&body =During business hours we respond within two hours" id="toggle_3">Request Demo Access</a>-->
             </div>
         </div>
         <div class="plan_box" id="toggle_12">
@@ -68,7 +69,8 @@ robots: all, index, follow
                 <p><strong>Custom</strong> Calendar Overlay</p>
                 <p><strong>5</strong> Custom Page Layout</p>
                 <span>$1550</span>
-                <a href="mailto:info@spjedi.com?subject=Initiate%20Mockup%20Request&body =During business hours we respond within two hours" id="toggle_3">Request Demo Access</a>
+                <a class="btnSendEmail" id="toggle_3" subject="Initiate mockup request" body="During business hours we respond within two hours">Request Demo Access</a>
+                <!--<a href="mailto:info@spjedi.com?subject=Initiate%20Mockup%20Request&body =During business hours we respond within two hours" id="toggle_3">Request Demo Access</a>-->
             </div>
         </div>
         <div class="plan_box zoom_box" id="toggle_13">
@@ -82,7 +84,8 @@ robots: all, index, follow
                 <p><strong></strong>Social Media and Tabbed Webparts</p>
                 <p><strong>6</strong> Other Webparts iIncluded</p>
                 <span>$2150</span>
-                <a href="mailto:info@spjedi.com?subject=Jedi%20Knight%20Mockup%20Request&body =During business hours we respond within two hours" id="toggle_3">Request Demo Access</a>
+                <a class="btnSendEmail" id="toggle_3" subject="Jedi Knight Mockup Request" body="During business hours we respond within two hours">Request Demo Access</a>
+                <!--<a href="mailto:info@spjedi.com?subject=Jedi%20Knight%20Mockup%20Request&body =During business hours we respond within two hours" id="toggle_3">Request Demo Access</a>-->
                 <span>variations shown below</span>
             </div>
         </div>
@@ -97,7 +100,8 @@ robots: all, index, follow
                 <p><strong></strong>All Automated Displays From Any Site</p>
                 <p><strong>9</strong> Other webparts included</p>
                 <span>$2650</span>
-                <a href="mailto:info@spjedi.com?subject=Jedi%20Master%20Mockup%20Request&body =During business hours we respond within two hours" id="toggle_3">Request Demo Access</a>
+                <a class="btnSendEmail" id="toggle_3" subject="Jedi Master Mockup Request" body="During business hours we respond within two hours">Request Demo Access</a>
+                <!--<a href="mailto:info@spjedi.com?subject=Jedi%20Master%20Mockup%20Request&body =During business hours we respond within two hours" id="toggle_3">Request Demo Access</a>-->
             </div>
         </div>
         <div class="plan_box" id="toggle_15">
@@ -111,7 +115,8 @@ robots: all, index, follow
                 <p><strong></strong>Graphics and Training Incluced</p>
                 <p><strong>15</strong> Webparts of your Choice</p>
                 <span>Starting at $3750</span>
-                <a href="mailto:info@spjedi.com?subject=Grand%20Master%20Mockup%20Request&body =During business hours we respond within two hours" id="toggle_3">Request Demo Access</a>
+                <a class="btnSendEmail" id="toggle_3" subject="Grand Master Mockup Request" body="During business hours we respond within two hours">Request Demo Access</a>
+                <!--<a href="mailto:info@spjedi.com?subject=Grand%20Master%20Mockup%20Request&body =During business hours we respond within two hours" id="toggle_3">Request Demo Access</a>-->
             </div>
         </div>
     </div>
@@ -235,6 +240,16 @@ robots: all, index, follow
 </section>
 
 <script type="text/javascript">
+    
+    $(function () {
+        $('.btnSendEmail').click(function (event) {
+            var email = 'info@spjedi.com';
+            var subject = $(this).attr("subject");
+            var emailBody = $(this).attr("body");
+            window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody;
+        });
+    });
+    
     $(document).ready(function () {
         $('.owl-carousel').owlCarousel();
     });
