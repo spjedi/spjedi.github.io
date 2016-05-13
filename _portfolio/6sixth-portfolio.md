@@ -2,7 +2,7 @@
 heading: National DCP
 image_small: /img/portfolio/ndcp_small.jpg
 image: /img/portfolio/NDCP.jpg
-title: National DCP-Coming July 2017
+title: National DCP-Coming July 2016
 website: http://nationaldcp.com/
 summary: The Supply Chain you can count on...
 ---
