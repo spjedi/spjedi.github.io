@@ -1,8 +1,8 @@
 - image: /images/tipton.png
   description: Carpenter Webparts
   sku: 027
-  price: 4350
-- image: /img/sundt.jpg
+  price: 3500
+- image: /img/esab.jpg
   description: Training Portal
   sku: 016
   price: 2530
