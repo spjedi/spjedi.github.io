@@ -1,11 +1,11 @@
-- image: /images/tipton.png
-  description: Carpenter Webparts
+- image: /images/vta.jpg
+  description: Russell Invoice
   sku: 027
-  price: 3500
-- image: /img/esab.jpg
-  description: Commodity & Capex Portal
-  sku: 016
-  price: 3500
+  price: 2400
+- image: /img/vta.jpg
+  description: Carolyn Invoice
+  sku: 029
+  price: 2400
 - image: /img/ndcp.png
   description: Project Portal
   sku: 015
