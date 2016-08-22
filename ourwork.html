@@ -9,26 +9,24 @@ robots: all, index, follow
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#featured").tabs({ fx: { opacity: "toggle" } }).tabs("", 5000, true);
-        $("#featured").hover(
-        function () {
-            $("#featured").tabs("rotate", 0, true);
-        },
-        function () {
-            $("#featured").tabs("rotate", 80000000, true);
-        }
-        );
-
-
-    });
-</script>
-
-
 </head>
 <body>
-    <div class="wrp_ourwork">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#featured").tabs({ fx: { opacity: "toggle" } }).tabs("", 5000, true);
+            $("#featured").hover(
+            function () {
+                $("#featured").tabs("rotate", 0, true);
+            },
+            function () {
+                $("#featured").tabs("rotate", 80000000, true);
+            }
+            );
+
+
+        });
+    </script>
+    <div class="wrp_ourwork" style=" margin-top: 100px; background: url(/images/body_bg.jpg)">
         <div class="container-fluid">
             <div class="our_work">
                 <h1>Our Work</h1>
