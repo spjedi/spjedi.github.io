@@ -1,624 +1,274 @@
 ---
-layout: null
+layout: default
 permalink: /custom/
+title: Human Resource SharePoint Job Portal
+description: SP Jedi's SharePoint HR Portal provides automation within the HR Process. Applicant Tracking, Internal Job Postings, and Storing Confidential Documents.
+keywords: Hr human resource portal, SPjedi’s HR portal, human resource sharepoint software portal, HR job posting portal, HR Process software, Office 365 Migration, SharePoint project portal, SharePoint Templates, SharePoint Design, SharePoint Branding, SharePoint solution, SharePoint Team site Template, SharePoint Development phoenix, SharePoint phoenix
+robots: all, index, follow
 ---
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-        <!-- Google Analytics -->
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+<script type="text/javascript">
 
-            ga('create', 'UA-59720216-1', 'auto');  // Replace with your property ID.
-            ga('send', 'pageview');
+    function SetFirstImg(ent) {
+        //var scroll_pos = (200);
+        //$('html, body').animate({ scrollTop: (scroll_pos) }, '90000');
+        //$("html, body").animate({ scrollTop: 0 }, "slow");
+        var img = $("#" + ent).find(".img_sub").eq(0).attr('src');
 
-        </script>
-        <!-- End Google Analytics -->
-		<title>Custom SharePoint Builds</title>
-		<meta name="robots" content="all, index, follow">
-		<link rel="canonical" href=" http://spjedi.com/custom/">
-		<meta name="keywords" content="SharePoint   Administrator, SharePoint   Consultant, SharePoint   Consulting">
-		<meta name="description" content="Custom SharePoint Build – Get your design ready by our expert SharePoint   administrator.">
+        $(".mainImg").attr('src', img);
 
-		<!-- Import required css and js files -->
-		<link rel="stylesheet" type="text/css" href="/css/skin_modern_warm.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/html_content.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/style.css"/>
-		
-      
-		<script type="text/javascript" src="/js/FWDPage.js"></script>
-		<script type="text/javascript" src="/js/FWDUltimate3DCarousel.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	    <script src="/js/jquery.timelinr-0.9.54.js"></script>
-		<!-- Setup the carousel (all settings are explained in detail in the documentation files) -->
-		<script type="text/javascript">
-			
-			FWDU3DCarUtils.onReady(function(){
-				if(window.top != window){
-					top.location.href = 'index.html';	
-				}else{
-					init();
-				}
-			});
-			
-			function setupCarousel(){
-				carousel = new FWDUltimate3DCarousel({
-					
-					//required settings
-					carouselHolderDivId:"myDiv",
-					carouselDataListDivId:"playList4SingleCat",
-					displayType:"fluidwidth",
-					autoScale:"yes",
-					carouselWidth:940,
-					carouselHeight:538,
-					skinPath:"images",
-												
-					//main settings
-					backgroundColor:"#DDDDDD",
-					backgroundImagePath:"/images/background.jpg",
-					thumbnailsBackgroundImagePath:"",
-					scrollbarBackgroundImagePath:"/images/scrollbarBackground.jpg",
-					backgroundRepeat:"repeat-x",
-					carouselStartPosition:"center",
-					carouselTopology:"ring",
-					carouselXRadius:600,
-					carouselYRadius:0,
-					carouselXRotation:10,
-					carouselYOffset:0,
-					showCenterImage:"no",
-					centerImagePath:"/images/logo.png",
-					centerImageYOffset:0,
-					showDisplay2DAlways:"no",
-					slideshowDelay:5000,
-					autoplay:"no",
-					showPrevButton:"yes",
-					showNextButton:"yes",
-					showSlideshowButton:"yes",
-					disableNextAndPrevButtonsOnMobile:"no",
-					controlsMaxWidth:940,
-					controlsHeight:29,
-					slideshowTimerColor:"#777777",
-					showContextMenu:"no",
-					addKeyboardSupport:"yes",
-												
-					//thumbnail settings
-					thumbnailWidth:380,
-					thumbnailHeight:330,
-					thumbnailBorderSize:0,
-					thumbnailMinimumAlpha:.3,
-					thumbnailBackgroundColor:"#999999",
-					thumbnailBorderColor1:"#fcfdfd",
-					thumbnailBorderColor2:"#e4e4e4",
-					transparentImages:"no",
-					maxNumberOfThumbnailsOnMobile:13,
-					showThumbnailsGradient:"yes",
-					showThumbnailsHtmlContent:"yes",
-					textBackgroundColor:"#333333",
-					textBackgroundOpacity:.7,
-					showText:"no",
-					showTextBackgroundImage:"yes",
-					showThumbnailBoxShadow:"yes",
-					thumbnailBoxShadowCss:"0px 2px 2px #666666",
-					showReflection:"yes",
-					reflectionHeight:60,
-					reflectionDistance:0,
-					reflectionOpacity:.2,
-												
-					
-					//combobox settings
-					showComboBox:"yes",
-					startAtCategory:1,
-					selectLabel:"SELECT CATEGORIES",
-					allCategoriesLabel:"All Categories",
-					showAllCategories:"no",
-					comboBoxPosition:"topright",
-					selectorBackgroundNormalColor1:"#FFFFFF",
-					selectorBackgroundNormalColor2:"#FFFFFF",
-					selectorBackgroundSelectedColor1:"#bab8b4",
-					selectorBackgroundSelectedColor2:"#a09e9a",
-					selectorTextNormalColor:"#8b8b8b",
-					selectorTextSelectedColor:"#FFFFFF",
-					buttonBackgroundNormalColor1:"#FFFFFF",
-					buttonBackgroundNormalColor2:"#FFFFFF",
-					buttonBackgroundSelectedColor1:"#bab8b4",
-					buttonBackgroundSelectedColor2:"#bab8b4",
-					buttonTextNormalColor:"#8b8b8b",
-					buttonTextSelectedColor:"#FFFFFF",
-					comboBoxShadowColor:"#999999",
-					comboBoxHorizontalMargins:12,
-					comboBoxVerticalMargins:12,
-					comboBoxCornerRadius:0,
-												
-					
-				});
-			}
-		</script>
-		<script>
-		$(function(){
-			$().timelinr({
-				arrowKeys: 'true'
-			})
-		});
-	</script>
-	</head>
+    }
 
-	<body>
-<div class="home_page_wrp">
-	<div style="display:none;">
-		<!-- header -->
-		<div id="mainHeader" style=" display: none;">
-			<img id="logoImage" src=""/>
-			<img id="byFWD" src=""/>
-		</div>
-		
-		<!-- menu holder -->
-		<div id="menuHolder" style=" display: none;"></div>
-		
-		
-		
-		<!-- sliders holder done -->
-		<div id="mainSlidersHolder" style=" display: none;">
-			<p id="preview">Live preview settings:</p>
-			<div id="slidersHolder"></div>
-		</div>
-		
-		<!-- thumbnails holder -->
-		<div id="mainThumbsHolder" style=" display: none;">
-			<p id="examples">Examples:</p>
-			<div id="thumbsHolder"></div>
-		</div>
-		
-		<!-- what is -->
-		<div id="mainInfoHolder" style=" display: none;">
-			
-			<p id="whatIsMainText"></p>
-			
-			
-			<div id="mainFeatureTableHolder">
-				
-			</div>
-			
-			
-			<div id="videoHolder"></div>
-		</div>
-		
-		<div id="specialNotesMainHolder" style=" display: none;">
-			<div id="specialNotes">
-				
-				
-			</div>
-		</div>
-	</div>
-		<!-- carousel data -->
-<!-- div used as a holder for the carousel -->
-		<div id="myDiv" style=" "></div>
 
-			<div class="table_box">
-				<table width="100" cellspacing="0" cellpadding="0">
-					<thead>
-						<tr>
-							<th>Job Type</th>
-							<th>Our Average Costs</th>
-							<th>Competitor</th>
-							<th>Competitor</th>
-							<th>Competitor</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>data</td>
-							<td>data</td>
-							<td>data</td>
-							<td>data</td>
-							<td>data</td>
-						</tr>
-						<tr>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-						</tr>
-						<tr>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-						</tr>
-						<tr>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-						</tr>
-						<tr>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-						</tr>
+    $(function () {
+        $('.img_sub').click(function () {
+            var img = $(this).attr('src');
+            var id = $(this).attr('id');
+            $('.big' + id).attr('src', img);
+            $('.sub_right_img').removeClass("myClass");
+            $(this).closest('div').addClass("myClass");
+            //$('.img_sub').find('.sub_right_img').addClass("myClass");
+        });
+        $('.ui-tabs-nav-item').click(function () {
+            
+            $('.ui-tabs-nav-item').removeClass("ui-tabs-selected");
+            $(this).closest('li').addClass("ui-tabs-selected");
 
-					</tbody>
-				</table>
-			</div>
+        });
+        
 
-			<div id="timeline">
-		<ul id="dates">
-			<li><a href="#1900">Phases</a></li>
-			<li><a href="#1930">Zero</a></li>
-			<li><a href="#1944">One</a></li>
-			<li><a href="#1950">Two</a></li>
-			<li><a href="#1971">Three</a></li>
-			<li><a href="#1977">Four</a></li>
-			<li><a href="#1989">Five</a></li>
-			<!--<li><a href="#1999">1999</a></li>
-			<li><a href="#2001">2001</a></li>
-			<li><a href="#2011">2011</a></li>-->
-		</ul>
-		<ul id="issues">
-			<li id="1900">
-				<img src="/images/timeline/1.png" width="256" height="256" />
-				<h1>The Phase of a SharePoint Instance</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-			<li id="1930">
-				<img src="/images/timeline/2.png" width="256" height="256" />
-				<h1>Phase Zero-Planning</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-			<li id="1944">
-				<img src="/images/timeline/3.png" width="256" height="256" />
-				<h1>Phase One-Design Phase</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-			<li id="1950">
-				<img src="/images/timeline/4.png" width="256" height="256" />
-				<h1>Phase Two-Deploy Farm</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-			<li id="1971">
-				<img src="/images/timeline/5.png" width="256" height="256" />
-				<h1>Phase Three-Deploy All Sites</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-			<li id="1977">
-				<img src="/images/timeline/6.png" width="256" height="256" />
-				<h1>Phase Four-UAT and Pilot</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-            <li id="1989">
-				<img src="/images/timeline/7.png" width="256" height="256" />
-				<h1>1989</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-            <!--
-			<li id="1999">
-				<img src="/images/timeline/8.png" width="256" height="256" />
-				<h1>1999</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-			<li id="2001">
-				<img src="/images/timeline/9.png" width="256" height="256" />
-				<h1>2001</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-			<li id="2011">
-				<img src="/images/timeline/10.png" width="256" height="256" />
-				<h1>2011</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>  -->
-		</ul>
-		<div id="grad_left"></div>
-		<div id="grad_right"></div>
-		<a href="#" id="next">+</a>
-		<a href="#" id="prev">-</a>
-	</div>
-		
-		<ul id="playList4SingleCat" style="display: none;">
-			
-			<!-- category  -->
-			<ul data-cat="Category one">
-				<ul>
-					<li data-type="none" data-url="http://www.google.com" data-target="_blank"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb1Div">
-							<p class="thumb1P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum, justo sed vestibulum tincidunt est. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
-			
-				<ul>
-					<li data-type="none" data-url="/images/2.jpg"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb2Div">
-							<p class="thumb2P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque est. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
-				
-				<ul>
-					<li data-type="none" data-width="640" data-height="420" data-url="http://vimeo.com/84577359"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb3Div">
-							<p class="thumb3P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum est. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
-				
-				<ul>
-					<li data-type="none" data-url="/images/7.jpg"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">Medical Portal</p>
-						<p class="smallLabel">Mobile Site ready for custom protocol and tabs for quick use.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb7Div">
-							<p class="thumb7P">
-                                A custom Purchase Order and Document Site. Tied in with Sage 500 with over 20 process automation. 
-							</p>
-							<!--<p class="thumb7P2">
-                                
-								<a href='http://www.google.com' target="_blank" class='thumb7ImageIcon'></a>
-								<a href='http://www.google.com' target="_blank" class='thumb7HtmlIcon'></a>
-								<a href='http://www.google.com' target="_blank" class='thumb7LinkIcon'></a>
-								<a href='http://www.youtube.com' target="_blank" class='thumb7YoutubeIcon'></a>
-								<a href='http://www.vimeo.com' target="_blank" class='thumb7VimeoIcon'></a>
-							</p>-->
-						</div>
-					</li>
-				</ul>
-				
-				<ul>
-					<li data-type="none" data-url="http://www.google.com" data-target="_blank"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb4Div">
-							<p class="thumb4P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar dolor sit amet dolor sit. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
+    });
+    
 
-				<ul>
-					<li data-type="none" data-width="640" data-height="420" data-url="http://www.youtube.com/watch?v=v7POb8zrb6M"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb5Div">
-							<p class="thumb5P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum, justo sed vestibulum tincidunt est. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
 
-				<ul>
-					<li data-type="none" data-width="800" data-height="550" data-url="http://www.bing.com/"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb6Div">
-							<p class="thumb6P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum, justo sed vestibulum tincidunt est. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
-				
-				<ul>
-					<li data-type="none" data-url="/images/8.jpg"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb8Div">
-							<p class="thumb8P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes  est consectetur adipiscing elit. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
-				
-			</ul>
-			<!-- end  -->
-			
-			<!-- category  -->
-			<ul data-cat="Category two">
-				<ul>
-					<li data-type="none" data-url="http://www.google.com" data-target="_blank"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb1Div">
-							<p class="thumb1P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum, justo sed vestibulum tincidunt est. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
-			
-				<ul>
-					<li data-type="none" data-url="/images/2.jpg"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb2Div">
-							<p class="thumb2P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque est. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
-				
-				<ul>
-					<li data-type="none" data-width="640" data-height="420" data-url="http://vimeo.com/84577359"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb3Div">
-							<p class="thumb3P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum est. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
-				
-				<ul>
-					<li data-type="none" data-url="http://www.google.com" data-target="_blank"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb4Div">
-							<p class="thumb4P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar dolor sit amet dolor sit. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
+</script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery2-ui.min.js"></script>
 
-			</ul>
-			<!-- end  -->
-			
-			<!-- category  -->
-			<ul data-cat="Category three">
-				<ul>
-					<li data-type="none" data-url="http://www.google.com" data-target="_blank"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb1Div">
-							<p class="thumb1P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum, justo sed vestibulum tincidunt est. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
-			
-				<ul>
-					<li data-type="none" data-url="/images/2.jpg"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb2Div">
-							<p class="thumb2P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque est. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
-				
-				<ul>
-					<li data-type="none" data-width="640" data-height="420" data-url="http://vimeo.com/84577359"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb3Div">
-							<p class="thumb3P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum est. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
-				
-				<ul>
-					<li data-type="none" data-url="http://www.google.com" data-target="_blank"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb4Div">
-							<p class="thumb4P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar dolor sit amet dolor sit. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#featured").tabs({ fx: { opacity: "toggle" } }).tabs("rotate", 5000, true);
+            $("#featured").hover(
+            function () {
+                $("#featured").tabs("rotate", 0, true);
+            },
+            function () {
+                $("#featured").tabs("rotate", 80000000, true);
+            }
+            );
 
-				<ul>
-					<li data-type="none" data-width="640" data-height="420" data-url="http://www.youtube.com/watch?v=v7POb8zrb6M"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb5Div">
-							<p class="thumb5P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum, justo sed vestibulum tincidunt est. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
 
-				<ul>
-					<li data-type="none" data-width="800" data-height="550" data-url="http://www.bing.com/"></li>
-					<li data-thumbnail-text="" data-thumbnail-text-title-offset="35" data-thumbnail-text-offset-top="10" data-thumbnail-text-offset-bottom="5">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the grid can open a browser window or the lightbox.</p>
-					</li>
-					<li data-html-content="">
-						<div class="thumb6Div">
-							<p class="thumb6P">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at pulvinar arcu, quis lacinia massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum, justo sed vestibulum tincidunt est. <a class="thumblink" href="http://www.google.com" target="_blank">Read more.</a>
-							</p>
-						</div>
-					</li>
-				</ul>
+        });
+    </script>
 
-			</ul>
-			<!-- end  -->
-			
-		</ul>
-		</div>
-		
-	</body>
-</html>
+
+    <div class="wrp_ourwork" style=" margin-top: 100px; background: url(/images/body_bg.jpg)">
+        <div class="container-fluid">
+            <div class="our_work">
+                <h1>SharePoint Custom Builds</h1>
+                <div class="header_line"></div>
+                <p>All of our custom webparts including graphic design assets.</p>
+                <p>We include deployment instructions and training.</p>
+                <p>You dream it we build it</p>
+            </div>
+        </div>
+
+        <div class="slider_ourwork">
+            <div id="featured">
+                    <ul class="ui-tabs-nav" style="width: 100%;">
+                        <li style="float:left;" class="ui-tabs-nav-item inner_div1 ui-tabs-selected " id="nav-fragment-1"><a href="#fragment-1" onclick="SetFirstImg('fragment-1')"><img class="top_img_border" src="/images/custom/ProductFinder1.PNG" alt="" /></a></li>
+                        <li style="float:left;" class="ui-tabs-nav-item inner_div2 " id="nav-fragment-2"><a href="#fragment-2" onclick="SetFirstImg('fragment-2')"><img class="top_img_border" src="/images/custom/ProductFinder1.PNG" alt="" /></a></li>
+                        <li style="float:left;" class="ui-tabs-nav-item inner_div3" id="nav-fragment-3"><a href="#fragment-3" onclick="SetFirstImg('fragment-3')"><img class="top_img_border" src="/images/custom/ProductFinder1.PNG" alt="" /></a></li>
+                        <li style="float:left;" class="ui-tabs-nav-item inner_div4" id="nav-fragment-4"><a href="#fragment-4" onclick="SetFirstImg('fragment-4')"><img class="top_img_border" src="/images/custom/ProductFinder1.PNG" alt="" /></a></li>
+                        <li style="float:left;" class="ui-tabs-nav-item inner_div5" id="nav-fragment-5"><a href="#fragment-5" onclick="SetFirstImg('fragment-5')"><img class="top_img_border" src="/images/custom/ProductFinder1.PNG" alt="" /></a></li>
+                        <li style="float:left;" class="ui-tabs-nav-item inner_div6" id="nav-fragment-6"><a href="#fragment-6" onclick="SetFirstImg('fragment-6')"><img class="top_img_border" src="/images/custom/ProductFinder1.PNG" alt="" /></a></li>
+                    </ul>
+                <div id="right_sub1">
+                    <!-- First Content -->
+                    <div id="fragment-1" class="ui-tabs-panel" style="">
+                        <div class="sub_min_img"><img src="/images/custom/ProductFinder1.PNG" alt="" class="big1 mainImg" /></div>
+
+                        <div class="right_sub">
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/ProductFinder1.PNG" alt="" class="img_sub" id="1" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/ProductFinder2.PNG" alt="" class="img_sub" id="1" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/ProductFinder3.PNG" alt="" class="img_sub" id="1" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/ProductFinder4.PNG" alt="" class="img_sub" id="1" /></a></div>
+                        </div>
+                        <div class="info">
+                            <div class="left_had">
+                                <h2>Product Finder Page</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam....</p>
+                            </div>
+                            <div class="right_had_img">
+                                <div class="had_img"><img src="/images/custom/right_had_img.jpg" alt="" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Content -->
+
+                    <div id="fragment-2" class="ui-tabs-panel ui-tabs-hide" style="">
+                        <div class="sub_min_img"><img src="/images/custom/image2.jpg" alt="" class="big2 mainImg" /></div>
+
+                        <div class="right_sub">
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image2.jpg" alt="" class="img_sub" id="2" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image1.jpg" alt="" class="img_sub" id="2" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image3.jpg" alt="" class="img_sub" id="2" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image4.jpg" alt="" class="img_sub" id="2" /></a></div>
+                        </div>
+                        <div class="info">
+                            <div class="left_had">
+                                <h2>Matchtrade-app</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam....</p>
+                            </div>
+                            <div class="right_had_img">
+                                <div class="had_img"><img src="/images/custom/right_had_img.jpg" alt="" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third Content -->
+                    <div id="fragment-3" class="ui-tabs-panel ui-tabs-hide" style="">
+                        <div class="sub_min_img"><img src="/images/custom/image3.jpg" alt="" class="big3 mainImg" /></div>
+
+                        <div class="right_sub">
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image3.jpg" alt="" class="img_sub" id="3" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image2.jpg" alt="" class="img_sub" id="3" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image1.jpg" alt="" class="img_sub" id="3" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image4.jpg" alt="" class="img_sub" id="3" /></a></div>
+                        </div>
+                        <div class="info">
+                            <div class="left_had">
+                                <h2>Matchtrade-app</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam....</p>
+                            </div>
+                            <div class="right_had_img">
+                                <div class="had_img"><img src="/images/custom/right_had_img.jpg" alt="" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fourth Content -->
+                    <div id="fragment-4" class="ui-tabs-panel ui-tabs-hide" style="">
+                        <div class="sub_min_img"><img src="/images/custom/image4.jpg" class="big4 mainImg" alt="" /></div>
+
+                        <div class="right_sub">
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image4.jpg" alt="" class="img_sub" id="4" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image2.jpg" alt="" class="img_sub" id="4" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image3.jpg" alt="" class="img_sub" id="4" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image1.jpg" alt="" class="img_sub" id="4" /></a></div>
+                        </div>
+                        <div class="info">
+                            <div class="left_had">
+                                <h2>Matchtrade-app</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam....</p>
+                            </div>
+                            <div class="right_had_img">
+                                <div class="had_img"><img src="/images/custom/right_had_img.jpg" alt="" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fourth Content -->
+                    <div id="fragment-5" class="ui-tabs-panel ui-tabs-hide" style="">
+                        <div class="sub_min_img"><img src="/images/custom/image1.jpg" class="big5 mainImg" alt="" /></div>
+
+                        <div class="right_sub">
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image1.jpg" alt="" class="img_sub" id="5" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image2.jpg" alt="" class="img_sub" id="5" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image3.jpg" alt="" class="img_sub" id="5" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image4.jpg" alt="" class="img_sub" id="5" /></a></div>
+                        </div>
+                        <div class="info">
+                            <div class="left_had">
+                                <h2>Matchtrade-app</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam....</p>
+                            </div>
+                            <div class="right_had_img">
+                                <div class="had_img"><img src="/images/custom/right_had_img.jpg" alt="" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6 Content -->
+                    <div id="fragment-6" class="ui-tabs-panel ui-tabs-hide" style="">
+                        <div class="sub_min_img"><img src="/images/custom/image4.jpg" class="big6 mainImg" alt="" /></div>
+
+                        <div class="right_sub">
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image2.jpg" alt="" class="img_sub" id="6" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image1.jpg" alt="" class="img_sub" id="6" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image3.jpg" alt="" class="img_sub" id="6" /></a></div>
+                            <div class="sub_right_img"><a href="javascript:void(0);"><img src="/images/custom/image4.jpg" alt="" class="img_sub" id="6" /></a></div>
+                        </div>
+                        <div class="info">
+                            <div class="left_had">
+                                <h2>Matchtrade-app</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam....</p>
+                            </div>
+                            <div class="right_had_img">
+                                <div class="had_img"><img src="/images/custom/right_had_img.jpg" alt="" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+
+    </div>
+
+
+   <script>
+       $('.inner_div1').click(function () {
+           
+           $('#right_sub1').find('#fragment-2').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-1').removeClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-3').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-4').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-5').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-6').addClass("ui-tabs-hide");
+       });
+       $('.inner_div2').click(function () {
+           
+           $('#right_sub1').find('#fragment-2').removeClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-1').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-3').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-4').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-5').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-6').addClass("ui-tabs-hide");
+       });
+       $('.inner_div3').click(function () {
+
+           $('#right_sub1').find('#fragment-2').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-1').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-3').removeClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-4').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-5').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-6').addClass("ui-tabs-hide");
+       });
+       $('.inner_div4').click(function () {
+
+           $('#right_sub1').find('#fragment-2').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-1').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-3').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-4').removeClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-5').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-6').addClass("ui-tabs-hide");
+       });
+       $('.inner_div5').click(function () {
+
+           $('#right_sub1').find('#fragment-2').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-1').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-3').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-4').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-5').removeClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-6').addClass("ui-tabs-hide");
+       });
+       $('.inner_div6').click(function () {
+
+           $('#right_sub1').find('#fragment-2').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-1').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-3').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-4').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-5').addClass("ui-tabs-hide");
+           $('#right_sub1').find('#fragment-6').removeClass("ui-tabs-hide");
+       });
+   </script>
