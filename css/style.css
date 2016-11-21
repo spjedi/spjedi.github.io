@@ -879,3 +879,297 @@ body { background:url(../images/body_bg.png) repeat center center; }
     #featured ul.ui-tabs-nav li { width:200px; }
 }
 
+     .tab-content {
+          font-size: 18px;
+          color: rgb(43, 154, 243);
+          padding: 0px 4px;
+          background: none !important;
+          margin-top: 50px;
+      }
+
+
+      /* remove border radius for the tab */
+
+
+
+      /* change border radius for the tab , apply corners on top*/
+
+
+
+      .alerts-container {
+          min-height: 560px;
+      }
+       .tab-content {
+            font-size: 18px;
+            color: rgb(43, 154, 243);
+            padding: 0px 4px;
+            background: none!important;
+            margin-top: 50px;
+        }
+        .tablogo {
+    margin-right:25%;
+    margin-bottom:10px;
+        }
+        .logocontainer {
+                padding-right: 7px;
+    text-align: right;
+        }
+        .tabImage {
+            float:left;
+            height:62px;
+        }
+        .tablink {
+            float: left;
+    line-height: 3;
+    padding: 8px!important;
+        }
+        #centernav li {
+    padding-left: 0;
+    margin-right: 17px;
+    padding-right: 0;
+	margin-left:4%;
+	background-color:white;
+        }
+            #centernav li:last-of-type {
+                margin-right:0;
+            }
+
+        .tabheader {
+                background-color: white;
+    color: black;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-right:0;
+            
+        }
+            .tabheader h3 {
+                margin-top: 10px;
+    border: 1px solid lightgray;
+    font-size:14px;
+    padding: 10px;
+    padding-left: 0;
+    padding-right:0;
+            }
+        /* remove border radius for the tab */
+
+
+
+        /* change border radius for the tab , apply corners on top*/
+
+
+
+        .alerts-container {
+            min-height: 560px;
+        }
+
+        .nav-pills li {
+            border: 1px solid lightgray;
+        }
+
+        .nav-pills > li > a {
+            font-size: 15px;
+            color: black;
+            text-align:center;
+            background-color:white;
+        }
+
+        #leftnav li > a {
+            text-align:left;
+            background-color:white;
+			border-left-color: #5fd3cf;
+			border-left-width: 15px;
+        }
+
+        .tabs-left {
+            border-right:0;
+        }
+        .tabs-left li {
+            margin-bottom:10px!important;
+
+        }
+
+        .nav-pills > li.active {
+            background-color: #5fd3cf !important;
+        }
+
+            .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+                background-color: #5fd3cf !important;
+                color: black;
+            }
+
+        .main-content {
+            margin-top: 5px;
+            border: 1px solid lightgray;
+            
+        }
+
+        .tabs-left li > a {
+            padding: 13px;
+        }
+
+
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+            border: none;
+        }
+
+        .nav-pills > li + li {
+            margin: 0;
+            background-color:white;
+        }
+
+        .watermarktext {
+            position: absolute;
+            left: 0px;
+            z-index: 999;
+            color: black;
+            background-color: rgba(211, 211, 211, 0.49);
+            padding: 20px;
+            width: 100%;
+            bottom: 0;
+            margin-bottom: 0;
+            /*top: 315px;*/
+    font-size:20px;
+    margin-top: 0;
+
+        }
+
+        .nopad {
+            padding:0;
+        }
+        .center-tab {
+            padding-left:6px;
+            padding-bottom:8px;
+        }
+
+        .subtext {
+            font-size:12px;
+        }
+        .bgimage {
+            width:100%;
+            max-height:450px;
+        }
+
+
+        #btnToggle {
+            display:none;
+        }
+       
+      
+
+        .navfeatures {
+            display:none;
+        }
+
+        @media only screen and (max-width:1024px) {
+            .watermarktext {
+             
+                font-size:15px;
+            }
+			#centernav li {margin-left:0px;}
+            .nav-pills > li > a {
+                font-size:13px;
+            }
+            #centernav li {
+                margin-right:9px;
+            }
+            .tablink {
+                width:62%;
+            }
+            .bgimage {
+                height:396px;
+            }
+            .tabImage {
+                height:54px;
+            }
+        }
+
+       @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+             .watermarktext {
+             
+                font-size:18px;
+            }
+        .tablink {
+            width:60%;
+        }
+        .bgimage {
+            height:430px;
+        }
+        .tablogo {
+                width:204px;
+            }
+        #centernav li {
+            margin-right:12px;
+        }
+        }
+
+        @media only screen and (max-width:640px) {
+            .bgimage {
+                height: 250px;
+            }
+
+            .watermarktext {
+                font-size: 14px;
+              bottom:39px;
+                text-align:left;
+                top:350px;
+
+            }
+            .show {
+                position:relative;
+                z-index:9999;
+                background-color:white;
+                left:0;
+               
+
+            }
+
+            .hide {
+                display:none;
+            }
+            #btnToggle {
+                display:block;
+                width:100%;
+                left:-8px;
+                margin-top:5px;
+            }
+            #leftnav {
+             width:60%;
+            }
+
+
+            .logocontainer {
+                text-align:left;
+            }
+            .tabImage {
+                height:40px;
+            }
+            #centernav li {
+                margin-right:5px;
+            }
+            .tablink {
+                width:60%;
+                line-height:1.2;
+            }
+        }
+        @media only screen and (max-width:640px)and (orientation:landscape) {
+            .show {
+                top: 0;
+            }
+
+            .watermarktext {
+                bottom: 39px;
+                font-size: 14px;
+                text-align: left;
+                top: 360px;
+            }
+            #centernav {
+                padding-left:8px;
+            }
+                #centernav li {
+                    margin-right:10px;
+                }
+        }
+
