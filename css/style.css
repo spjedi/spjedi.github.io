@@ -385,6 +385,7 @@ footer.about_footer .addr_social .footer_email_social .email_footer a { color: #
 
 /* Reponsive */
 @media (min-width: 980px) and (max-width: 1200px) {
+    .
 	.our_process_box { width: 100%;}
 	.site_header .site_menu ul li a { font-size: 16px; padding: 10px 5px;}
 	.site_header .logo_right { width: 35px;}
@@ -1114,7 +1115,7 @@ and (orientation : landscape) {
                 font-size: 14px;
               bottom:39px;
                 text-align:left;
-                top:350px;
+
 
             }
             .show {
