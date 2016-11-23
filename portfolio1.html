@@ -6,35 +6,194 @@ description: Bring us a napkin (preferably cloth, but paper can work) and we wil
 keywords: Office 365 Migration, SharePoint project portal, SharePoint Templates, SharePoint Design, SharePoint Branding, SharePoint solution, SharePoint Team site Template, SharePoint Development phoenix, SharePoint phoenix, Our work, portfolio, one page website package portfolio, five page package portfolio, classic web design with SEO, e-commerce site design, 365 Custom Development, Office 365 Design, SharePoint UI/UX, Office 365 Style
 robots: all, index, follow
 ---
-<div class="portfolio-page">
-	<div class="header-position text-center">
-		<div class="portfolio-page-header">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-xs-12">
-						<h1 data-sr="wait 0.1s, scale up 50%, over 0.6s">Our Work</h1>
-						<div class="header-line" data-sr="wait 0.2s, enter top"></div>
-						<p data-sr="wait 0.4s, scale up 70%, enter top">Our websites are built by taking your business needs and style to create a voice for your company. Our sites are turned around quickly with line of site provided at every turn. <br />We have content writers to make your message into an inspiration. <br />We have graphic designers to craft your vision into a reality. <br />We have developers to avoid the boring part of website designs.<br /><strong>Prices Starting As Low As $750 With Two Week Completion</strong> </p>
-					</div>
-				</div>
-			</div>
-		</div>
+<!-- Content-part-->
+<style>
+    .home-background {
+        background: rgba(0, 0, 0, 0) url("/img/bg.png") no-repeat scroll;
+        background-size: cover;
+    }
+</style>
+<body class="home-background">
+    <div class="content-part">
+        <div class="container">
+            <div class="main-heading">
+                <h1>OUR WORK</h1>
+                <p class="text-center">
+                    Our websites are built by taking your business needs and style to create a voice for your company.<br>
+                    Our sites are turned around quickly with line of site provided at every turn. <br>
+                    We have content writers to make your message into an inspiration.  We have graphic designers to craft your vision into a reality. <br>
+                    We have developers to avoid the boring part of website designs. Prices Starting As Low As $750 With Two Week Completion
+                </p>
+                <div class="caption sub slider_center slider_btn" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300" style="padding-top:4% !important;"><a href=" mailto:info@spjedi.com?subject=Project%20Portal%20Request&body =During business hours we respond within the hour">Request a Mockup and Quote</a></div>
+            </div>
 
-		<div class="container-fluid">
-			<div class="row portfolio-box">
-				{% for portfolio in site.portfolio %}
-				<div class="col-md-4 col-sm-4 col-xs-12">
-					<a href="{{ portfolio.url }}">
-						<img src="{{ portfolio.image_small }}">
-						<div class="excerpt text-left">
-							<h3>{{ portfolio.heading }}</h3>
-							<p>{{ portfolio.summary | truncatewords:65 }}</p>
-							<i class="fa fa-chevron-right"></i>
-						</div>
-					</a>
-				</div>
-				{% endfor %}
-			</div>
-		</div>
-	</div>
-</div>
+
+            <div class="four-section">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="img-section-four">
+                            <a href="" data-toggle="modal" data-target="#showimg1">
+                                <img src="/img/portfolio/ndcp_small.jpg" class="img-responsive">
+                                <p>National DCP</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="img-section-four">
+                            <a href="" data-toggle="modal" data-target="#showimg2">
+                                <img src="/img/portfolio/watermovers_small.jpg" class="img-responsive">
+                                <p>WATERMOVERS</p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-3">
+                        <div class="img-section-four">
+                            <a href="" data-toggle="modal" data-target="#showimg3">
+                                <img src="/img/portfolio/geier asset_small.jpg" class=" img-responsive">
+                                <p>GEIER FINANCIAL</p>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-sm-3">
+                        <div class="img-section-four">
+                            <a href="" data-toggle="modal" data-target="#showimg4">
+                                <img src="/img/portfolio/Training_Room_small.jpg" class="img-responsive" style="min-height:233px;">
+                                <p>TRAINING ROOM PHX</p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-3">
+                        <div class="img-section-four">
+                            <a href="" data-toggle="modal" data-target="#showimg5">
+                                <img src="/img/portfolio/chemtura_small.jpg" class="img-responsive">
+                                <p>CHEMTURA</p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-3">
+                        <div class="img-section-four">
+                            <a href="" data-toggle="modal" data-target="#showimg6">
+                                <img src="/img/portfolio/workthis_small.jpg" class="img-responsive">
+                                <p>WORKTHIS</p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-3">
+                        <div class="img-section-four">
+                            <a href="" data-toggle="modal" data-target="#showimg7">
+                                <img src="/img/portfolio/ialtc_small.jpg" class="img-responsive">
+                                <p>INSURANCE ADVISORS</p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-3">
+                        <div class="img-section-four">
+                            <a href="" data-toggle="modal" data-target="#showimg8">
+                                <img src="/img/portfolio/viola_small.jpg" class="img-responsive">
+                                <p>VIOLA MILANO</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content-part-->
+    <!--poup-->
+    <!-- Modal -->
+    <div class="modal fade" id="showimg1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="background:none;">
+            <div class="modal-content" style="background:none;">
+                <div class="modal-body">
+                    <img src="/img/portfolio/NDCP.jpg" style="width:100%">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="showimg2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="background:none;">
+            <div class="modal-content" style="background:none;">
+                <div class="modal-body">
+                    <img src="/img/portfolio/watermovers.jpg" style="width:100%">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="showimg3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="background:none;">
+            <div class="modal-content" style="background:none;">
+                <div class="modal-body">
+                    <img src="/img/portfolio/geier_asset.png" style="width:100%">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="showimg4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="background:none;">
+            <div class="modal-content" style="background:none;">
+                <div class="modal-body">
+                    <img src="/img/portfolio/Training_Room.jpg" style="width:100%">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="showimg5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="background:none;">
+            <div class="modal-content" style="background:none;">
+                <div class="modal-body">
+                    <img src="/img/portfolio/chemtura-desktop.JPG" style="width:100%">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="showimg6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="background:none;">
+            <div class="modal-content" style="background:none;">
+                <div class="modal-body">
+                    <img src="/img/portfolio/portfolio_4.jpg" style="width:100%">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="showimg7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="background:none;">
+            <div class="modal-content" style="background:none;">
+                <div class="modal-body">
+                    <img src="/img/portfolio/ialtc.jpg" style="width:100%">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="showimg8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="background:none;">
+            <div class="modal-content" style="background:none;">
+                <div class="modal-body">
+                    <img src="/img/portfolio/violamilano.png" style="width:100%">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--popup-->
+    </body>
