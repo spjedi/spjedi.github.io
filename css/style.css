@@ -1212,3 +1212,14 @@ and (orientation : landscape) {
 	color:#fff;
 	text-align:center
 }
+.main-heading h1
+{
+	font-size:40px;
+	font-weight:bold;
+	text-shadow:1px 5px 2px #000
+}
+.main-heading p
+{
+	color:#fff;
+	font-size:13px;
+}
