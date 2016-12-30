@@ -1,7 +1,7 @@
-- image: /img/vta.jpg
-  description: Russell Invoice
-  sku: 027
-  price: 2400
+- image: /img/iplogo.PNG
+  description: Interior Plantscapes
+  sku: 031
+  price: 3750
 - image: /img/vta.jpg
   description: Carolyn Invoice
   sku: 029
