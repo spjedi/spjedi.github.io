@@ -19,7 +19,12 @@ robots: all, index, follow
             <h1 style="color:white;">Human Resources Center</h1>
             <hr class="heading_slider" />
             <div class="caption slider_sub slider_text" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300">Our SharePoint Human Resource portal organizes key HR functions in a customizable, secure central database. Once installed, you can store critical company policies, manage employee records and performance evaluations, and organize training. You can also use the portal to manage online job postings, track applicant interviews, and automate new employee onboarding. </div>
-            <div class="caption sub slider_center slider_btn" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300"><a href="mailto:info@spjedi.com?Subject=HR%20Portal%20Request&body=During Business Hours We Respond Within The Hour">Demo Site Access</a></div>
+            <script type="text/javascript">
+                function trackEventaction() {
+                    _gaq.push(['_trackEvent', 'HR', 'Click', 'http://spjedi.com/HR/', 3, true]);
+                }
+            </script>
+            <div class="caption sub slider_center slider_btn" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300" onclick="trackEventaction();"><a href="mailto:info@spjedi.com?Subject=HR%20Portal%20Request&body=During Business Hours We Respond Within The Hour">Demo Site Access</a></div>
         </div>
     </div>
 </section>

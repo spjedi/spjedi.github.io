@@ -13,6 +13,14 @@ robots: all, index, follow
         background: rgba(0, 0, 0, 0) url("/img/bg.png") no-repeat scroll;
         background-size: cover;
     }
+    .container-fluid {
+        margin-top: -25px !important;
+        background-color: white;
+        padding-bottom: 60px;
+    }
+    .pull-left {
+        padding-top: 4px;
+    }
 </style>
 <body class="home-background">
     <div class="content-part">
@@ -25,7 +33,12 @@ robots: all, index, follow
                     We have content writers to make your message into an inspiration.  We have graphic designers to craft your vision into a reality. <br>
                     We have developers to avoid the boring part of website designs. Prices Starting As Low As $750 With Two Week Completion
                 </p>
-                <div class="caption sub slider_center slider_btn" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300" style="padding-top:4% !important;"><a href=" mailto:info@spjedi.com?subject=Website%20Mockup%20Request&body =During business hours we respond within the hour">Request a Mockup and Quote</a></div>
+                <script type="text/javascript">
+                    function trackEventaction() {
+                        _gaq.push(['_trackEvent', 'Portfolio', 'Click', 'http://spjedi.com/portfolio/', 4, true]);
+                    }
+                </script>
+                <div class="caption sub slider_center slider_btn" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300" style="padding-top:4% !important;" onclick="trackEventaction();"><a href=" mailto:info@spjedi.com?subject=Website%20Mockup%20Request&body =During business hours we respond within the hour">Request a Mockup and Quote</a></div>
             </div>
 
 

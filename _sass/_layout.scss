@@ -189,7 +189,7 @@
     .site-header {
         .top-header {
             background-color: #f9f9f9;
-            padding: 4px;
+            padding: 1px;
             .top-info a {
                 text-decoration: none;
                 font-size: 14px;
@@ -237,7 +237,7 @@
         }
         .header-2 {
             .navbar {
-                margin: 33px 15px 0 15px;
+                margin: 28px 15px 0 15px;
                 background-color: #fff;
                  @media #{$xs} {
                     margin: 0;

@@ -65,12 +65,16 @@ robots: all, index, follow
 						<div class="form-group col-sm-12" id="msg">
 							<label>Message</label>
 							<textarea class="form-control" rows="4" name="message" required></textarea>
-
-							<button type="submit" class="orange-button btn animated fadeIn" data-sr='move 100px'>
-								Send
-								<i class="fa fa-paper-plane-o"></i>
-								<i class="fa fa-refresh fa-spin"></i>
-							</button>
+                            <script type="text/javascript">
+                                function trackEventaction() {
+                                    _gaq.push(['_trackEvent', 'Contact', 'Click', 'http://spjedi.com/contact/', 5, true]);
+                                }
+                            </script>
+                            <button type="submit" class="orange-button btn animated fadeIn" data-sr='move 100px' onclick="trackEventaction();">
+                                Send
+                                <i class="fa fa-paper-plane-o"></i>
+                                <i class="fa fa-refresh fa-spin"></i>
+                            </button>
 
 						</div>
 
