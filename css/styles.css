@@ -122,3 +122,46 @@ blockquote cite {
 .skills_bock h4 { color: #05e7e6; font-size: 30px; margin-bottom: 30px; text-align: center;}
 .skills_bock .name { color: #fff; text-align: left;}
 .skill .bar .value { background: #05e7e6;}
+.price-calculator{padding:10%;}
+ .price-calculator .slider{width:18%;}
+.price-calculator {background:#EAEAEA; padding:50px 150px; margin:30px 0; overflow: auto; width:auto;}
+.price-calculator .row {border-bottom: 1px solid #D8D7D7; float: left; width:100%;}
+.price-calculator h2, .price-calculator p, .price-calculator label {color:#333 !important;}
+.price-calculator .row input.submit {border:none;}
+.price-calculator .row label {float:left; font-size:.75em; width: 200px; padding: 10px 0;}
+.price-calculator .row input[type="text"] {float:right; font-size:.75em; background: #D8D7D7; border: 0; box-shadow: none; padding: 10px; border-radius:0; min-height: 40px;}
+.price-calculator .slider-left,
+.price-calculator .slider-right {float:left; -webkit-border-radius: 10px; border-radius: 10px; width: 20px; padding: 0; margin:10px 0; height: 20px; cursor:pointer; position: relative; line-height: 1.4em;
+font-size: 16px;}
+.price-calculator .slider-left .pictogram,
+.price-calculator .slider-right .pictogram {padding: 0; position: absolute; top: 2px; left: 6px;}
+.price-calculator .slider {float:left; height: 20px; width: 240px; position:relative; background:url(../images/repeat-slider-bg.gif) repeat-x; -webkit-border-radius: 10px; border-radius: 10px; margin:10px; }
+.price-calculator .slider .ui-slider-handle {background-color: #eee; display: block; height: 20px; position: absolute; width:20px; top:0; -webkit-border-radius: 10px; border-radius: 10px; outline:none;-webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .3);
+box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .3); margin-left:-10px; }
+.price-calculator .button-row {margin-top:20px;}
+.price-calculator table {color: #333; border-top: #d8d7d7 solid 1px; border-left: #d8d7d7 solid 1px; width: 100%; margin-bottom: 30px;}
+.price-calculator td, .price-calculator th {border-right: #d8d7d7 solid 1px; border-bottom: #d8d7d7 solid 1px; padding:8px; font-weight:normal;}
+.price-calculator td {font-size:.813em;}
+.price-calculator th.service {text-align:left;}
+.price-calculator .total,
+.price-calculator tr.total .low,
+.price-calculator tr.total .high {background:#99CC62;}
+.price-calculator .low {background:#d8d7d7; text-align:right;}
+.price-calculator .high {background:#ccc; text-align:right;}
+.price-calculator .top th {font-size:.813em; text-transform:uppercase;}
+.price-calculator.main-form input[type="text"],
+.price-calculator.main-form textarea {border:1px solid #999; -webkit-box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, .4); box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, .4);}
+.price-calculator .quote-details .arrow {font-size:200px; display:block; text-align:center; line-height: 80px; color: #CCC;}
+
+.btn.blue {
+	background:#7492c8;
+	color:#fff;
+}
+
+.hide,
+.hide--desktop,
+.display--tablet,
+.display--mobile,
+.show--mobile {
+	display:none !important;
+}
