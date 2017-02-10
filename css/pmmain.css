@@ -3477,6 +3477,7 @@ a.fc-more:hover { text-decoration: underline }
 @media (max-width:767px) {
 	.fixed .content-wrapper { margin-top: 100px }
 }
+
 .wrapper { min-height: 100vh; position: static;}
 .wrapper:before { content: " "; display: table }
 .wrapper:after { content: " "; clear: both }
