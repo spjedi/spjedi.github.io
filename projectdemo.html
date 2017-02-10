@@ -200,37 +200,37 @@ robots: all, index, follow
             <div class="page-title">
                 <div class="row width-100">
                     <div class="col-md-2">
-                        <div id="tab1" class="tab_menu">
+                        <div id="tab-1" class="tab_menu" tabattr="1" tabindex="1">
                             <i><img src="/images/new-portal.png" alt=""></i>
                             <span>New Project</span>
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <div id="tab2" class="tab_menu active">
+                        <div id="tab-2" class="tab_menu" tabattr="2" tabindex="2">
                             <i><img src="/images/My-Projects.png" alt=""></i>
                             <span>My Projects</span>
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <div id="tab3" class="tab_menu">
+                        <div id="tab-3" class="tab_menu" tabattr="3">
                             <i><img src="/images/My-tasks.png" alt=""></i>
                             <span>My Tasks</span>
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <div id="tab4" class="tab_menu">
+                        <div id="tab-4" class="tab_menu" tabattr="4">
                             <i><img src="/images/my-workspace.png" alt=""></i>
                             <span>My Worskspace</span>
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <div id="tab5" class="tab_menu">
+                        <div id="tab-5" class="tab_menu" tabattr="5">
                             <i><img src="/images/Project-Dashboard.png" alt=""></i>
                             <span>Project Dashboard</span>
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <div id="tab6" class="tab_menu">
+                        <div id="tab-6" class="tab_menu" tabattr="6">
                             <i><img src="/images/Project-calendar.png" alt=""></i>
                             <span>Enterprise Dashboard</span>
                         </div>
@@ -238,7 +238,7 @@ robots: all, index, follow
                 </div>
             </div>
             <div class="row">
-                <div id="box-1" class="subtag top-tab2 middle_cont1">
+                <div id="box-1" class="subtag top-tab1 middle_cont1">
                     <div class="new-project">
                         <div class="bs-component">
                             <ul class="nav nav-tabs">
@@ -407,7 +407,7 @@ robots: all, index, follow
                         </div>
                     </div>
                 </div>
-                <div id="box-2" class="middle_cont">
+                <div id="box-2" class="subtag top-tab2 middle_cont">
                     <div class="table_wrp">
                         <table class="table tab_1 left-bar">
                             <thead>
@@ -613,7 +613,7 @@ robots: all, index, follow
 
 
                 </div>
-                <div id="box-3" class="middle_cont">
+                <div id="box-3" class="subtag top-tab3 middle_cont3">
                     <div class="table_wrp">
                         <table class="table tab_1 left-bar">
                             <thead>
@@ -793,31 +793,323 @@ robots: all, index, follow
                         </table>
 
                     </div>
-                    <div id="box-4" class="middle_cont"></div>
-                    <div id="box-5" class="middle_cont">
-
                     </div>
-                    <div id="box-6" class="middle_cont"></div>
+                    <div id="box-4" class="subtag top-tab4 middle_cont4"></div>
+                <div id="box-5" class="subtag top-tab5 middle_cont5">
+                    <div id="pageContainer" class="container">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div>Project Category</div>
+                                <select id="categoryFilter" data-bind="value: category"> </select>
+                            </div>
+                            <div class="col-md-2">
+                                <div>Project</div>
+                                <select id="projectFilter" data-bind="value: project"> </select>
+                            </div>
+                        </div>
+                        <div class="row topBuffer">
+                            <div class="col-md-6">
+                                <div class="chartTitle">Timeline</div>
+                                <div id="ganttChart"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="chartTitle row">
+                                    Costs
+                                    <div class="col-md-3 pull-right magnifying-glass">
+                                        <a data-bind="attr: {href: magnifyingGlassLink}" target="_blank">
+                                            <img height="25" src="https://sharepointjed.sharepoint.com/sites/prm/SiteAssets/ProgramManagerScripts/magnifying-glass-hi.png" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="chartSubTitle">Recurring Costs<br>(Total: $ <span id="chartSubTitle-recurring-total">0</span>)</div>
+                                        <canvas class="piechart" id="costsProjectChart" height="200"></canvas>
+                                        <div id="stockphoto-wrapper" data-bind="visible: stockPhotoLink_NotEmpty">
+                                            <a id="stockPhoto-link" data-bind="attr: {href: stockPhotoLink}, text: stockPhotoDescription" title="Stock photo">
+                                                <!--<img data-bind="attr: {src: stockPhotoLink}" alt="" />-->
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="chartSubTitle">Non-Recurring Costs<br>(Total: $ <span id="chartSubTitle-nonrecurring-total">0</span>)</div>
+                                        <canvas class="" id="costsProjectBarChart" height="200"></canvas>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row topBuffer">
+                            <div class="col-md-8">
+                                <div class="chartTitle">Risks</div>
+                                <div id="riskGrid" class="riskGrid"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="chartTitle">Actions</div>
+                                <div id="taskGrid" class="taskGrid"></div>
+                            </div>
+                        </div>
+                       <!-- <div class="whiteLayout"></div> -->
+                    </div>
+                </div>
+                    <!--<script type="text/javascript" src="/js/loader.js"></script> -->
+                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    <script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
+
+                    <!-- Javascripts-->
+                    <script type="text/javascript" src="/js/knockout-min.js"></script>
+                    <script type="text/javascript" src="/js/essential-plugins.js"></script>
+                    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+                    <script type="text/javascript" src="/js/plugins/pace.min.js"></script>
+                    <script type="text/javascript" src="/js/pmmain.js"></script>
+                    <script type="text/javascript" src="/js/slick.min.js"></script>
+                    <script type="text/javascript" src="/js/d3.min.js"></script>
+                    <script type="text/javascript" src="/js/plugins/chart.js"></script>
+                    <script type="text/javascript" src="/js/plugins/bootstrap-datepicker.min.js"></script>
+                    <script type="text/javascript" src="/js/plugins/select2.min.js"></script>
+                    <script src="/js/donut-pie-chart.min.js"></script>
+
+                    <!-- Javascripts-->
+                    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+                    <!-- Latest compiled and minified CSS -->
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                    <!-- Optional theme -->
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+                    <!-- Latest compiled and minified JavaScript -->
+                    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.min.js"></script>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.js"></script>
+                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jinq/1.6.0/jinqjs.min.js"></script>
+
+                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.1/jsgrid.min.js"></script>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.1/jsgrid.min.css">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.1/jsgrid-theme.min.css">
+                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+                    <script type="text/javascript" src="/js/stateOfUnion_local.js"></script>
+                    <link rel="stylesheet" href="/css/stateOfUnion_local.css" />
+
+                    <script>
+                        function drawProjectChart() {
+                            google.charts.load('current', {
+                                'packages': ['gantt']
+                            });
+                            //$(function () {
+                            createFancyBox();
+
+                            var params = queryString.parse(location.search);
+                            var defaultCategory, defaultProject;
+                            if (params.hasOwnProperty('p'))
+                                defaultProject = params.p;
+
+                            //LOADINGSPINNER.create(null, [CHARTS.projectGanttChart, CHARTS.tasksGrid, CHARTS.riskGrid, FILTERS.projectFilter, FILTERS.projectCategoryFilter], $('#pageContainer'));
+
+                            PROJECT_CHART_VIEWMODEL = new projectChartViewModel();
+                            try{
+                                ko.applyBindings(PROJECT_CHART_VIEWMODEL);
+                            } catch(ex){}
+                            DATAPROVIDER.loadAllProjectData(projectDataLoaded, null);
+
+                            function projectDataLoaded() {
+                                defaultCategory = DATAPROVIDER.getCategoryByProject(defaultProject);
+
+                                var ganttChart = $('#ganttChart');
+                                reportOfUnion.projectGanttChart_getDataAndDraw(function (data) {
+                                    CHARTS.projectGanttChart.draw(ganttChart, data, true);
+                                }, null);
+
+                                var costPieChart = $('#costsProjectChart');
+                                reportOfUnion.costProjectPieChart_getDataAndDraw(function (data) {
+                                    CHARTS.costProjectPieChart.draw(costPieChart, data);
+                                }, null);
+
+                                var costBarChart = $('#costsProjectBarChart');
+                                reportOfUnion.costProjectBarChart_getDataAndDraw(function (data) {
+                                    CHARTS.costProjectBarChart.draw(costBarChart, data);
+                                }, null);
+
+                                var taskGrid = $('#taskGrid');
+                                CHARTS.tasksGrid.bindToDOMElement(taskGrid);
+
+                                var riskGrid = $('#riskGrid');
+                                CHARTS.riskGrid.bindToDOMElement(riskGrid);
+
+                                var projectFilter = $('#projectFilter');
+                                reportOfUnion.projectFlter_getDataFromCacheAndDraw(function (data) {
+                                    FILTERS.projectFilter.create(projectFilter, null, null, defaultProject);
+                                });
+
+                                var categoryFilter = $('#categoryFilter');
+                                reportOfUnion.projectCategoryFilter_getDataFromCacheAndDraw(function (data) {
+                                    FILTERS.projectCategoryFilter.create(categoryFilter, data, defaultCategory);
+                                });
+                            }
+                            //getLastGanttRow(ganttChart);
+                            //});
+
+                            function createFancyBox() {
+                                var self = $('#stockPhoto-link');
+                                self.fancybox({
+                                    afterClose: function () {
+                                        self.show();
+                                    }
+                                })
+                                    .hover(function () {
+                                        var link = $(this).attr('href');
+                                        if (link != null && typeof link !== "undefined" && link !== "") {
+                                            $(this).click();
+                                            $(".fancybox-overlay").mouseout(function () {
+                                                $.fancybox.close();
+                                            });
+                                        }
+                                    })
+                            }
+                        }
+                    </script>
+                
+
+                    <div id="box-6" class="subtag top-tab6 middle_cont6">
+                        <div id="pageContainer" class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="chartTitle row">
+                                        Timing
+                                        <div class="col-md-3 pull-right magnifying-glass">
+                                            <a href="https://sharepointjed.sharepoint.com/sites/prm/Lists/Program%20Management/Project%20Status%20View.aspx" target="_blank">
+                                                <img height="25" src="/images/magnifying-glass-hi.png" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <canvas class="piechart" id="projectTiming"></canvas>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="chartTitle">Cost</div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <canvas class="" id="costPieChart" height="300"></canvas>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <canvas class="" id="costBarChart" height="300"></canvas>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row delemiter"></div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div id="projectCostContainer">
+                                        <div class="chartTitle">
+                                            Risk
+                                            <div class="col-md-3 pull-right magnifying-glass">
+                                                <a href="https://sharepointjed.sharepoint.com/sites/prm/Lists/Risks/Risk%20Level%202.aspx" target="_blank">
+                                                    <img height="25" src="/images/magnifying-glass-hi.png" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <canvas class="piechart" id="projectRisk"></canvas>
+                                        <div class="columnchart" id="devcost"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="chartTitle">Actions</div>
+                                    <div id="table_div" class="actionGrid"></div>
+                                </div>
+                            </div>
+                            <!-- <div class="whiteLayout"></div> -->
+                        </div>    
                 </div>
             </div>
         </div>
-        <!-- Javascripts-->
-        <script src="/js/jquery-2.1.4.min.js"></script>
-        <script src="/js/essential-plugins.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
-        <script src="/js/plugins/pace.min.js"></script>
-        <script src="/js/main.js"></script>
-        <script src="/js/clndr.js"></script>
-        <script type="text/javascript" src="/js/plugins/chart.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
-        <script src="/js/donut-pie-chart.min.js"></script>
-        <script type="text/javascript" src="/js/loader.js"></script>
-        <script src="/js/d3.min.js"></script>
-        <script type="text/javascript" src="/js/plugins/bootstrap-datepicker.min.js"></script>
-        <script type="text/javascript" src="/js/plugins/select2.min.js"></script>
+       
+        <script>
+            //$(function () {
+                //LOADINGSPINNER.create(null, [CHARTS.timingPieChart, CHARTS.riskPieChart, CHARTS.actionsGrid, CHARTS.costBarChart], $('#pageContainer'));
+            function drawStateOfUnion() {
+                var projectTiming = $('#projectTiming');
+                reportOfUnion.timingChart_getDataAndDraw(function (data) {
+                    CHARTS.timingPieChart.draw(projectTiming, data);
+                });
+
+                var riskChart = $('#projectRisk');
+                reportOfUnion.riskChart_getDataAndDraw(function (data) {
+                    CHARTS.riskPieChart.draw(riskChart, data);
+                });
+
+                var actionsGrid = $('#table_div');
+                reportOfUnion.actionsGrid_getDataAndDraw(function (data) {
+                    CHARTS.actionsGrid.draw(actionsGrid, data);
+                });
+
+                var costBarChart = $('#costBarChart');
+                reportOfUnion.costBarChart_getDataAndDraw(function (data) {
+                    CHARTS.costBarChart.draw(costBarChart, data);
+                });
+
+                var costPieChart = $('#costPieChart');
+                reportOfUnion.costPieChart_getDataAndDraw(function (data) {
+                    CHARTS.costPieChart.draw(costPieChart, data);
+                });
+            }
+            //});
+        </script>
+
         <script type="text/javascript">
-            google.charts.load('current', { 'packages': ['corechart'] });
-            google.charts.setOnLoadCallback(drawChart);
+            $(document).ready(function () {
+                $('#box-1').css("display", "block");
+                $('#box-2').css("display", "none");
+                $('#box-3').css("display", "none");
+                $('#box-4').css("display", "none");
+                $('#box-5').css("display", "none");
+                $('#box-6').css("display", "none");
+                $('#tab-1').addClass("active");
+                $('#tab-2').removeClass("active");
+                $('#tab-3').removeClass("active");
+                $('#tab-4').removeClass("active");
+                $('#tab-5').removeClass("active");
+                $('#tab-6').removeClass("active");
+                $("#tab-1").click(function () {
+                    $('#box-1').css("display", "block");
+                    $('#box-2').css("display", "none");
+                    $('#box-3').css("display", "none");
+                    $('#box-4').css("display", "none");
+                    $('#box-5').css("display", "none");
+                    $('#box-6').css("display", "none");
+                    $('#tab-1').addClass("active");
+                    $('#tab-2').removeClass("active");
+                    $('#tab-3').removeClass("active");
+                    $('#tab-4').removeClass("active");
+                    $('#tab-5').removeClass("active");
+                    $('#tab-6').removeClass("active");
+                });
+            });
+
+            $(document).ready(function () {
+                $("#tab-2").click(function () {
+                    $('#box-1').css("display", "none");
+                    $('#box-2').css("display", "block");
+                    $('#box-3').css("display", "none");
+                    $('#box-4').css("display", "none");
+                    $('#box-5').css("display", "none");
+                    $('#box-6').css("display", "none");
+                    $('#tab-2').addClass("active");
+                    $('#tab-1').removeClass("active");
+                    $('#tab-3').removeClass("active");
+                    $('#tab-4').removeClass("active");
+                    $('#tab-5').removeClass("active");
+                    $('#tab-6').removeClass("active");
+
+                    google.charts.load('current', { 'packages': ['corechart'] });
+                    google.charts.setOnLoadCallback(drawChart);
+
+
+                    google.charts.load('current', { 'packages': ['corechart'] });
+                    google.charts.setOnLoadCallback(drawChart1);
+
+
+                });
+            });
+
             function drawChart() {
 
                 var data = google.visualization.arrayToDataTable([
@@ -840,11 +1132,7 @@ robots: all, index, follow
 
                 chart.draw(data, options);
             }
-        </script>
-        <script type="text/javascript">
-            google.charts.load('current', { 'packages': ['corechart'] });
-            google.charts.setOnLoadCallback(drawChart);
-            function drawChart() {
+            function drawChart1() {
 
                 var data = google.visualization.arrayToDataTable([
                   ['Task', 'Hours per Day'],
@@ -866,113 +1154,176 @@ robots: all, index, follow
 
                 chart.draw(data, options);
             }
-        </script>
-
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('#box-1').css("display", "none");
-                $('#box-2').css("display", "block");
-                $('#box-3').css("display", "none");
-                $('#tab1').removeClass("active");
-                $('#tab2').addClass("active");
-                $('#tab3').removeClass("active");
-                $('#tab4').removeClass("active");
-                $('#tab5').removeClass("active");
-                $('#tab6').removeClass("active");
-            });
-            $(document).ready(function () {
-                $("#tab1").click(function () {
-                    $('#box-1').css("display", "block");
-                    $('#box-2').css("display", "none");
-                    $('#box-3').css("display", "none");
-                    $('#tab1').addClass("active");
-                    $('#tab2').removeClass("active");
-                    $('#tab3').removeClass("active");
-                    $('#tab4').removeClass("active");
-                    $('#tab5').removeClass("active");
-                    $('#tab6').removeClass("active");
-                });
-            });
 
             $(document).ready(function () {
-                $("#tab2").click(function () {
-                    $('#box-1').css("display", "none");
-                    $('#box-2').css("display", "block");
-                    $('#box-3').css("display", "none");
-                    $('#tab2').addClass("active");
-                    $('#tab1').removeClass("active");
-                    $('#tab3').removeClass("active");
-                    $('#tab4').removeClass("active");
-                    $('#tab5').removeClass("active");
-                    $('#tab6').removeClass("active");
-                });
-            });
-
-            $(document).ready(function () {
-                $("#tab3").click(function () {
+                $("#tab-3").click(function () {
                     $('#box-1').css("display", "none");
                     $('#box-2').css("display", "none");
                     $('#box-3').css("display", "block");
-                    $('#tab3').addClass("active");
-                    $('#tab1').removeClass("active");
-                    $('#tab2').removeClass("active");
-                    $('#tab4').removeClass("active");
-                    $('#tab5').removeClass("active");
-                    $('#tab6').removeClass("active");
+                    $('#box-4').css("display", "none");
+                    $('#box-5').css("display", "none");
+                    $('#box-6').css("display", "none");
+                    $('#tab-3').addClass("active");
+                    $('#tab-1').removeClass("active");
+                    $('#tab-2').removeClass("active");
+                    $('#tab-4').removeClass("active");
+                    $('#tab-5').removeClass("active");
+                    $('#tab-6').removeClass("active");
                 });
             });
 
             $(document).ready(function () {
-                $("#tab4").click(function () {
+                $("#tab-4").click(function () {
                     $('#box-1').css("display", "none");
                     $('#box-2').css("display", "none");
                     $('#box-3').css("display", "none");
                     $('#box-4').css("display", "block");
                     $('#box-5').css("display", "none");
                     $('#box-6').css("display", "none");
-                    $('#tab4').addClass("active");
-                    $('#tab1').removeClass("active");
-                    $('#tab2').removeClass("active");
-                    $('#tab3').removeClass("active");
-                    $('#tab5').removeClass("active");
-                    $('#tab6').removeClass("active");
+                    $('#tab-4').addClass("active");
+                    $('#tab-1').removeClass("active");
+                    $('#tab-2').removeClass("active");
+                    $('#tab-3').removeClass("active");
+                    $('#tab-5').removeClass("active");
+                    $('#tab-6').removeClass("active");
                 });
             });
 
             $(document).ready(function () {
-                $("#tab5").click(function () {
+                $("#tab-5").click(function () {
                     $('#box-1').css("display", "none");
                     $('#box-2').css("display", "none");
                     $('#box-3').css("display", "none");
                     $('#box-4').css("display", "none");
                     $('#box-5').css("display", "block");
                     $('#box-6').css("display", "none");
-                    $('#tab5').addClass("active");
-                    $('#tab1').removeClass("active");
-                    $('#tab2').removeClass("active");
-                    $('#tab3').removeClass("active");
-                    $('#tab4').removeClass("active");
-                    $('#tab6').removeClass("active");
-                    window.location = "Project%20Chart.html";
+                    $('#tab-5').addClass("active");
+                    $('#tab-1').removeClass("active");
+                    $('#tab-2').removeClass("active");
+                    $('#tab-3').removeClass("active");
+                    $('#tab-4').removeClass("active");
+                    $('#tab-6').removeClass("active");
+                    drawProjectChart();
                 });
             });
 
             $(document).ready(function () {
-                $("#tab6").click(function () {
+                $("#tab-6").click(function () {
                     $('#box-1').css("display", "none");
                     $('#box-2').css("display", "none");
                     $('#box-3').css("display", "none");
                     $('#box-4').css("display", "none");
                     $('#box-5').css("display", "none");
                     $('#box-6').css("display", "block");
-                    $('#tab6').addClass("active");
-                    $('#tab1').removeClass("active");
-                    $('#tab2').removeClass("active");
-                    $('#tab3').removeClass("active");
-                    $('#tab4').removeClass("active");
-                    $('#tab5').removeClass("active");
-                    window.location = "StateOfUnion.html";
+                    $('#tab-6').addClass("active");
+                    $('#tab-1').removeClass("active");
+                    $('#tab-2').removeClass("active");
+                    $('#tab-3').removeClass("active");
+                    $('#tab-4').removeClass("active");
+                    $('#tab-5').removeClass("active");
+                    drawStateOfUnion();
                 });
             });
+
+            $(function () {
+                $('#demoDate').datepicker({
+                    format: "dd/mm/yyyy",
+                    autoclose: true,
+                    todayHighlight: true
+                });
+                $('#demoDate2').datepicker({
+                    format: "dd/mm/yyyy",
+                    autoclose: true,
+                    todayHighlight: true
+                });
+                $('#demoDate3').datepicker({
+                    format: "dd/mm/yyyy",
+                    autoclose: true,
+                    todayHighlight: true
+                });
+                $('#demoDate4').datepicker({
+                    format: "dd/mm/yyyy",
+                    autoclose: true,
+                    todayHighlight: true
+                });
+                $('#demoDate5').datepicker({
+                    format: "dd/mm/yyyy",
+                    autoclose: true,
+                    todayHighlight: true
+                });
+                $('#demoDate6').datepicker({
+                    format: "dd/mm/yyyy",
+                    autoclose: true,
+                    todayHighlight: true
+                });
+                $('#demoDate7').datepicker({
+                    format: "dd/mm/yyyy",
+                    autoclose: true,
+                    todayHighlight: true
+                });
+                $('#demoDate8').datepicker({
+                    format: "dd/mm/yyyy",
+                    autoclose: true,
+                    todayHighlight: true
+                });
+                $('#demoDate9').datepicker({
+                    format: "dd/mm/yyyy",
+                    autoclose: true,
+                    todayHighlight: true
+                });
+            });
+            
+
+            (function () {
+                $('#btnRight').click(function (e) {
+                    var selectedOpts = $('#lstBox1 option:selected');
+                    if (selectedOpts.length == 0) {
+                        alert("Nothing to move.");
+                        e.preventDefault();
+                    }
+
+                    $('#lstBox2').append($(selectedOpts).clone());
+                    $(selectedOpts).remove();
+                    e.preventDefault();
+                });
+
+                $('#btnAllRight').click(function (e) {
+                    var selectedOpts = $('#lstBox1 option');
+                    if (selectedOpts.length == 0) {
+                        alert("Nothing to move.");
+                        e.preventDefault();
+                    }
+
+                    $('#lstBox2').append($(selectedOpts).clone());
+                    $(selectedOpts).remove();
+                    e.preventDefault();
+                });
+
+                $('#btnLeft').click(function (e) {
+                    var selectedOpts = $('#lstBox2 option:selected');
+                    if (selectedOpts.length == 0) {
+                        alert("Nothing to move.");
+                        e.preventDefault();
+                    }
+
+                    $('#lstBox1').append($(selectedOpts).clone());
+                    $(selectedOpts).remove();
+                    e.preventDefault();
+                });
+
+                $('#btnAllLeft').click(function (e) {
+                    var selectedOpts = $('#lstBox2 option');
+                    if (selectedOpts.length == 0) {
+                        alert("Nothing to move.");
+                        e.preventDefault();
+                    }
+
+                    $('#lstBox1').append($(selectedOpts).clone());
+                    $(selectedOpts).remove();
+                    e.preventDefault();
+                });
+            }(jQuery));
+
         </script>
+        
 </body>

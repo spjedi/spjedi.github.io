@@ -2,7 +2,7 @@ var reportOfUnion = (function (self) {
     var _default = {};
     _default.pieChart = {};
     _default.pieChart.options = {
-        responsive: true
+       // responsive: true
     };
 
     self.drawTimingChart = function (domElement) {
@@ -135,7 +135,7 @@ var CHARTS = (function (self) {
     }
 
     self.default.pieChart.options = {
-        responsive: true,       
+       // responsive: true,       
         legend: {
             labels: {
                 generateLabels: self.generateLabelsWithData
@@ -414,23 +414,23 @@ CHARTS.projectGanttChart = (function () {
             var rows = [];
             //discovery
             if (initialData.discoveryStartDate != null && initialData.discoveryEndDate != null)
-                rows.push([initialData.id + 'discovery', 'Discovery',
+                rows.push([initialData.id + 'discovery', 'Phase 1',
                     initialData.discoveryStartDate, initialData.discoveryEndDate, null, 0, null]);
             //prospect
             if (initialData.prospectStartDate != null && initialData.prospectEndDate != null)
-                rows.push([initialData.id + 'prospect', 'Prospect',
+                rows.push([initialData.id + 'prospect', 'Phase 2',
                     initialData.prospectStartDate, initialData.prospectEndDate, null, 0, null]);
             //cv
             if (initialData.cvStartDate != null && initialData.cvEndDate != null)
-                rows.push([initialData.id + 'cv', 'CV',
+                rows.push([initialData.id + 'cv', 'Phase 3',
                     initialData.cvStartDate, initialData.cvEndDate, null, 0, null]);
             //dv
             if (initialData.dvStartDate != null && initialData.dvEndDate != null)
-                rows.push([initialData.id + 'dv', 'DV',
+                rows.push([initialData.id + 'dv', 'Phase 4',
                     initialData.dvStartDate, initialData.dvEndDate, null, 0, null]);
             //pv
             if (initialData.pvStartDate != null && initialData.pvEndDate != null)
-                rows.push([initialData.id + 'pv', 'PV',
+                rows.push([initialData.id + 'pv', 'Phase 5',
                     initialData.pvStartDate, initialData.pvEndDate, null, 0, null]);
 
             data.addRows(rows);
@@ -1411,31 +1411,31 @@ INITIAL_DATA_ACTIONS = [
 ];
 
 INITIAL_DATA_PROJECTS = [
-    { projectName: 'Project 1', status: 'Proposed', id: 1, category: 'Category 1' },
-    { projectName: 'Project 2', status: 'In Progress', id: 2, category: 'Category 2' },
-    { projectName: 'Project 3', status: '111', id: 3, category: 'Category 2' }
+    { projectName: 'Project 1', status: 'Proposed', id: 1, category: 'Finance' },
+    { projectName: 'Project 2', status: 'In Progress', id: 2, category: 'Finance' },
+    { projectName: 'Project 3', status: '111', id: 3, category: 'Operations' }
 ]
 
 INITIAL_DATA_PROJECTCATEGORIES = [
-    { categoryName: "Category 1" },
-    { categoryName: "Category 2" },
-    { categoryName: "Category 3" }
+    { categoryName: "Finance" },
+    { categoryName: "Operations" },
+    { categoryName: "Operations" }
 ]
 
 INITIAL_DATA_GANNT = [{
         id: 1,
         projectName: 'project 1',
-        category: "Category 1",
-        discoveryStartDate: new Date(2016, 10, 25),
-        discoveryEndDate: new Date(2016, 10, 28),
-        prospectStartDate: new Date(2016, 7, 29),
-        prospectEndDate: new Date(2016, 7, 30),
-        cvStartDate: new Date(2016, 7, 29),
-        cvEndDate: new Date(2016, 8, 1),
-        dvStartDate: new Date(2016, 8, 3),
-        dvEndDate: new Date(2016, 8, 13),
-        pvStartDate: new Date(2016, 7, 14),
-        pvEndDate: new Date(2016, 7, 16),
+        category: "Finance",
+        discoveryStartDate: new Date(2017, 1, 1),
+        discoveryEndDate: new Date(2017, 1, 5),
+        prospectStartDate: new Date(2017, 1, 6),
+        prospectEndDate: new Date(2017, 1, 15),
+        cvStartDate: new Date(2017, 1, 16),
+        cvEndDate: new Date(2017, 1, 21),
+        dvStartDate: new Date(2017, 1, 22),
+        dvEndDate: new Date(2017, 1, 31),
+        pvStartDate: new Date(2017, 2, 1),
+        pvEndDate: new Date(2017, 2, 16),
         capitalCosts: 33,
         projectDevCost: 66,
         calculatedMargin: 0.5,
@@ -1450,17 +1450,17 @@ INITIAL_DATA_GANNT = [{
     {
         id: 2,
         projectName: 'project 2',
-        category: "Category 1",
-        discoveryStartDate: new Date(2016, 7, 25),
-        discoveryEndDate: new Date(2016, 7, 28),
-        prospectStartDate: new Date(2016, 7, 29),
-        prospectEndDate: new Date(2016, 7, 30),
-        cvStartDate: new Date(2016, 7, 29),
-        cvEndDate: new Date(2016, 8, 1),
-        dvStartDate: new Date(2016, 8, 3),
-        dvEndDate: new Date(2016, 8, 13),
-        pvStartDate: new Date(2016, 11, 14),
-        pvEndDate: new Date(2016, 11, 16),
+        category: "Finance",
+        discoveryStartDate: new Date(2017, 2, 1),
+        discoveryEndDate: new Date(2017, 2, 5),
+        prospectStartDate: new Date(2017, 2, 6),
+        prospectEndDate: new Date(2017, 2, 15),
+        cvStartDate: new Date(2017, 2, 16),
+        cvEndDate: new Date(2017, 2, 21),
+        dvStartDate: new Date(2017, 2, 22),
+        dvEndDate: new Date(2017, 2, 28),
+        pvStartDate: new Date(2017, 3, 1),
+        pvEndDate: new Date(2017, 2, 16),
         capitalCosts: 12,
         projectDevCost: 43,
         calculatedMargin: 0.02,
@@ -1474,17 +1474,17 @@ INITIAL_DATA_GANNT = [{
     {
         id: 3,
         projectName: 'project 3',
-        category: "Category 2",
-        discoveryStartDate: new Date(2016, 7, 25),
-        discoveryEndDate: new Date(2016, 7, 28),
-        prospectStartDate: new Date(2016, 7, 29),
-        prospectEndDate: new Date(2016, 7, 30),
-        cvStartDate: new Date(2016, 7, 29),
-        cvEndDate: new Date(2016, 8, 1),
-        dvStartDate: new Date(2016, 8, 3),
-        dvEndDate: new Date(2016, 8, 13),
-        pvStartDate: new Date(2016, 11, 14),
-        pvEndDate: new Date(2016, 11, 16),
+        category: "Operations",
+        discoveryStartDate: new Date(2017, 2, 1),
+        discoveryEndDate: new Date(2017, 2, 5),
+        prospectStartDate: new Date(2017, 2, 6),
+        prospectEndDate: new Date(2017, 2, 15),
+        cvStartDate: new Date(2017, 2, 16),
+        cvEndDate: new Date(2017, 2, 21),
+        dvStartDate: new Date(2017, 2, 22),
+        dvEndDate: new Date(2017, 2, 28),
+        pvStartDate: new Date(2017, 3, 1),
+        pvEndDate: new Date(2017, 2, 16),
         capitalCosts: 23,
         projectDevCost: 78,
         calculatedMargin: 0.07,
