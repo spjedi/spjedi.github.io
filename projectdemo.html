@@ -9,6 +9,31 @@ robots: all, index, follow
 <link rel="shortcut icon" type="image/x-icon" href="/images/project-management.png" />
 <title>My Projects</title>
 <body class="sidebar-mini fixed">
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <h4 class="head-title"><i></i><span>Get Immediate Access</span><i></i></h4>
+                    <div class="email_filed">
+                        <input type="email" name="" value="" placeholder="Email address">
+                        <i class="fa fa-envelope-o" style="color: rgb(146, 146, 146); font-size: 25px; box-sizing: content-box; line-height: 25px; text-align: center; display: initial; overflow: hidden;"></i>
+                    </div>
+                    <button type="button" class="btn full-btn">See Demo Site</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left remove-radi" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary pull-left remove-radi" onclick=" window.open('http://google.com','_blank')">New tab</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <div class="wrapper">
         <!-- Navbar-->
         <header class="main-header hidden-print">
@@ -24,6 +49,12 @@ robots: all, index, follow
                         <a href="#">SharePoint</a>
                     </li>
                 </ul>
+
+                <div class="seedemo_btn">
+
+                    <button type="button" class="btn-seedemo" data-toggle="modal" data-target="#myModal">See Demo <span>Site</span></button>
+
+                </div>
 
                 <!-- Navbar Right Menu-->
                 <div class="navbar-custom-menu">

@@ -153,7 +153,7 @@ $(document).ready(function(){
 			type: "POST",
 			url: "https://mandrillapp.com/api/1.0/messages/send.json",
 			data: {
-				'key': 'vkzXy4TRFE87bF0uGwcvwQ',
+			    'key': 'qUnNKSqipOc7_rXIySQLFw',
 				'message': {
 					'from_email': $email.val(),
 					'from_name': $name.val(),
