@@ -23,11 +23,10 @@ robots: all, index, follow
                         <input type="email" name=""  id=txtSiteDemoEmail"" value="" placeholder="Email address">
                         <i class="fa fa-envelope-o" style="color: rgb(146, 146, 146); font-size: 25px; box-sizing: content-box; line-height: 25px; text-align: center; display: initial; overflow: hidden;"></i>
                     </div>
-                    <button type="button" class="btn full-btn"  id="btnSeeDemo">See Demo Site</button>
+                    <button type="button" class="btn full-btn" id="btnSeeDemo" onclick=" window.open('http://spjedi.com/PM','_blank')">See Demo Site</button>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default pull-left remove-radi" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary pull-left remove-radi" onclick=" window.open('http://google.com','_blank')">New tab</button>
                 </div>
             </div>
 
@@ -1067,7 +1066,7 @@ robots: all, index, follow
                                 'Reply-To': $email.val()
                             },
                             'subject': 'Project Portal Demo Site',
-                            'text': 'Text- I got instant access to the slim site',
+                            'text':  $email.val(),  'Text- I got instant access to the slim site',
                             'to': [
                                 {
                                     'email': 'info@spjedi.com',
@@ -1090,8 +1089,8 @@ robots: all, index, follow
             });
 
 
-
-
+            </script>
+            <script>
             //$(function () {
                 //LOADINGSPINNER.create(null, [CHARTS.timingPieChart, CHARTS.riskPieChart, CHARTS.actionsGrid, CHARTS.costBarChart], $('#pageContainer'));
             function drawStateOfUnion() {
