@@ -1050,27 +1050,33 @@ robots: all, index, follow
        
         <script>
 
-            
-            $("#btnSeeDemo").click(function(){
+            $("#btnSeeDemo").Click(function (e) {
+
+
+                alert();
 
                 var $email = $("#txtSiteDemoEmail");
+
+
+
+
                 $.ajax({
                     type: "POST",
                     url: "https://mandrillapp.com/api/1.0/messages/send.json",
                     data: {
                         'key': 'qUnNKSqipOc7_rXIySQLFw',
                         'message': {
-
-                            'from_email': "info@spjedi.com",
-                            'from_name': "info@spjedi.com",
+                            'from_email': $email.val(),
+                            'from_name': $email.val(),
                             'headers': {
-                                'Reply-To': "info@spjedi.com"
+                                'Reply-To': $email.val()
                             },
                             'subject': 'Project Portal Demo Site',
                             'text': 'Text- I got instant access to the slim site',
                             'to': [
                                 {
                                     'email': 'info@spjedi.com',
+                                    'name': 'Jed Elliott',
                                     'type': 'to'
                                 }
                             ]
@@ -1078,7 +1084,11 @@ robots: all, index, follow
                     }
                 })
                 .done(function (response) {
+
+
                     $email.val('');
+
+
                     $('.status-message').addClass('hidden');
                     $('.status-message.text-success').removeClass('hidden');
                 })
@@ -1087,7 +1097,6 @@ robots: all, index, follow
                     $('.status-message.text-danger').removeClass('hidden');
                 });
             });
-
 
             </script>
             <script>
