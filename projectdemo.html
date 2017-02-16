@@ -1053,7 +1053,7 @@ robots: all, index, follow
             $("#btnSeeDemo").Click(function (e) {
 
 
-                alert();
+                
 
                 var $email = $("#txtSiteDemoEmail");
 
@@ -1066,13 +1066,13 @@ robots: all, index, follow
                     data: {
                         'key': 'qUnNKSqipOc7_rXIySQLFw',
                         'message': {
-                            'from_email': $email.val(),
+                            'from_email': 'info@spjedi.com',
                             'from_name': $email.val(),
                             'headers': {
                                 'Reply-To': $email.val()
                             },
                             'subject': 'Project Portal Demo Site',
-                            'text': 'Text- I got instant access to the slim site',
+                            'text': 'Text- I got instant access to the slim site <br /> From Email : '+$email.val(),
                             'to': [
                                 {
                                     'email': 'info@spjedi.com',
