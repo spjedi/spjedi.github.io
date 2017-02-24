@@ -20,10 +20,11 @@ robots: all, index, follow
                 <div class="modal-body">
                     <h4 class="head-title"><i></i><span>Get Immediate Access</span><i></i></h4>
                     <div class="email_filed">
-                        <input type="email" name=""  id=txtSiteDemoEmail"" value="" placeholder="Email address">
+                        <input type="email" name=""  id="txtSiteDemoEmail" value="" placeholder="Email address">
                         <i class="fa fa-envelope-o" style="color: rgb(146, 146, 146); font-size: 25px; box-sizing: content-box; line-height: 25px; text-align: center; display: initial; overflow: hidden;"></i>
                     </div>
-                    <button type="button" class="btn full-btn" id="btnSeeDemo" onclick=" window.open('http://spjedi.com/PM','_blank')">See Demo Site</button>
+                    <button type="button" class="btn full-btn" id="btnSeeDemo" >See Demo Site</button>
+                    <!--onclick=" window.open('http://spjedi.com/PM','_blank')"-->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default pull-left remove-radi" data-dismiss="modal">Close</button>
@@ -1050,7 +1051,7 @@ robots: all, index, follow
        
         <script>
 
-            $("#btnSeeDemo").Click(function (e) {
+            $("#btnSeeDemo").click(function (e) {
 
 
                 
@@ -1072,7 +1073,7 @@ robots: all, index, follow
                                 'Reply-To': $email.val()
                             },
                             'subject': 'Project Portal Demo Site',
-                            'text': 'Text- I got instant access to the slim site <br /> From Email : '+$email.val(),
+                            'text': 'Text- I got instant access to the slim site  From Email : '+$email.val(),
                             'to': [
                                 {
                                     'email': 'info@spjedi.com',
