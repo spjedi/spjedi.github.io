@@ -1445,7 +1445,7 @@ INITIAL_DATA_GANNT = [{
         adjSubVariableOverhead: 41,
         projectCostChartLink: 'http://google.com',
         stockPhotoLink: 'http://www.w3schools.com/css/img_fjords.jpg',
-        stockPhotoDescription: "Descrption 1"
+        stockPhotoDescription: "Description 1"
     },
     {
         id: 2,
@@ -1498,29 +1498,29 @@ INITIAL_DATA_GANNT = [{
 ]
 
 INITIAL_DATA_TASKS = [
-    { taskName: 'task 1', projectId: 1, id: 1, url: "http://google.ru" },
-    { taskName: 'task 2', projectId: 2, id: 2, url: "http://google.ru" },
-    { taskName: 'task 3', projectId: 2, id: 3, url: "http://google.ru" },
-    { taskName: 'task 4', projectId: 1, id: 4, url: "http://google.ru" },
-    { taskName: 'task 4-2', projectId: 3, id: 5, url: "http://google.ru" },
-    { taskName: 'task 5', projectId: 4, id: 6, url: "http://google.ru" },
-    { taskName: 'task 6', projectId: 3, id: 7, url: "http://google.ru" },
-    { taskName: 'task 7', projectId: 3, id: 8, url: "http://google.ru" },
-    { taskName: 'task 8', projectId: 2, id: 9, url: "http://google.ru" },
-    { taskName: 'task 9', projectId: 1, id: 10, url: "http://google.ru" },
+    { taskName: 'task 1', projectId: 1, id: 1, url: "http://spjedi.com/project" },
+    { taskName: 'task 2', projectId: 2, id: 2, url: "http://spjedi.com/project" },
+    { taskName: 'task 3', projectId: 2, id: 3, url: "http://spjedi.com/project" },
+    { taskName: 'task 4', projectId: 1, id: 4, url: "http://spjedi.com/project" },
+    { taskName: 'task 4-2', projectId: 3, id: 5, url: "http://spjedi.com/project" },
+    { taskName: 'task 5', projectId: 4, id: 6, url: "http://spjedi.com/project" },
+    { taskName: 'task 6', projectId: 3, id: 7, url: "http://spjedi.com/project" },
+    { taskName: 'task 7', projectId: 3, id: 8, url: "http://spjedi.com/project" },
+    { taskName: 'task 8', projectId: 2, id: 9, url: "http://spjedi.com/project" },
+    { taskName: 'task 9', projectId: 1, id: 10, url: "http://spjedi.com/project" },
 ];
 
 INITIAL_DATA_RISKS_PROJECT = [
-    { riskName: 'Name 1', projectId: 1, overallRiskScore: 30, riskDescription: 'Risk Descrption 1', riskMigrationDescription: 'Description 1', id: 1, url: 'http://google.ru' },
-    { riskName: 'Name 2', projectId: 1, overallRiskScore: 77, riskDescription: 'Risk Descrption 2', riskMigrationDescription: 'Description 2', id: 2, url: 'http://google.ru' },
-    { riskName: 'Name 3', projectId: 1, overallRiskScore: 40, riskDescription: 'Risk Descrption 3', riskMigrationDescription: 'Description 3', id: 3, url: 'http://google.ru' },
-    { riskName: 'Name 4', projectId: 1, overallRiskScore: 75, riskDescription: 'Risk Descrption 4', riskMigrationDescription: 'Description 4', id: 4, url: 'http://google.ru' },
-    { riskName: 'Name 5', projectId: 1, overallRiskScore: 10, riskDescription: 'Risk Descrption 5', riskMigrationDescription: 'Description 5', id: 5, url: 'http://google.ru' },
-    { riskName: 'Name 6', projectId: 1, overallRiskScore: 77, riskDescription: 'Risk Descrption 6', riskMigrationDescription: 'Description 6', id: 6, url: 'http://google.ru' },
-    { riskName: 'Name 7', projectId: 1, overallRiskScore: 71, riskDescription: 'Risk Descrption 7', riskMigrationDescription: 'Description 7', id: 7, url: 'http://google.ru' },
-    { riskName: 'Name 8', projectId: 2, overallRiskScore: 60, riskDescription: 'Risk Descrption 8', riskMigrationDescription: 'Description 8', id: 8, url: 'http://google.ru' },
-    { riskName: 'Name 9', projectId: 2, overallRiskScore: 75, riskDescription: 'Risk Descrption 9', riskMigrationDescription: 'Description 9', id: 9, url: 'http://google.ru' },
-    { riskName: 'Name 10', projectId: 2, overallRiskScore: 40, riskDescription: 'Risk Descrption 10', riskMigrationDescription: 'Description 10', id: 10, url: 'http://google.ru' },
+    { riskName: 'Name 1', projectId: 1, overallRiskScore: 30, riskDescription: 'Risk Description 1', riskMigrationDescription: 'Description 1', id: 1, url: 'http://spjedi.com/project' },
+    { riskName: 'Name 2', projectId: 1, overallRiskScore: 77, riskDescription: 'Risk Description 2', riskMigrationDescription: 'Description 2', id: 2, url: 'http://spjedi.com/project' },
+    { riskName: 'Name 3', projectId: 1, overallRiskScore: 40, riskDescription: 'Risk Description 3', riskMigrationDescription: 'Description 3', id: 3, url: 'http://spjedi.com/project' },
+    { riskName: 'Name 4', projectId: 1, overallRiskScore: 75, riskDescription: 'Risk Description 4', riskMigrationDescription: 'Description 4', id: 4, url: 'http://spjedi.com/project' },
+    { riskName: 'Name 5', projectId: 1, overallRiskScore: 10, riskDescription: 'Risk Description 5', riskMigrationDescription: 'Description 5', id: 5, url: 'http://spjedi.com/project' },
+    { riskName: 'Name 6', projectId: 1, overallRiskScore: 77, riskDescription: 'Risk Description 6', riskMigrationDescription: 'Description 6', id: 6, url: 'http://spjedi.com/project' },
+    { riskName: 'Name 7', projectId: 1, overallRiskScore: 71, riskDescription: 'Risk Description 7', riskMigrationDescription: 'Description 7', id: 7, url: 'http://spjedi.com/project' },
+    { riskName: 'Name 8', projectId: 2, overallRiskScore: 60, riskDescription: 'Risk Description 8', riskMigrationDescription: 'Description 8', id: 8, url: 'http://spjedi.com/project' },
+    { riskName: 'Name 9', projectId: 2, overallRiskScore: 75, riskDescription: 'Risk Description 9', riskMigrationDescription: 'Description 9', id: 9, url: 'http://spjedi.com/project' },
+    { riskName: 'Name 10', projectId: 2, overallRiskScore: 40, riskDescription: 'Risk Description 10', riskMigrationDescription: 'Description 10', id: 10, url: 'http://spjedi.com/project' },
 
 ]
 

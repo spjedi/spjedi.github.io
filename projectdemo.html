@@ -123,7 +123,7 @@ robots: all, index, follow
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 
-                                <span>Jed Elliot <i class="use_img"><img src="/images/use.jpg" alt=""></i></span>
+                                <span>Jed Elliott <i class="use_img"><img src="/images/use.jpg" alt=""></i></span>
                             </a>
                             <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
                                 <li class="dropdown-header text-center">Account</li>
@@ -598,7 +598,7 @@ robots: all, index, follow
                                 <tr>
                                     <td><a href="#">SPJEDI Project 10</a></td>
                                     <td>In progress</td>
-                                    <td>80%</td>
+                                    <td>40%</td>
                                     <td>$45,000</td>
                                     <td>
                                         <div class="progress progress-striped">
@@ -1134,18 +1134,28 @@ robots: all, index, follow
 
         <script type="text/javascript">
             $(document).ready(function () {
-                $('#box-1').css("display", "block");
-                $('#box-2').css("display", "none");
+                $('#box-1').css("display", "none");
+                $('#box-2').css("display", "block");
                 $('#box-3').css("display", "none");
                 $('#box-4').css("display", "none");
                 $('#box-5').css("display", "none");
                 $('#box-6').css("display", "none");
-                $('#tab-1').addClass("active");
-                $('#tab-2').removeClass("active");
+                $('#tab-1').removeClass("active");
+                $('#tab-2').addClass("active");
                 $('#tab-3').removeClass("active");
                 $('#tab-4').removeClass("active");
                 $('#tab-5').removeClass("active");
                 $('#tab-6').removeClass("active");
+
+                google.charts.load('current', { 'packages': ['corechart'] });
+                google.charts.setOnLoadCallback(drawChart);
+
+
+                google.charts.load('current', { 'packages': ['corechart'] });
+                google.charts.setOnLoadCallback(drawChart1);
+            });
+
+            $(document).ready(function () {
                 $("#tab-1").click(function () {
                     $('#box-1').css("display", "block");
                     $('#box-2').css("display", "none");
