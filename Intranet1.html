@@ -6,104 +6,13 @@ description: US Based leading SharePoint Branding company. 14 Templates to choos
 keywords: Office 365 Migration, SharePoint project portal, SharePoint Templates, SharePoint Design, SharePoint Branding, SharePoint solution, SharePoint Team site Template, SharePoint Development phoenix, SharePoint phoenix, SharePoint Human Resources Portal, SharePoint Help Desk, SharePoint Asset Management,
 robots: all, index, follow
 ---
-
-<style>
- 
-</style>
-
-<script type="text/javascript">
-
-    $(document).ready(function () {
-        var width = $(window).width();
-        if (width >= 360 && width <= 640) {
-            $("#leftnav").addClass("show");
-            $("#btnToggle").click();
-        }
-        $("#leftnav li").click(function () {
-            var width = $(window).width();
-
-            var leftActive = $(this).find("a").html();
-            var centerActive = $("#centernav").find("li.active >a").html();
-
-            var centerContent = $("#centernav").find("li.active").attr("data-content");
-            var leftContent = $(this).attr("data-content");
-            $("#imgContent").attr("src", "/images/" + centerContent + "-" + leftContent + ".jpg");
-            $("#headerText").html(centerActive + ", " + leftActive);
-            if (width >= 360 && width <= 640) {
-                $("#btnToggle").click();
-            }
-        });
-
-        $(".navfeatures li").click(function () {
-            var width = $(window).width();
-
-            var leftActive = $(this).find("a").html();
-            var centerActive = $("#centernav").find("li.active >a").html();
-
-            var centerContent = $("#centernav").find("li.active").attr("data-content");
-            var leftContent = $(this).attr("data-content");
-            $("#imgContent").attr("src", "/images/" + centerContent + "-" + leftContent + ".jpg");
-            $("#headerText").html(centerActive + ", " + leftActive);
-            if (width >= 360 && width <= 640) {
-                $("#btnToggle").click();
-            }
-        });
-
-
-        $("#centernav li").click(function () {
-            var centerActive = $(this).find("a").html();
-            var leftActive = $("#leftnav").find("li.active > a").html();
-            $("#headerText").html(centerActive + ", " + leftActive);
-
-            var centerContent = $(this).attr("data-content");
-            var leftContent = $("#leftnav").find("li.active").attr("data-content");
-            $("#imgContent").attr("src", "/images/" + centerContent + "-" + leftContent + ".jpg");
-
-        });
-        var leftActive = $("#leftnav").find("li.active > a").html();
-        var centerActive = $("#centernav").find("li.active > a").html();
-
-        var centerContent = $("#centernav").find("li.active").attr("data-content");
-        var leftContent = $("#leftnav").find("li.active").attr("data-content");
-        $("#imgContent").attr("src", "/images/" + centerContent + "-" + leftContent + ".jpg");
-        $("#headerText").html(centerActive + ", " + leftActive);
-
-        $("#btnToggle").click(function () {
-            if ($(".navfeatures").hasClass("show")) {
-                $(".navfeatures").addClass("hide");
-                $(".navfeatures").removeClass("show");
-            }
-            else {
-                $(".navfeatures").addClass("show");
-                $(".navfeatures").removeClass("hide");
-            }
-        });
-
-    });
-
-
-
-</script>
-<style type="text/css">
-    .is-bg-overflow.bounce .is-background {
-        display: none !important;
-    }
-
-    .slider .site_slider {
-        position: relative;
-    }
-
-    .site_slider .slider_center {
-        position: absolute;
-        top: 15%;
-    }
-
-    .slider_center .heading_slider {
-        margin: 20px auto 10px;
-    }
-</style>
-</head>
-<body>
+<link rel="stylesheet" href="/css/productstyle.css" type="text/css" media="screen">
+<!-- <script src="/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/jquery.galleriffic.js" type="text/javascript"></script>
+<script src="/js/jquery.opacityrollover.js" type="text/javascript"></script> -->
+<body id="page1">
+    <!--==============================header=================================-->
+    <!-- content -->
     <section class="slider header-position">
         <div class="site_slider">
             <img src="/images/slider_4.png" style="min-height:400px; max-height:400px;">
@@ -120,121 +29,123 @@ robots: all, index, follow
             </div>
         </div>
     </section>
-    <div class="container">
-        <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
-
-
-            <div class="col-lg-offset-3 col-lg-9 col-md-offset-3 col-md-9 col-sm-offset-4 col-sm-8 col-xs-12 center-tab">
-
-                <ul class="nav nav-pills" id="centernav">
-                    <li class="active col-lg-4 col-md-4 col-sm-4 col-xs-4" data-content="0">
-                        <a href="#tab1" id="aAll" data-toggle="tab">JEDI INITIATE</a>
-                    </li>
-                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4" data-content="1">
-                        <a href="#tab2" id="aNews" data-toggle="tab">JEDI KNIGHT</a>
-                    </li>
-                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4" data-content="2">
-                        <a href="#tab3" id="aAlerts" data-toggle="tab">JEDI MASTER</a>
-                    </li>
-                    <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12" data-content="3" style="margin-top:1%;">
-                        <a href="#tab4" id="aAlert" data-toggle="tab">JEDI DEATH STAR CUSTOM</a>
-                    </li>
-
-                </ul>
-
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 hidden-xs">
-
-
-                    <ul class="nav nav-tabs  tabs-left nav-pills" id="leftnav">
-                        <li class="active" data-content="a"><a href="#home" data-toggle="tab">4 Choices of Branding Colors</a></li>
-                        <li data-content="b"><a href="#profile" data-toggle="tab">4 Custom Webparts</a></li>
-                        <li data-content="c"><a href="#messages" data-toggle="tab">Team/Sub Site Template Included</a></li>
-                        <li data-content="d"><a href="#settings" data-toggle="tab">Custom Page Layouts <span class="subtext">(knight & master only)</span></a></li>
-                        <li data-content="e"><a href="#settings" data-toggle="tab">Birthday/Anniversary Webparts <span class="subtext">(knight & master only)</span></a></li>
-                        <li data-content="f"><a href="#settings" data-toggle="tab">FEATURE 6 <span class="subtext">(master only)</span></a></li>
-                        <li data-content="g"><a href="#settings" data-toggle="tab">FEATURE 7 <span class="subtext">(master only)</span></a></li>
-                    </ul>
-                </div>
-
-
-
-                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 main-content nopad">
-                    <h3 class="watermarktext" id="headerText"></h3>
-                    <img id="imgContent" class="bgimage" />
-                    <button type="button" class="btn btn-info" data-toggle="button" id="btnToggle">
-                        Features
-                    </button>
-                    <ul class="nav nav-tabs  tabs-left nav-pills navfeatures">
-                        <li class="active" data-content="a"><a href="#home" data-toggle="tab">Custom Company Colors</a></li>
-                        <li data-content="b"><a href="#profile" data-toggle="tab">6 Custom Webparts</a></li>
-                        <li data-content="c"><a href="#messages" data-toggle="tab">Team/Sub Site Template Included</a></li>
-                        <li data-content="d"><a href="#settings" data-toggle="tab">Custom Page Layouts <span class="subtext">(knight & master only)</span></a></li>
-                        <li data-content="e"><a href="#settings" data-toggle="tab">Birthday/Anniversary Webparts <span class="subtext">(knight & master only)</span></a></li>
-                        <li data-content="f"><a href="#settings" data-toggle="tab">Enterprise Discussion Board <span class="subtext">(master only)</span></a></li>
-                        <li data-content="g"><a href="#settings" data-toggle="tab">Employee Directory <span class="subtext">(master only)</span></a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 main-content nopad">
-                    <h3 class="watermarktext" id="headerText"></h3>
-                    <img id="imgContent" class="bgimage" />
-                    <button type="button" class="btn btn-info" data-toggle="button" id="btnToggle">
-                        Features
-                    </button>
-                    <ul class="nav nav-tabs  tabs-left nav-pills navfeatures">
-                        <li class="active" data-content="a"><a href="#home" data-toggle="tab">Custom Company Colors</a></li>
-                        <li data-content="b"><a href="#profile" data-toggle="tab">6 Custom Webparts</a></li>
-                        <li data-content="c"><a href="#messages" data-toggle="tab">Team/Sub Site Template Included</a></li>
-                        <li data-content="d"><a href="#settings" data-toggle="tab">Custom Page Layouts <span class="subtext">(knight & master only)</span></a></li>
-                        <li data-content="e"><a href="#settings" data-toggle="tab">Birthday/Anniversary Webparts <span class="subtext">(knight & master only)</span></a></li>
-                        <li data-content="f"><a href="#settings" data-toggle="tab">Enterprise Discussion Board <span class="subtext">(master only)</span></a></li>
-                        <li data-content="g"><a href="#settings" data-toggle="tab">Employee Directory <span class="subtext">(master only)</span></a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-
+    <section class="membership_wrp">
+        <div class="purple-header" style="background-color: #013f56; padding:20px; margin-bottom: 25px;">
+            <h3 class="text-center" style="color:white;">Our SharePoint Templates can be customized and delivered within 7 days</h3>
+            <h4 class="text-center" style="color:white;">Demo Sites are available. Try to destroy them, we dare you!</h4>
         </div>
-    </div>
-    <div class="related-applications">
-        <div class="container-fluid">
-            <div class="row" style="background-color: #10172C; padding-top:1%;">
-                <div class="col-sm-6 col-md-3 col-xs-12">
-                    <a class="mask-box" href="/img/Technology_Center.jpg" id="single_image" data-sr='vFactor 1.0'>
-                        <img src="/img/Technology_Center.jpg" alt="Branding Screenshots">
-                        <h4 class="text-center">Asset Management</h4>
-                        <h4 class="text-center">Three way Inventory System (example: software/hardware/user)</h4>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-3 col-xs-12">
-                    <a class="mask-box" href="/project" id="single_image" data-sr='vFactor 1.0'>
-                        <img src="/img/projecthub_b.jpg" alt="Branding Screenshots" style="height: 218px; width: 445px;">
-                        <h4 class="text-center" href="/img/projecthub_b.jpg">Project Portal</h4>
-                        <h4 class="text-center">Manage all company projects in a customized site</h4>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-3 col-xs-12">
-                    <a class="mask-box" href="/img/hr_6.jpg" id="single_image" data-sr='vFactor 1.0'>
-                        <img src="/img/HR.jpg" alt="Branding Screenshots">
-                        <h4 class="text-center">Human Resources Portal</h4>
-                        <h4 class="text-center">Internal Hub for Employees and HR</h4>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-3 col-xs-12">
-                    <a class="mask-box" href="/HR" id="single_image" data-sr='vFactor 1.0'>
-                        <img src="/img/Technology_Center.jpg" alt="Branding Screenshots">
-                        <h4 class="text-center">Help Desk</h4>
-                        <h4 class="text-center">Manage All Tickets and Tasks For Technology</h4>
-                    </a>
+    </section>
+        <section id="content">
+            <div class="bg-top">
+                <div class="bg-top-2">
+                    <div class="bg">
+                        <div class="bg-top-shadow">
+                            <div class="main">
+                                <div class="gallery p3">
+                                    <div class="wrapper indent-bot">
+                                        <div id="gallery" class="content">
+                                            <div class="wrapper">
+                                                <div class="slideshow-container">
+                                                    <div id="slideshow" class="slideshow"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="thumbs" class="navigation">
+                                            <ul class="thumbs noscript">
+                                                <li>
+                                                    <a class="thumb" href="/images/Swatch_full.jpg" title=""> <img src="/images/Swatch_thumbnail.jpg" alt="" /><span></span> </a>
+                                                </li>
+                                                <li>
+                                                    <a class="thumb" href="/images/Zone_full.jpg" title=""> <img src="/images/Zone_thumbnail.jpg" alt="" /> <span></span></a>
+                                                </li>
+                                                <li>
+                                                    <a class="thumb" href="/images/Vader_Full.jpg" title=""> <img src="/images/Vader_Thumbnail.jpg" alt="" /> <span></span></a>
+                                                </li>
+                                                <li>
+                                                    <a class="thumb" href="/images/District10_full.jpg" title=""> <img src="/images/District10_thumbnail.jpg" alt="" /> <span></span></a>
+                                                </li>
+                                                <li>
+                                                    <a class="thumb" href="/images/StDavid_full.jpg" title=""> <img src="/images/StDavid_Thumbnail.jpg" alt="" /> <span></span></a>
+                                                </li>
+                                                <li>
+                                                    <a class="thumb" href="/images/StDavid_Team_full.jpg" title=""> <img src="/images/StDavid_Team_thumbnail.jpg" alt="" /> <span></span></a>
+                                                </li>
+                                                <li>
+                                                    <a class="thumb" href="/images/Sullair_full.jpg" title=""> <img src="/images/Sullair_thumbnail.jpg" alt="" /> <span></span></a>
+                                                </li>
+                                                <li>
+                                                    <a class="thumb" href="/images/Drive_full.jpg" title=""> <img src="/images/Drive_thumbnail.jpg" alt="" /> <span></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="wrapper">
+                                            <span class="title img-indent3">Branding Jedis!!</span>
+                                            <div class="extra-wrap indent-top2">
+                                                <strong>Interior Design</strong> is one of <a target="_blank" href="http://blog.templatemonster.com/free-website-templates/ ">free website templates</a> created by This website template is opti mized for 1024 resolution <a class="color-3" href="index.html">About</a>, <a class="color-3" href="services.html">Services</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div style="background-color:black; border-bottom-style:groove; border-bottom-color:teal; height: 30px;">
-        <div class="row">
-            </div>
-        </div>
-    </div>
+
+        </section>
+        <script type="text/javascript">
+            $(window).load(function () {
+                // We only want these styles applied when javascript is enabled
+                $('div.navigation').css({ 'width': '320px', 'float': 'right' });
+                $('div.content').css('display', 'block');
+
+                // Initially set opacity on thumbs and add
+                // additional styling for hover effect on thumbs
+                var onMouseOutOpacity = 0.5;
+                $('#thumbs ul.thumbs li span').opacityrollover({
+                    mouseOutOpacity: onMouseOutOpacity,
+                    mouseOverOpacity: 0.0,
+                    fadeSpeed: 'fast',
+                    exemptionSelector: '.selected'
+                });
+
+                // Initialize Advanced Galleriffic Gallery
+                var gallery = $('#thumbs').galleriffic({
+                    delay: 7000,
+                    numThumbs: 12,
+                    preloadAhead: 6,
+                    enableTopPager: false,
+                    enableBottomPager: false,
+                    imageContainerSel: '#slideshow',
+                    controlsContainerSel: '',
+                    captionContainerSel: '',
+                    loadingContainerSel: '',
+                    renderSSControls: true,
+                    renderNavControls: true,
+                    playLinkText: 'Play Slideshow',
+                    pauseLinkText: 'Pause Slideshow',
+                    prevLinkText: 'Prev',
+                    nextLinkText: 'Next',
+                    nextPageLinkText: 'Next',
+                    prevPageLinkText: 'Prev',
+                    enableHistory: true,
+                    autoStart: 7000,
+                    syncTransitions: true,
+                    defaultTransitionDuration: 900,
+                    onSlideChange: function (prevIndex, nextIndex) {
+                        // 'this' refers to the gallery, which is an extension of $('#thumbs')
+                        this.find('ul.thumbs li span')
+                            .css({ opacity: 0.5 })
+                    },
+                    onPageTransitionOut: function (callback) {
+                        this.find('ul.thumbs li span').css({ display: 'block' });
+                    },
+                    onPageTransitionIn: function () {
+                        this.find('ul.thumbs li span').css({ display: 'none' });
+                    }
+                });
+            });
+        </script>
+</body>
