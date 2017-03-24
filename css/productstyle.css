@@ -88,7 +88,7 @@ h1 {padding:15px 0 0 0;position:relative;font-weight:normal;text-transform:upper
 #search-form .search-button {display:block;width:17px;height:16px;text-indent:-5000px;background:url(../images/search-icon.gif) 0 0 no-repeat;position:absolute;right:8px;top:7px}
 /*********************************content*************************************/
 #content {width:100%;padding:0;position:relative;z-index:1;}
-.gallery {padding:20px 0 26px 20px;background:#fff;box-shadow: 0px 5px 8px rgba(0,0,0,0.70);-moz-box-shadow: 0px 5px 8px rgba(0,0,0,0.70);-webkit-box-shadow: 0px 5px 8px rgba(0,0,0,0.70); max-height: 550px;}
+.gallery {padding:20px 0 26px 20px;background:#fff;box-shadow: 0px 5px 8px rgba(0,0,0,0.70);-moz-box-shadow: 0px 5px 8px rgba(0,0,0,0.70);-webkit-box-shadow: 0px 5px 8px rgba(0,0,0,0.70); max-height: 600px;}
 .padding {padding:30px 0px 38px}
 /* -- gallery  begin --*/
  div.content {/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
