@@ -14,7 +14,7 @@ body {font-family:Arial, Helvetica, sans-serif;color:#262626;min-width:980px;bac
 .bg {width:100%; background:url(../images/bg-top.jpg) center top no-repeat}
 .bg-bot {width:100%; background:url(../images/bg-bot-tail.gif) center top repeat-x #fff; padding:30px 0 55px}
 	#page3 .bg-bot, #page4 .bg-bot {padding:30px 0 49px}
-.main {width:980px;max-height: 550px; padding:0;margin:0 auto;font-size:0.8125em;line-height:1.6153em; display:block;}
+.main {width:980px; max-height: 550px; padding:0;margin:0 auto;font-size:0.8125em;line-height:1.6153em; display:block;}
 a {color:#ff9601; outline:none}
 a:hover {text-decoration:none}
 .col-1, .col-2 {float:left}
