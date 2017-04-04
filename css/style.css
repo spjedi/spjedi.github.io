@@ -1223,3 +1223,105 @@ and (orientation : landscape) {
 	color:#fff;
 	font-size:13px;
 }
+.fullwidth-slider { background: url(../images/br-pic-1.jpg) no-repeat left top; padding: 40px 0; }
+.fullwidth-costslider { background: url(../images/cost-slider-bg.jpg) no-repeat left top; padding: 40px 0; background-size: cover;}
+
+.calend_box { background: #CCCCCC; padding: 5px 15px; border-radius: 10px; text-align: center; display: block; text-decoration: none;}
+.calend_box span { font-size: 16px; color: #fff; }
+.calend_box:hover, .calend_box:focus, li.active .calend_box { background: #555555; }
+.cu-slider { width: 820px; margin: 0 auto; padding: 30px; background: #fff; }
+
+.cu-slider .cal_list p { color: #666666; font-size: 16px; font-weight: normal; }
+.cu-slider .cal_list table { width: 100%; border:1px solid #DDDDDD; }
+.cu-slider .cal_list table thead { 
+background: #9C9C9C;
+background: -moz-linear-gradient(top, #D8D8D8 0%, #9C9C9C 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #D8D8D8), color-stop(100%, #9C9C9C));
+background: -webkit-linear-gradient(top, #D8D8D8 0%, #9C9C9C 100%);
+background: -o-linear-gradient(top, #D8D8D8 0%, #9C9C9C 100%);
+background: -ms-linear-gradient(top, #D8D8D8 0%, #9C9C9C 100%);
+background: linear-gradient(top, #D8D8D8 0%, #9C9C9C 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D8D8D8', endColorstr='#9C9C9C');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#D8D8D8', endColorstr='#9C9C9C')";
+-webkit-background-clip: padding-box; }
+
+.cu-slider .cal_list table th { color: #fff; font-size: 14px; padding: 8px 5px; }
+.cu-slider .cal_list table td { color: #666666; padding: 12px 5px; font-size: 16px; font-weight: normal; }
+.cu-slider .cal_list table tbody tr:nth-child(2n+1)  { background: #EEEEEE; }
+.cu-slider .cal_list table tbody tr:nth-child(2n+2)  { background: #ffffff; }
+.cu-slider .cal_list table td .cal_btn { border:0 none; background: #8BBF52;
+background: -moz-linear-gradient(top, #B1E478 0%, #8BBF52 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #B1E478), color-stop(100%, #8BBF52));
+background: -webkit-linear-gradient(top, #B1E478 0%, #8BBF52 100%);
+background: -o-linear-gradient(top, #B1E478 0%, #8BBF52 100%);
+background: -ms-linear-gradient(top, #B1E478 0%, #8BBF52 100%);
+background: linear-gradient(top, #B1E478 0%, #8BBF52 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B1E478', endColorstr='#8BBF52');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#B1E478', endColorstr='#8BBF52')";
+-webkit-background-clip: padding-box;
+padding: 5px 15px; color: #fff; font-size: 16px; border-radius: 10px; font-weight: normal; }
+.cu-slider .cal_list table td .cal_btn:hover { background: #7EAD49; }
+.cu-slider .bx-default-pager { display: none; }
+.cu-slider .bx-wrapper .bx-prev { left: -27px; background: url('../images/next_icon.png') no-repeat 0 0;}
+.cu-slider .bx-wrapper .bx-next { right: -37px; background: url('../images/pre_icon.png') no-repeat 0 0;}
+
+
+.remo_support_3 { background: url(../images/body_bg.jpg) no-repeat left top; border-top: 5px solid #68B5BC;
+	border-bottom: 5px solid #68B5BC; background-size: cover; padding: 80px 0; }
+.remo_support_3 .supp_office_list { width: 30%; display: inline-block; background: #151315; border:1px solid #275D68; 
+	border-radius: 10px; padding: 10px; position: relative; margin: 0 1%; min-height: 280px; vertical-align: top;}
+.remo_support_3 .support_3list { padding-top: 80px; }
+.remo_support_3 .supp_office_list .supp_office_deta h5 { color: #68B5BC; font-size: 22px; text-transform: uppercase; 
+	text-align: center; margin-top: 80px; margin-bottom: 20px;}
+.remo_support_3 .supp_office_list .supp_office_deta p { color: #fff; font-size: 14px; font-weight: normal;}
+.remo_support_3 .supp_office_list .supp_office_logo { width: 150px; height: 150px; background: #fff; border-radius: 100%;
+	margin: 0 auto; text-align: center; vertical-align: middle; line-height: 140px;border:1px solid #275D68;
+	position: absolute; top: -80px; right: 0; left: 0; }     
+.remo_support_3 .supp_office_list .supp_office_logo img { max-width: 90px; }
+
+.popup_deta p { font-size: 16px; }
+
+.support_reasonswork { background: url(../images/br-pic-2.jpg) no-repeat left top; background-size: cover; padding: 80px 0; }
+.support_reasonswork .remo_reasonswork h2 { margin-top: 0; color: #fff; text-align: center; }
+.support_reasonswork .remo_reasonswork li { width: 30%; display: inline-block; vertical-align: top; margin: 0 1%; }
+.support_reasonswork .remo_reasonswork ul { margin-top: 40px; margin-bottom: 0; }
+.support_reasonswork .remo_reasonswork li span { color: #68B5BC; font-size: 22px; margin-bottom: 10px; display: block;}
+.support_reasonswork .remo_reasonswork li p { color: #fff; font-size: 14px; }
+
+/*------- Resposive -------*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.remo_support_3 .supp_office_list { min-height: 325px; }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.cu-slider { width: 720px;}
+	.support_reasonswork .remo_reasonswork li span { font-size: 19px; }
+	.remo_support_3 .supp_office_list { min-height: 380px; }	
+}
+
+@media only screen and (max-width: 767px) {
+	.cu-slider { width: 620px;}
+	.remo_support_3 .supp_office_list { width: 80%; display: block; margin: 0 auto 110px; min-height: 240px; }
+	.remo_support_3 .supp_office_list:last-child { margin-bottom: 0; }
+	.support_reasonswork .remo_reasonswork li { width: 80%; display: block; margin: 0 auto 40px; text-align: center; }
+	.support_reasonswork .remo_reasonswork li:last-child { margin-bottom: 0; }
+	.cu-slider .cal_list table { min-width: 400px; }
+	.cu-slider .cal_list { overflow: auto; }
+}
+
+@media only screen and (max-width: 640px) {
+	.cu-slider { width: 450px;}
+	.remo_support_3 .supp_office_list { width: 80%; display: block; margin: 0 auto 110px; min-height: 240px; }
+	.remo_support_3 .supp_office_list:last-child { margin-bottom: 0; }
+	.support_reasonswork .remo_reasonswork li { width: 80%; display: block; margin: 0 auto 40px; text-align: center; }
+	.support_reasonswork .remo_reasonswork li:last-child { margin-bottom: 0; }
+	.remo_support_3 .supp_office_list .supp_office_logo { width: 120px; height: 120px; line-height: 110px; top: -65px;}
+	.remo_support_3 .supp_office_list .supp_office_logo img { max-width: 80px;}
+}
+
+@media only screen and (max-width: 480px) {
+	.cu-slider { width: 300px;}
+	.remo_support_3 .supp_office_list { width: 80%; display: block; margin: 0 auto 110px; min-height: 240px; }
+	.remo_support_3 .supp_office_list:last-child { margin-bottom: 0; }
+	.support_reasonswork .remo_reasonswork li { width: 80%; display: block; margin: 0 auto 40px; text-align: center; }
+	.support_reasonswork .remo_reasonswork li:last-child { margin-bottom: 0; }
+}
