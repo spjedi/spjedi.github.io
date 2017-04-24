@@ -4090,6 +4090,19 @@ a.fc-more:hover { text-decoration: underline }
   		background: #479555;
   		color: #fff;
   	}
+      	.two-btn {
+  		background: #48AF5A;
+  		width: 49.5%;
+  		font-size: 20px;
+  		font-weight: bold;
+  		padding: 15px;
+  		color: #fff;
+  		margin-top: 10px;
+  	}	
+  	.two-btn:hover {
+  		background: #479555;
+  		color: #fff;
+  	}
   	.head-title { text-align: center; position: relative; margin-bottom: 20px;}
   	.head-title i {
   		height: 1px;
@@ -4099,7 +4112,9 @@ a.fc-more:hover { text-decoration: underline }
   		vertical-align: middle;
   	}
   	.head-title span { width: 40%; display: inline-block; vertical-align: middle; color: #929292;}
-  	.remove-radi { border-radius: 0; }
+  	.remove-radi { border-radius: 0 !important; }
 
   	.btn-seedemo {background-color:#5fd3cf; border:0 none; width: 75%; height: 50px; color: #fff; font-size: 22px; font-weight: bold; outline:0; border-radius: 25px; margin-left:5%; margin-right: 5%;}
   	.btn-seedemo span { color: #22710f; }
+
+    .full-btn-square { width: 100%; margin: 0 auto;}
