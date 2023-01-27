@@ -1,29 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  {% include head.html %}
 
-  {% include head_index.html %}
+  <body>
+    <div id="spacenav">
+      <div class="nav" id="nav">
+        <nav>
+          <div class="sidebar-top">
+            <span class="shrink-btn">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
+          <div class="sidebar-top">
+            <img
+              src="/assets/img/logo.png"
+              class="logo hide"
+              style="margin-bottom: 50px"
+              alt=""
+            />
+          </div>
 
-  <body class="home-background">
+          <div class="sidebar-links">
+            <div class="wrapper">
+              <div class="button active">
+                <a href="/home"
+                  ><div class="icon">
+                    <img src="/assets/img/nav-icon-1.png" alt="" />
+                  </div>
+                  <span class="hide">Home</span></a
+                >
+              </div>
+              <div class="button active" style="padding-bottom: 20px">
+                <a href="/case"
+                  ><div class="icon">
+                    <img src="/assets/img/nav-icon-2.png" alt="" />
+                  </div>
+                  <span class="hide">Case Study</span></a
+                >
+              </div>
 
-    {% include header_1.html %}
+              <h4
+                class="hide"
+                style="
+                  border-bottom: 1px solid #ccc;
+                  border-top: 1px solid #ccc;
+                "
+              >
+                SharePoint Services
+              </h4>
 
-    	{{ content }}
+              <div class="sizeml" style="padding: 20px 0px">
+                <div class="button active">
+                  <a href="/migrat"
+                    ><div class="icon">
+                      <img src="/assets/img/nav-icon-1.png" alt="" />
+                    </div>
+                    <span class="hide">Migration Services</span></a
+                  >
+                </div>
+                <div class="button active">
+                  <a href="/remote"
+                    ><div class="icon">
+                      <img src="/assets/img/nav-icon-2.png" alt="" />
+                    </div>
+                    <span class="hide">Remote Support</span></a
+                  >
+                </div>
+                <div class="button active">
+                  <a href="/promanage"
+                    ><div class="icon">
+                      <img src="/assets/img/nav-icon-3.png" alt="" />
+                    </div>
+                    <span class="hide">Project Manage</span></a
+                  >
+                </div>
+                <div class="button active">
+                  <a href="/branding"
+                    ><div class="icon">
+                      <img src="/assets/img/nav-icon-1.png" alt="" />
+                    </div>
+                    <span class="hide">Branding Hub</span></a
+                  >
+                </div>
+              </div>
+              <div
+                class="button active"
+                style="border-top: 1px solid #ccc; padding-top: 20px"
+              >
+                <a href="/about"
+                  ><div class="icon">
+                    <img src="/assets/img/nav-icon-3.png" alt="" />
+                  </div>
+                  <span class="hide">About US</span></a
+                >
+              </div>
+              <div class="button active">
+                <a href="/contact"
+                  ><div class="icon">
+                    <img src="/assets/img/nav-icon-1.png" alt="" />
+                  </div>
+                  <span class="hide">Contact US</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-footer">
+            <a href="#" class="account tooltip-element" data-tooltip="0">
+              <i class="bx bx-user"></i>
+            </a>
+            <div class="admin-user tooltip-element" data-tooltip="1">
+              <div class="admin-profile hide">
+                <img src="/assets/img/Jed Elliott.png" alt="" />
+                <div class="admin-info">
+                  <h3>Jed Elliott</h3>
+                  <h5>Admin</h5>
+                </div>
+              </div>
+              <a href="#" class="log-out">
+                <i class="bx bx-log-out"></i>
+              </a>
+            </div>
+            <div class="tooltip">
+              <span class="show">Jed Elliott</span>
+              <span>Logout</span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <i class="bi bi-list mobile-nav-toggle d-none"></i>
+    <main id="main">
+      <!-- ======= Hero Section ======= -->
+      {% include hero.html %}
+      <!-- End Hero -->
+
+      <!-- ======= Values Section ======= -->
+      {% include values.html %}
+      <!-- End Values Section -->
+
+      <!-- ======= Flight Section ======= -->
+      {% include flight.html %}
+      <!-- End Flight  Section -->
+
+      <!-- ======= Flight Section ======= -->
+      {% include flight-2.html %}
+      <!-- End Flight  Section -->
+
+      <!-- ======= Case Section ======= -->
+      {% include case-study.html %}
+      <!-- End Case  Section -->
+
+      <!-- ======= Case Section ======= -->
+      {% include why-us.html %}
+      <!-- End Case  Section -->
+
       {% include footer.html %}
+    </main>
+    <!-- End #main -->
 
-    {% include foot.html %}
-      <!--Start of Tawk.to Script-->
-      <script type="text/javascript">
-          var $_Tawk_API = {}, $_Tawk_LoadStart = new Date();
-          (function () {
-              var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-              s1.async = true;
-              s1.src = 'https://embed.tawk.to/55b166e7fbb9458908f65fde/default';
-              s1.charset = 'UTF-8';
-              s1.setAttribute('crossorigin', '*');
-              s0.parentNode.insertBefore(s1, s0);
-          })();
-      </script>
-      <!--End of Tawk.to Script-->
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- ======= Hero Section ======= -->
+    {% include script.html %}
+    <!-- End Hero -->
   </body>
-
+  <script src="/assets/js/app.js"></script>
 </html>

@@ -1,5 +1,5 @@
 _site
 .sass-cache
-bower_components
-Desktop - Shortcut.lnk
-css.7z
+.jekyll-cache
+.jekyll-metadata
+vendor
