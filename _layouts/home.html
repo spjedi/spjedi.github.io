@@ -47,31 +47,34 @@
       >
         <div id="navbar" class="navbar">
           <div id="mySidenav" class="sidenav">
+            <a href="/home">home</a>
+            <a href="/case">case study</a>
+            <a href="#">home</a>
+            <a href="#">home</a>
             <i
               id="aaa"
-              class="mobile-nav-toggle fa fa-list"
-              style="color: wheat"
+              class="mobile-nav-toggle bi bi-list"
+              style="color: #1ba492"
               onclick="openNav()"
             ></i>
-            <a class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">home</a>
-            <a href="#">case study</a>
-            <a href="#">home</a>
-            <a href="#">home</a>
           </div>
         </div>
         <!-- .navbar -->
       </div>
       <script>
         function openNav() {
-          document.getElementById("mySidenav").style.height = "250px";
-          document.getElementById("aaa").style.opacity = 0;
+          console.log(document.getElementById("mySidenav").style.height);
+          if (document.getElementById("mySidenav").style.height == "250px") {
+            document.getElementById("mySidenav").style.height = "0px";
+          } else {
+            document.getElementById("mySidenav").style.height = "250px";
+          }
         }
 
-        function closeNav() {
-          document.getElementById("mySidenav").style.height = "0";
-          document.getElementById("aaa").style.opacity = 1;
-        }
+        // function closeNav() {
+        //   document.getElementById("mySidenav").style.height = "0";
+        //   document.getElementById("aaa").style.opacity = 1;
+        // }
       </script>
     </header>
     <!-- End Header -->
