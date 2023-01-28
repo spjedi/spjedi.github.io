@@ -28,15 +28,7 @@
     }
 
     .sidenav a:hover {
-      color: #f1f1f1;
-    }
-
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
+      color: #1ba492;
     }
   </style>
   <body>
@@ -46,11 +38,116 @@
         class="container-fluid d-flex align-items-center justify-content-between"
       >
         <div id="navbar" class="navbar">
-          <div id="mySidenav" class="sidenav">
-            <a href="/home">home</a>
-            <a href="/case">case study</a>
-            <a href="#">home</a>
-            <a href="#">home</a>
+          <div
+            id="mySidenav"
+            class="sidenav"
+            style="box-shadow: inset 0 -10px 10px -5px #1ba492"
+          >
+            <div class="row" style="justify-content: center">
+              <div class="col-sm-4">
+                <div class="button active">
+                  <a href="/home"
+                    ><div class="icon">
+                      <img
+                        src="/assets/img/nav-icon-1.png"
+                        style="width: 30px; height: 30px"
+                        alt=""
+                      />
+                    </div>
+                    <span>Home</span>
+                  </a>
+                </div>
+                <div class="button active">
+                  <a href="/case"
+                    ><div class="icon">
+                      <img
+                        src="/assets/img/nav-icon-2.png"
+                        style="width: 30px; height: 30px"
+                        alt=""
+                      />
+                    </div>
+                    <span>Case study</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="button active">
+                  <a href="/"
+                    ><div class="icon">
+                      <img
+                        src="/assets/img/nav-icon-2.png"
+                        style="width: 30px; height: 30px"
+                        alt=""
+                      />
+                    </div>
+                    <span>Migration Services</span>
+                  </a>
+                </div>
+                <div class="button active">
+                  <a href="/"
+                    ><div class="icon">
+                      <img
+                        src="/assets/img/nav-icon-3.png"
+                        style="width: 30px; height: 30px"
+                        alt=""
+                      />
+                    </div>
+                    <span>Remote Support</span>
+                  </a>
+                </div>
+                <div class="button active">
+                  <a href="/"
+                    ><div class="icon">
+                      <img
+                        src="/assets/img/nav-icon-1.png"
+                        style="width: 30px; height: 30px"
+                        alt=""
+                      />
+                    </div>
+                    <span>Project Manage</span>
+                  </a>
+                </div>
+                <div class="button active">
+                  <a href="/"
+                    ><div class="icon">
+                      <img
+                        src="/assets/img/nav-icon-2.png"
+                        style="width: 30px; height: 30px"
+                        alt=""
+                      />
+                    </div>
+                    <span>Branding Hub</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="button active">
+                  <a href="/"
+                    ><div class="icon">
+                      <img
+                        src="/assets/img/nav-icon-3.png"
+                        style="width: 30px; height: 30px"
+                        alt=""
+                      />
+                    </div>
+                    <span>About US</span>
+                  </a>
+                </div>
+                <div class="button active">
+                  <a href="/"
+                    ><div class="icon">
+                      <img
+                        src="/assets/img/nav-icon-1.png"
+                        style="width: 30px; height: 30px"
+                        alt=""
+                      />
+                    </div>
+                    <span>Contact US</span>
+                  </a>
+                </div>
+              </div>
+            </div>
             <i
               id="aaa"
               class="mobile-nav-toggle bi bi-list"
@@ -64,10 +161,10 @@
       <script>
         function openNav() {
           console.log(document.getElementById("mySidenav").style.height);
-          if (document.getElementById("mySidenav").style.height == "250px") {
+          if (document.getElementById("mySidenav").style.height == "500px") {
             document.getElementById("mySidenav").style.height = "0px";
           } else {
-            document.getElementById("mySidenav").style.height = "250px";
+            document.getElementById("mySidenav").style.height = "500px";
           }
         }
 

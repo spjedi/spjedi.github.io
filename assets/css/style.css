@@ -160,6 +160,16 @@
   opacity: 1;
 }
 
+a .icon {
+  background: url(/assets/img/menu-btn-on.png) top center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  background-size: cover;
+  z-index: 77;
+}
 #nav .wrapper .button:hover a .icon {
   background: url(/assets/img/menu-btn-on.png) top center;
   display: flex;
