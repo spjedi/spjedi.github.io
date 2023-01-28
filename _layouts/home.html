@@ -1,135 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
 
+    .sidenav {
+      height: 0;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+  </style>
   <body>
-    <div id="spacenav">
-      <div class="nav" id="nav">
-        <nav>
-          <div class="sidebar-top">
-            <span class="shrink-btn">
-              <i class="bx bx-chevron-left"></i>
-            </span>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top" data-scrollto-offset="0">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <div id="navbar" class="navbar">
+          <div id="mySidenav" class="sidenav">
+            <i
+              id="aaa"
+              class="mobile-nav-toggle fa fa-list"
+              style="color: wheat"
+              onclick="openNav()"
+            ></i>
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">home</a>
+            <a href="#">case study</a>
+            <a href="#">home</a>
+            <a href="#">home</a>
           </div>
-          <div class="sidebar-top">
-            <img
-              src="/assets/img/logo.png"
-              class="logo hide"
-              style="margin-bottom: 50px"
-              alt=""
-            />
-          </div>
-
-          <div class="sidebar-links">
-            <div class="wrapper">
-              <div class="button active">
-                <a href="/home"
-                  ><div class="icon">
-                    <img src="/assets/img/nav-icon-1.png" alt="" />
-                  </div>
-                  <span class="hide">Home</span></a
-                >
-              </div>
-              <div class="button active" style="padding-bottom: 20px">
-                <a href="/case"
-                  ><div class="icon">
-                    <img src="/assets/img/nav-icon-2.png" alt="" />
-                  </div>
-                  <span class="hide">Case Study</span></a
-                >
-              </div>
-
-              <h4
-                class="hide"
-                style="
-                  border-bottom: 1px solid #ccc;
-                  border-top: 1px solid #ccc;
-                "
-              >
-                SharePoint Services
-              </h4>
-
-              <div class="sizeml" style="padding: 20px 0px">
-                <div class="button active">
-                  <a href="/migrat"
-                    ><div class="icon">
-                      <img src="/assets/img/nav-icon-1.png" alt="" />
-                    </div>
-                    <span class="hide">Migration Services</span></a
-                  >
-                </div>
-                <div class="button active">
-                  <a href="/remote"
-                    ><div class="icon">
-                      <img src="/assets/img/nav-icon-2.png" alt="" />
-                    </div>
-                    <span class="hide">Remote Support</span></a
-                  >
-                </div>
-                <div class="button active">
-                  <a href="/promanage"
-                    ><div class="icon">
-                      <img src="/assets/img/nav-icon-3.png" alt="" />
-                    </div>
-                    <span class="hide">Project Manage</span></a
-                  >
-                </div>
-                <div class="button active">
-                  <a href="/branding"
-                    ><div class="icon">
-                      <img src="/assets/img/nav-icon-1.png" alt="" />
-                    </div>
-                    <span class="hide">Branding Hub</span></a
-                  >
-                </div>
-              </div>
-              <div
-                class="button active"
-                style="border-top: 1px solid #ccc; padding-top: 20px"
-              >
-                <a href="/about"
-                  ><div class="icon">
-                    <img src="/assets/img/nav-icon-3.png" alt="" />
-                  </div>
-                  <span class="hide">About US</span></a
-                >
-              </div>
-              <div class="button active">
-                <a href="/contact"
-                  ><div class="icon">
-                    <img src="/assets/img/nav-icon-1.png" alt="" />
-                  </div>
-                  <span class="hide">Contact US</span></a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="sidebar-footer">
-            <a href="#" class="account tooltip-element" data-tooltip="0">
-              <i class="bx bx-user"></i>
-            </a>
-            <div class="admin-user tooltip-element" data-tooltip="1">
-              <div class="admin-profile hide">
-                <img src="/assets/img/Jed Elliott.png" alt="" />
-                <div class="admin-info">
-                  <h3>Jed Elliott</h3>
-                  <h5>Admin</h5>
-                </div>
-              </div>
-              <a href="#" class="log-out">
-                <i class="bx bx-log-out"></i>
-              </a>
-            </div>
-            <div class="tooltip">
-              <span class="show">Jed Elliott</span>
-              <span>Logout</span>
-            </div>
-          </div>
-        </nav>
+        </div>
+        <!-- .navbar -->
       </div>
-    </div>
-    <i class="bi bi-list mobile-nav-toggle d-none"></i>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.height = "250px";
+          document.getElementById("aaa").style.opacity = 0;
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.height = "0";
+          document.getElementById("aaa").style.opacity = 1;
+        }
+      </script>
+    </header>
+    <!-- End Header -->
     <main id="main">
       <!-- ======= Hero Section ======= -->
       {% include hero.html %}
@@ -169,5 +114,8 @@
     {% include script.html %}
     <!-- End Hero -->
   </body>
+  <script>
+    $("[data-toggle=tooltip]").tooltip();
+  </script>
   <script src="/assets/js/app.js"></script>
 </html>

@@ -1030,7 +1030,7 @@ section {
   }
 
   .mobile-nav-toggle {
-    display: block !important;
+    display: block;
     color: var(--color-secondary);
     font-size: 28px;
     cursor: pointer;
@@ -1041,9 +1041,9 @@ section {
     z-index: 9999;
     right: 20px;
   }
-
-  .mobile-nav-toggle.bi-x {
-    color: var(--color-white);
+  .mobile-nav-toggle.bi-list {
+    /* color: var(--color-white); */
+    color: white;
   }
 
   .mobile-nav-active {
