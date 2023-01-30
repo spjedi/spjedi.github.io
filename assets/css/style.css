@@ -5,6 +5,9 @@
   #spacenav {
     display: none;
   }
+  #headertop {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -17,7 +20,14 @@
   #startspace {
     margin-top: 470px;
   }
+  #headertop {
+    display: block;
+  }
+  #nav {
+    display: none;
+  }
 }
+
 .about_checkmark {
   display: table-cell;
   width: 30px;
@@ -1410,6 +1420,9 @@ section {
 /*--------------------------------------------------------------
 # Flight
 --------------------------------------------------------------*/
+.two {
+  display: contents;
+}
 .flight {
   width: 100%;
   background: url(../img/fl-bg.jpg) top no-repeat;
@@ -1855,7 +1868,7 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 600px;
+
   display: flex;
   align-items: flex-end;
 }
