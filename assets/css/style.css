@@ -1983,7 +1983,7 @@ section {
 --------------------------------------------------------------*/
 .flight-2 {
   width: 100%;
-  background-image: url(/assets/img/space-bg.jpg);
+  background-color: darkslateblue;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2139,6 +2139,12 @@ section {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.why-us {
+  width: 100%;
+  background: url(../img/fl-bg.jpg) top no-repeat;
+  background-size: cover;
+  background-color: #000;
 }
 .why-us header .liner i {
   color: #28b6b7;
