@@ -8,6 +8,9 @@
   #headertop {
     display: none;
   }
+  #aaa {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -26,8 +29,382 @@
   #nav {
     display: none;
   }
+  #aaa {
+    display: block;
+  }
+}
+.about_map iframe {
+  width: 100% !important;
+  border-radius: 5px;
+  border: 1px solid #256a61;
+  filter: grayscale(100%);
+}
+.about_map {
+  margin: 20px 0px;
+}
+.contact_email {
+  display: inline-block;
+  padding-left: 35px;
+  width: 100%;
+  margin-top: 30px;
+}
+.contact_email .email_name_id input {
+  width: 68%;
+  display: inline-block;
+  border: 1px solid #d1d1d1;
+  color: #141414;
+  font-size: 16px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.contact_email .email_name_id label {
+  color: #141414;
+  font-size: 16px;
+  font-family: Conv_VANTALIG;
+  width: 30%;
+  display: inline-block;
+  font-weight: normal;
+}
+.contact_email .email_name_id .name_fild {
+  width: 49.5%;
+  display: inline-block;
+}
+.contact_email .email_sub input {
+  width: 84%;
+  display: inline-block;
+  border: 1px solid #d1d1d1;
+  color: #141414;
+  font-size: 16px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.contact_email .email_sub label {
+  color: #141414;
+  font-size: 16px;
+  font-family: Conv_VANTALIG;
+  width: 15%;
+  display: inline-block;
+  font-weight: normal;
+}
+.contact_email .email_msg textarea {
+  width: 84%;
+  display: inline-block;
+  border: 1px solid #d1d1d1;
+  color: #141414;
+  font-size: 16px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  resize: none;
+  height: 100px;
+}
+.contact_email .email_msg label {
+  color: #141414;
+  font-size: 16px;
+  font-family: Conv_VANTALIG;
+  width: 15%;
+  display: inline-block;
+  font-weight: normal;
+  vertical-align: top;
+}
+.contact_email .email_name_id .eid_fild label {
+  width: 20%;
+  margin-left: 10.5%;
+}
+.contact_email .email_submit {
+  margin-top: 20px;
+  justify-content: center;
+}
+.contact_email .email_submit input {
+  background-color: #28b6b7;
+  border: 1px solid #28b6b7;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 20px;
+  border: 0 none;
+  padding: 12px;
+  width: 250px;
+  text-transform: uppercase;
+}
+.contact_email .email_sub {
+  margin: 20px 0;
+}
+.contact_email .email_submit input:hover {
+  color: #fff;
+  background-color: #43b1a3;
+}
+.head_info {
+  display: inline-block;
+  padding-left: 35px;
+  margin-top: 30px;
+}
+.head_info h5 {
+  font-size: 48px;
+  color: #141414;
+  text-transform: uppercase;
+  margin: 40px 0;
+}
+.head_info p {
+  margin-bottom: 2px;
+  color: #141414;
+  font-family: Conv_VANTALIG;
+  font-size: 16px;
+}
+.head_info p i {
+  margin-right: 10px;
+}
+.head_info a i {
+  margin-right: 10px;
+}
+.head_info a {
+  margin-bottom: 2px;
+  color: #141414;
+  font-family: Conv_VANTALIG;
+  font-size: 16px;
+}
+.head_info p.mb2 {
+  margin-bottom: 20px;
+}
+.about_top_center {
+  border-top: 5px solid #1ba492;
+  width: 200px;
+  margin-bottom: 60px;
+}
+.contact_banner_right {
+  position: absolute;
+  right: 0;
+  width: 48%;
+}
+.contact_banner_right img {
+  width: 100%;
+}
+/* about-contract */
+.services_our .servi_icon {
+  text-align: center;
+  margin-top: -75px;
+}
+.services_our .servi_icon.img-top-20 {
+  margin-top: -90px;
+}
+.services_our .servi_icon.img-top-10 {
+  margin-top: -83px;
+}
+.services_our .servi_icon.img-top-1 ~ span {
+  margin-top: 60px;
+}
+.services_our .servi_icon.img-top-1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 155px;
+  margin: 0 auto;
+  top: 7px;
+}
+.servic_list {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border: 2px dotted #43b1a3;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 60px;
+  height: 480px;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+.servic_list span {
+  color: #1ba492;
+  font-size: 16px;
+  font-family: Conv_VANTABOL;
+  margin: 20px auto;
+  display: block;
+}
+.servic_list p {
+  font-family: Conv_VANTALIG;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.servi_icon img {
+  width: 100%;
+}
+@media (max-width: 1199px) {
+  .about-hr_jed {
+    width: 74.5%;
+  }
+  .servic_list {
+    height: 535px;
+  }
+  .jed_header h4 {
+    font-size: 22px;
+  }
+  .services_our .servi_icon {
+    margin-top: -59px;
+  }
+  .services_our .servi_icon.img-top-20 {
+    margin-top: -70px;
+  }
+  .services_our .servi_icon.img-top-10 {
+    margin-top: -66px;
+  }
+  .services_our .servi_icon.img-top-1 {
+    width: 112px;
+    top: 23px;
+  }
+  .services_our .servi_icon.img-top-1 ~ span {
+    margin-top: 43px;
+  }
 }
 
+.check-title-name h4 {
+  font-size: 50px;
+  color: #141414;
+  font-family: "TradeGothicLTBold";
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 20px;
+}
+.check-title-name h4:before {
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  height: 1px;
+  background-color: #1ba492;
+  width: 170px;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
+.cu-contact header .liner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cu-contact header .liner i {
+  color: #28b6b7;
+  font-size: 22px;
+}
+.cu-contact header .liner .line {
+  content: "";
+  background-color: #28b6b7;
+  width: 100px;
+  height: 2px;
+  border-radius: 40px;
+}
+
+.cu-contact header p {
+  font-size: 54px;
+  font-weight: 700;
+  color: #28b6b7;
+}
+.about-hr_jed {
+  width: 31%;
+  margin: 35px 10px;
+  display: inline-block;
+}
+.jed_header {
+  background: rgba(31, 31, 31, 0.8);
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.hr-user {
+  text-align: center;
+  margin-top: -50%;
+  display: inline-block;
+  width: 100%;
+}
+.jed_header h4 {
+  color: #1ba492;
+  font-size: 28px;
+  font-family: Conv_VANTABOL;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+.jed_header p {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 0 10px;
+}
+.jed_detail {
+  background: #43b1a3;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+  border-top: 1px solid #fff;
+  position: relative;
+  text-align: left;
+}
+.jed_detail span {
+  color: #fff;
+  font-size: 18px;
+  font-family: Conv_VANTABOL;
+}
+.jed_detail p {
+  color: #fff;
+  font-size: 14px;
+  font-family: Conv_VANTALIG;
+  margin-bottom: 0;
+}
+.about_bottom_dot {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: #474745;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.hr_about-list {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.cu-contact.hr-abouts {
+  background: url(/assets/img/4-bg.png) no-repeat center top,
+    url(/assets/img/bg-screen-2.png) no-repeat center bottom;
+  background-color: rgba(204, 204, 204, 0.5);
+}
+@media (max-width: 1199px) {
+  .about-hr_jed {
+    width: 74.5%;
+  }
+}
+/* start about top */
+.about_hones {
+  text-align: center;
+  margin: 60px auto;
+}
+.about_hones .about_hone_detail {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px dashed #fff;
+  border-radius: 10px;
+  position: relative;
+  border-top: 0 none;
+}
+.about_hones .about_hone_detail span {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: -14px;
+  width: 100%;
+  left: 0;
+  font-family: Conv_VANTABOL;
+}
+.about_hones .about_hone_detail li {
+  color: #fff;
+  font-size: 14px;
+  font-family: Conv_VANTALIG;
+  text-align: left;
+}
+.about_hones .about_hone_detail ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+/* end about top */
 .about_checkmark {
   display: table-cell;
   width: 30px;
@@ -1241,7 +1618,90 @@ section {
     width: 100%;
   }
 }
+.about-contac_btn {
+  font-size: 13px;
+  background-color: transparent;
+  padding: 15px;
+  color: white;
+  font-family: Conv_VANTALIG;
+  text-transform: uppercase;
+  width: 200px;
+  width: 280px;
+  display: block;
+  text-align: center;
+  border-radius: 30px;
+  margin: 0 auto;
+  border: 1px solid #28b6b7;
+}
+.about-contac_btn:hover {
+  text-decoration: none;
+  color: white;
+  background: #28b6b7;
+}
+/*--------------------------------------------------------------
+# Animated Contact Section
+--------------------------------------------------------------*/
+.contact-animated {
+  width: 100%;
+  min-height: 100vh;
+  background: url("/assets/img/about-hr-bg.jpg") center center;
+  background-size: cover;
+  position: relative;
+  padding: 120px 0 60px;
+}
 
+.contact-animated h2 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.contact-animated p {
+  color: #b3b3b3;
+  margin: 0 0 30px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.contact-animated img {
+  width: 100%;
+}
+.contact-animated .animated {
+  margin-bottom: 60px;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+/*--------------------------------------------------------------
+# Animated About Section
+--------------------------------------------------------------*/
+.about-animated {
+  width: 100%;
+  min-height: 100vh;
+  background: url("/assets/img/about-hr-bg.jpg") center center;
+  background-size: cover;
+  position: relative;
+  padding: 120px 0 60px;
+}
+
+.about-animated h2 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.about-animated p {
+  color: #b3b3b3;
+  margin: 0 0 30px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.about-animated img {
+  width: 100%;
+}
+.about-animated .animated {
+  margin-bottom: 60px;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
 /*--------------------------------------------------------------
 # Animated Hero Section
 --------------------------------------------------------------*/
@@ -1279,16 +1739,25 @@ section {
   .hero-animated .animated {
     max-width: 45%;
   }
+  .about-animated .animated {
+    max-width: 45%;
+  }
 }
 
 @media (max-width: 991px) {
   .hero-animated .animated {
     max-width: 60%;
   }
+  .about-animated .animated {
+    max-width: 60%;
+  }
 }
 
 @media (max-width: 575px) {
   .hero-animated .animated {
+    max-width: 80%;
+  }
+  .about-animated .animated {
     max-width: 80%;
   }
 }
@@ -1636,6 +2105,9 @@ section {
   color: #fff;
   font-weight: 700;
 }
+.case .img {
+  display: contents;
+}
 
 .case .card .content .text p {
   color: #fff;
@@ -1892,7 +2364,6 @@ section {
 .footer .content {
   background-color: #28b6b7;
   min-height: 250px;
-  border-radius: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;

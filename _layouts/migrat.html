@@ -3,7 +3,8 @@
   {% include head.html %}
 
   <body>
-    {% include navigation.html %}
+    <!-- {% include navigation.html %} -->
+    {% include topnavbar.html %}
     <i class="bi bi-list mobile-nav-toggle d-none"></i>
     <main id="main">
       <section
@@ -114,40 +115,7 @@
       </section>
       <section>{% include migration.html %}</section>
 
-      <!--Footer-->
-      <!-- ======= Footer ======= -->
-      <footer class="footer">
-        <div class="row text-center justify-content-center mt-5 mb--5">
-          <div class="col-md-9">
-            <div class="content p-4">
-              <h2>Form your durable team with us</h2>
-              <p>
-                Some clients stay with us over 5 years. With 170+ professionals
-                on board, we’re ready to assist you with full-cycle development.
-              </p>
-              <div class="btn">
-                <a href="/">Book a FREE Consultant</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-legal text-center">
-          <div class="container">
-            <div class="copyright">
-              <div class="footer-links">
-                <a href="/">Instagram</a>
-                <a href="/">LinkedIn</a>
-                <a href="/">Email</a>
-                <a href="/"> Resume</a>
-              </div>
-              <hr />
-              © 2022 c Web Design Company. All rights reserved. <br />
-              Crafted with and powered by Jekyll
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- End Footer -->
+      {% include footer.html %}
     </main>
     <!-- End #main -->
 
