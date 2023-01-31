@@ -1832,6 +1832,7 @@ section {
 }
 
 .values header p {
+  margin-top: 20px;
   font-size: 54px;
   font-weight: 700;
   color: #28b6b7;
