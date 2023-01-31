@@ -3,8 +3,7 @@
   {% include head.html %}
 
   <body>
-    <!-- {% include navigation.html %} -->
-    {% include topnavbar.html %}
+    {% include topnavbar.html %}{% include navigation.html %}
     <i class="bi bi-list mobile-nav-toggle d-none"></i>
     <main id="main">
       <section
@@ -113,7 +112,10 @@
           </div>
         </div>
       </section>
-      <section>{% include migration.html %}</section>
+      <section id="migrate_dektop">{% include migration.html %}</section>
+      <section id="migrate_mobile" style="display: contents">
+        <img src="/assets/img/mobilemigrate.PNG" />
+      </section>
 
       {% include footer.html %}
     </main>

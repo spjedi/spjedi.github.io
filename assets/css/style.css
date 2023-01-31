@@ -11,9 +11,15 @@
   #aaa {
     display: none;
   }
+  #migrate_dektop {
+    display: block;
+  }
+  #migrate_mobile {
+    display: none;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #navwrapper {
     display: none;
   }
@@ -30,6 +36,12 @@
     display: none;
   }
   #aaa {
+    display: block;
+  }
+  #migrate_dektop {
+    display: none;
+  }
+  #migrate_mobile {
     display: block;
   }
 }
