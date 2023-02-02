@@ -1,9 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
 
+    .sidenav {
+      height: 0;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+    .sidenav a {
+      gap: 20px;
+      text-decoration: none;
+      color: #818181;
+      display: inline-flex;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #1ba492;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 20rem;
+      padding: 1.8rem 0.85rem !important;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      transition: width 0.5s ease-in-out;
+      box-shadow: inset 0 0 10px 0 #ccc;
+      border-left: 1px solid #ccc;
+      padding-top: 20px !important;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none !important;
+    }
+  </style>
   <body>
-    {% include topnavbar.html %}
+    {% include topnavbar.html %} {% include navigation.html %}
     <i class="bi bi-list mobile-nav-toggle d-none"></i>
     <main id="main">
       <section

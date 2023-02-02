@@ -375,8 +375,7 @@
   margin-bottom: 80px;
 }
 .cu-contact.hr-abouts {
-  background: url(/assets/img/4-bg.png) no-repeat center top,
-    url(/assets/img/bg-screen-2.png) no-repeat center bottom;
+  background: url(/assets/img/4-bg.png) no-repeat center top, url(/assets/img/bg-screen-2.png) no-repeat center bottom;
   background-color: rgba(204, 204, 204, 0.5);
 }
 @media (max-width: 1199px) {
