@@ -938,6 +938,7 @@
   margin-right: -10000px;
   margin-top: 1px;
   left: 685px;
+  cursor: pointer;
 }
 
 #u181 {
@@ -965,6 +966,7 @@
   margin-right: -10000px;
   margin-top: 1px;
   left: 548px;
+  cursor: pointer;
 }
 
 #u179 {
@@ -986,6 +988,7 @@
   margin-right: -10000px;
   margin-top: 1px;
   left: 411px;
+  cursor: pointer;
 }
 
 #u177 {
@@ -1006,6 +1009,7 @@
   position: relative;
   margin-right: -10000px;
   margin-top: 1px;
+  cursor: pointer;
 }
 
 #u171 {
@@ -1030,19 +1034,19 @@
 }
 
 #u183-2 {
-  font-size: 16px;
+  font-size: 10pt;
   line-height: 19px;
   padding-right: 5px;
   padding-left: 5px;
   padding-top: 5px;
-  font-family: open-sans, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 #u183-4,
 #u183-6 {
   padding-right: 5px;
   padding-left: 5px;
-  font-family: open-sans, sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: italic;
 }
 
@@ -1056,6 +1060,7 @@
   margin-right: -10000px;
   margin-top: 1px;
   left: 137px;
+  cursor: pointer;
 }
 
 #u173 {
@@ -1091,6 +1096,7 @@
   margin-right: -10000px;
   margin-top: 1px;
   left: 274px;
+  cursor: pointer;
 }
 
 #u87:hover,
@@ -1141,6 +1147,7 @@
   position: relative;
   margin-right: -10000px;
   left: 822px;
+  cursor: pointer;
 }
 
 #u170:hover {
@@ -1200,6 +1207,7 @@
   margin-right: -10000px;
   margin-top: 162px;
   left: 548px;
+  cursor: pointer;
   -pie-background: rgba(0, 0, 0, 0.2);
 }
 
@@ -1219,6 +1227,7 @@
   margin-right: -10000px;
   margin-top: 162px;
   left: 412px;
+  cursor: pointer;
   -pie-background: rgba(0, 0, 0, 0.2);
 }
 
@@ -1264,6 +1273,7 @@
   background-color: transparent;
   position: relative;
   margin-right: -10000px;
+  margin-left: -100px;
 }
 
 #U345_animation {
@@ -1283,8 +1293,8 @@
   font-weight: 300;
   position: relative;
   margin-right: -10000px;
-  margin-top: 148px;
-  left: 688px;
+  margin-top: 124px;
+  left: 612px;
 }
 
 #u207 {
