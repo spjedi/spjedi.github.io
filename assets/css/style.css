@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-width: 767px) {
   #navwrapper {
     display: block;
   }
@@ -17,17 +17,37 @@
   #migrate_mobile {
     display: none !important;
   }
+
+  #hero {
+    position: relative;
+  }
+
+  #startspace {
+    position: absolute;
+    top: 55%;
+    right: 50%;
+    transform: translate(50%, -55%);
+  }
 }
 
 @media (max-width: 767px) {
+  #hero {
+    position: relative;
+  }
+
+  #startspace {
+    position: absolute;
+    top: 55%;
+    right: 50%;
+    transform: translate(50%, -55%);
+    width: 100%;
+  }
+
   #navwrapper {
     display: none;
   }
   #spacenav {
     display: block;
-  }
-  #startspace {
-    margin-top: 470px;
   }
   #headertop {
     display: block;
@@ -1512,14 +1532,27 @@ section {
 #hero .star-btn .btns {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  gap: 10px;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
 }
-#hero .star-btn a {
-  text-align: center;
-  color: #fff;
-  background-color: #28b6b7;
+
+#hero .star-btn .btns > p {
+  margin: 0;
+  font-weight: 900;
+  font-size: 16px;
+  transition: 0.2s;
+  cursor: pointer;
 }
+
+#hero .star-btn .btns > p:hover {
+  color: #7cdcdd;
+}
+
+#hero .star-btn a:hover {
+  border: 1px solid white;
+}
+
 #hero .star-btn p {
   color: #28b6b7;
   text-align: center;
@@ -1541,7 +1574,6 @@ section {
 }
 @media (max-width: 991px) {
   .hero {
-    height: auto;
     padding: 120px 0 60px 0;
   }
   .hero .hero-img {
@@ -1873,10 +1905,10 @@ section {
 
 .flight .flight-box a:hover {
   padding: 5px 15px;
-  background-color: #fff;
+  background-color: #28b6b7;
   margin-top: 8px;
-  color: #000;
-  border: 1px solid #000;
+  color: #fff;
+  border: 1px solid #fff;
   border-radius: 50px;
 }
 /*--------------------------------------------------------------
@@ -2064,6 +2096,7 @@ section {
   font-weight: 700;
   color: #28b6b7;
 }
+
 .why-us .img {
   border-radius: 8px;
   overflow: hidden;
@@ -2417,9 +2450,97 @@ section {
     font-size: 14px !important;
     font-family: "Poppins", sans-serif !important;
   }
+  #hero .star-btn a {
+    text-align: center;
+    color: #fff;
+    background-color: #28b6b7;
+    border: 1px solid #28b6b7;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
 }
 
 @media (max-width: 767px) {
+  .flight header p {
+    font-size: 32px;
+    font-weight: 700;
+    color: #28b6b7;
+  }
+
+  .flight .flight-box a {
+    padding: 5px 15px;
+    margin-top: 8px;
+    color: #28b6b7;
+    border: 1px solid #28b6b7;
+    border-radius: 50px;
+    transition: all 0.3s ease-out;
+    font-size: 11px;
+  }
+
+  .flight .flight-box a:hover {
+    padding: 5px 15px;
+    background-color: #28b6b7;
+    margin-top: 8px;
+    color: white;
+    border: 1px solid #28b6b7;
+    border-radius: 50px;
+  }
+
+  .flight-2 header p {
+    font-size: 32px;
+    font-weight: 700;
+    color: #28b6b7;
+  }
+
+  .flight-2 .flight-box a {
+    padding: 5px 15px;
+    margin-top: 8px;
+    color: #28b6b7;
+    border: 1px solid #28b6b7;
+    border-radius: 50px;
+    transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    font-size: 11px;
+  }
+
+  .why-us header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #28b6b7;
+  }
+
+  .why-us header h3 {
+    font-size: 13px;
+  }
+
+  .why-item .details a h3 {
+    font-size: 17px;
+  }
+
+  .why-item .details p {
+    line-height: 17px;
+    font-size: 10px;
+  }
+
+  #hero .star-btn a {
+    text-align: center;
+    color: #fff;
+    background-color: #28b6b7;
+    border: 1px solid #28b6b7;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-size: 12px;
+  }
+
+  #hero .star-btn .btns > p {
+    margin: 0;
+    font-weight: 900;
+    font-size: 13px;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  #hero .star-btn p span {
+    font-size: 13px;
+  }
+
   .hero-animated h2 {
     margin: 0 0 10px 0;
     font-size: 27px;
