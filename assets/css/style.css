@@ -1539,7 +1539,7 @@ section {
 
 #hero .star-btn .btns > p {
   padding: 6px 20px;
-  margin: 0;
+  margin: 0 0 0 40px;
   font-weight: 900;
   font-size: 15px;
   cursor: pointer;
