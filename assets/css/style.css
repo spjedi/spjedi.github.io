@@ -37,9 +37,9 @@
 
   #startspace {
     position: absolute;
-    top: 55%;
+    top: 63%;
     right: 50%;
-    transform: translate(50%, -55%);
+    transform: translate(50%, -63%);
     width: 100%;
   }
 
@@ -1707,6 +1707,10 @@ section {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+.home-animated .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
 @media (min-width: 992px) {
   .hero-animated .animated {
     max-width: 45%;
@@ -2463,9 +2467,25 @@ section {
     border: 1px solid #28b6b7;
     transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
+
+  .home-animated {
+    position: absolute;
+    top: 83%;
+    right: 30%;
+    transform: translate(30%, -83%);
+    width: 350px;
+  }
 }
 
 @media (max-width: 767px) {
+  #hero .star-btn .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
   .flight header p {
     font-size: 32px;
     font-weight: 700;
@@ -2532,13 +2552,13 @@ section {
     background-color: #28b6b7;
     border: 1px solid #28b6b7;
     transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   #hero .star-btn .btns > p {
-    margin: 0;
+    margin: 0 0 0 20px;
     font-weight: 900;
-    font-size: 13px;
+    font-size: 10px;
     transition: 0.2s;
     cursor: pointer;
     border: 1px solid #28b6b7;
@@ -2547,7 +2567,7 @@ section {
   }
 
   #hero .star-btn p span {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .hero-animated h2 {
@@ -2717,6 +2737,20 @@ section {
   main .copyright span {
     font-size: 12px !important;
     font-family: "Poppins", sans-serif !important;
+  }
+
+  .home-animated {
+    position: absolute;
+    top: 83%;
+    right: 50%;
+    transform: translate(50%, -83%);
+    width: 80%;
+  }
+
+  .img-responsive {
+    display: block;
+    max-width: 50%;
+    height: auto;
   }
 }
 
