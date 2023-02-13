@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <style>
+    body {
+      font-family: "Lato", sans-serif !important;
+    }
+
+    .sidenav {
+      height: 0;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+    .sidenav a {
+      gap: 20px;
+      text-decoration: none;
+      color: #818181 !important;
+      display: inline-flex;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #1ba492;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 20rem;
+      padding: 1.8rem 0.85rem !important;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      transition: width 0.5s ease-in-out;
+      box-shadow: inset 0 0 10px 0 #ccc;
+      border-left: 1px solid #ccc;
+      padding-top: 20px !important;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none !important;
+    }
+
+    .log-out {
+      display: flex;
+      height: 40px;
+      min-width: 2.4rem;
+      background-color: var(--main-color-dark);
+      color: var(--text-color);
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      border-radius: 10px;
+      margin: 0 0.65rem;
+      transition: color 0.3s;
+    }
+
+    a {
+      text-decoration: none !important;
+    }
+
+    a:visited {
+      color: white;
+      text-decoration: none !important;
+    }
+
+    p {
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+      font-family: "Lato", sans-serif;
+    }
+
+    h2 {
+      font-family: "Lato", sans-serif;
+      line-height: 1.2;
+    }
+
+    .link {
+      position: absolute;
+      bottom: 37px;
+    }
+
+    @media (max-width: 767px) {
+      .mt-4.block {
+        height: 343px;
+        cursor: pointer;
+      }
+    }
+
+    @media (min-width: 767px) {
+      .mt-4.block {
+        height: 380px;
+        cursor: pointer;
+      }
+    }
+  </style>
+  <body>
+    {% include topnavbar.html %} {% include navigation.html %}
+    <i class="bi bi-list mobile-nav-toggle d-none"></i>
+    <main id="main">
+      <section
+        id="hero-animated"
+        class="hero-animated d-flex align-items-center"
+      >
+        <div class="container" data-aos="zoom-out">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h2>
+                MICROSOFT<br />
+                MIGRATION SERVICES
+              </h2>
+              <p>
+                Painless Microsoft Migration In Just 30 Days Our Microsoft
+                Migration Services are designed to simplify the process of
+                installing and configuring Microsoft and their powerful
+                platform. Within just 30 days you will have a custom tailored
+                workspace that will transform the way your team shares
+                information, collaborate on projects, and partners with external
+                vendors.
+              </p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+              <img src="/assets/img/Leya.png" class="img-fluid animated" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="values" class="values pb-0">
+        <div class="container" data-aos="fade-up">
+          <header>
+            <div class="liner">
+              <i class="bi bi-check-circle-fill"></i>
+              <div class="line"></div>
+            </div>
+            <p>Title</p>
+          </header>
+          <div class="row">
+            <div
+              class="col-lg-4 mt-4 mt-lg-0 block"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="box d-flex align-items-center flex-column mb-3">
+                <div class="img">
+                  <img src="/assets/img/starting.png" alt="Card Image" />
+                </div>
+                <h3>Ad cupiditate sed est odio</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  quidem laborum accusamus neque id ipsam tenetur consequatur
+                  obcaecati, fuga nostrum?
+                </p>
+                <a href="/" class="link">Get some Online zing</a>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 mt-4 mt-lg-0 block"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="box d-flex align-items-center flex-column mb-3">
+                <div class="img">
+                  <img src="/assets/img/starting.png" alt="Card Image" />
+                </div>
+                <h3>TURBOCHARGINTG YOUR WEBSITE</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Neque explicabo delectus illo!
+                </p>
+                <a href="/" class="link">Get some Online zing</a>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 mt-4 mt-lg-0 block"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="box d-flex align-items-center flex-column mb-3">
+                <div class="img">
+                  <img src="/assets/img/starting.png" alt="Card Image" />
+                </div>
+                <h3>Fugit cupiditate alias nobis.</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Magnam in accusamus deserunt voluptatum ratione odit libero
+                  enim officiis iusto id. Illo provident mollitia cupiditate.
+                </p>
+                <a href="/" class="link">Get some Online zing</a>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <img src="/assets/img/value-bg.png" alt="Bg" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="migrate_dektop">{% include migration.html %}</section>
+      <section id="migrate_mobile">
+        <img src="/assets/img/mobilemigrate.PNG" />
+      </section>
+
+      {% include footer.html %}
+    </main>
+    <!-- End #main -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- ======= Hero Section ======= -->
+    {% include script.html %}
+    <!-- End Hero -->
+  </body>
+  <script src="/assets/js/app.js"></script>
+</html>
