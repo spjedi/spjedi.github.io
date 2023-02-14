@@ -2554,7 +2554,7 @@ section {
     background-color: #28b6b7;
     border: 1px solid #28b6b7;
     transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    font-size: 20pt;
+    font-size: 16pt;
   }
 
   #hero .star-btn .btns > p {
