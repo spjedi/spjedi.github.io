@@ -1481,7 +1481,7 @@ section {
   margin-left: 15%;
 }
 #hero .wrapper .button span {
-  display: none;
+  display: block;
   background-color: rgba(0, 0, 0, 0.9);
   padding: 10px 45px;
   color: #28b6b7;
@@ -2432,7 +2432,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 3rem;
+    margin: 1.5rem 2rem 1.5rem 2rem;
   }
 
   .about_checkmark i {
@@ -2721,7 +2721,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 3rem;
+    margin: 1.5rem 2rem 1.5rem 2rem;
   }
 
   .about_checkmark i {
@@ -2768,11 +2768,11 @@ section {
 }
 
 .footer .footer-links a {
-  color: #28b6b7;
+  color: #28b6b7 !important;
   transition: all 0.3s ease-out;
 }
 .footer .footer-links a:hover {
-  color: #fff;
+  color: #fff !important;
 }
 .mb--5 {
   margin-bottom: -150px !important;
