@@ -58,3 +58,7 @@ function showTooltip() {
 tooltip_elements.forEach((elem) => {
   elem.addEventListener("mouseover", showTooltip);
 });
+
+document.frames[0].contentDocument.getElementsByClass("tawk-button").style[
+  "background-color"
+] = "white !important";

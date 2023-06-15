@@ -2778,3 +2778,80 @@ section {
 .mb--5 {
   margin-bottom: -150px !important;
 }
+
+.about-us {
+  background: #e4e2f5 !important;
+}
+
+.about-us header p {
+  color: #28b6b7 !important;
+}
+
+.content {
+  font-size: 25px;
+}
+
+@media (max-width: 767px) {
+  .about-us h3 {
+    font-size: 16px;
+  }
+}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  position: absolute;
+  right: 90px;
+  width: 251px;
+}
+
+.icon {
+  padding: 13px 10px 10px;
+  background: #28b6b7;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid #28b6b7;
+}
+
+@media (max-width: 767px) {
+  .input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    position: absolute;
+    right: 90px;
+    width: 251px;
+    display: none;
+  }
+
+  .icon {
+    padding: 13px 10px 10px;
+    background: #28b6b7;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+
+  .input-field:focus {
+    border: 2px solid #28b6b7;
+  }
+}
