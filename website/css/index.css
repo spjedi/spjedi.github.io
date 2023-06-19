@@ -226,7 +226,7 @@
   position: relative;
   margin-right: -10000px;
   margin-top: 164px;
-  left: 770px;
+  left: 964px;
 }
 
 #u75-bw {
@@ -415,7 +415,8 @@
   position: relative;
   margin-right: -10000px;
   margin-top: 232px;
-  left: 581px;
+  left: 400px;
+  top: -117px;
 }
 
 #u122-4:hover {
@@ -493,6 +494,7 @@
 #u126-4 {
   padding-right: 10px;
   padding-left: 10px;
+  color: white;
 }
 
 #u127-4 {

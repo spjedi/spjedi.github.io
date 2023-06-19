@@ -223,7 +223,24 @@
 .services_our .servi_icon {
   text-align: center;
   margin-top: -75px;
+  margin-bottom: 25px;
 }
+
+.services_our .servi_icon img{
+  width: 152px;
+  height: 136px;
+}
+
+.servi_icon.sharepoint {
+  margin-bottom: -8px;
+}
+
+.servi_icon.sharepoint > img {
+  height: 169px!important;
+  position: relative;
+  bottom: 18px;
+}
+
 .services_our .servi_icon.img-top-20 {
   margin-top: -90px;
 }
@@ -255,7 +272,7 @@
 .servic_list span {
   color: #1ba492;
   font-size: 16px;
-  font-family: Conv_VANTABOL;
+  /* /* font-family: Conv_VANTABOL; */ */
   margin: 20px auto;
   display: block;
 }
@@ -264,6 +281,7 @@
   font-size: 14px;
   color: #fff;
   margin-bottom: 0;
+  margin-top: 10px;
 }
 .servi_icon img {
   width: 100%;
@@ -357,7 +375,7 @@
 .jed_header h4 {
   color: #1ba492;
   font-size: 28px;
-  font-family: Conv_VANTABOL;
+  /* font-family: Conv_VANTABOL; */
   text-transform: uppercase;
   margin-top: 25px;
 }
@@ -378,7 +396,7 @@
 .jed_detail span {
   color: #fff;
   font-size: 18px;
-  font-family: Conv_VANTABOL;
+  /* font-family: Conv_VANTABOL; */
 }
 .jed_detail p {
   color: #fff;
@@ -433,7 +451,7 @@
   top: -14px;
   width: 100%;
   left: 0;
-  font-family: Conv_VANTABOL;
+  /* font-family: Conv_VANTABOL; */
 }
 .about_hones .about_hone_detail li {
   color: #fff;
