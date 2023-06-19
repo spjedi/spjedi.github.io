@@ -101,7 +101,7 @@
 .contact_email .email_name_id label {
   color: #141414;
   font-size: 16px;
-  font-family: Conv_VANTALIG;
+  /* font-family: Conv_VANTALIG; */
   width: 30%;
   display: inline-block;
   font-weight: normal;
@@ -122,7 +122,7 @@
 .contact_email .email_sub label {
   color: #141414;
   font-size: 16px;
-  font-family: Conv_VANTALIG;
+  /* font-family: Conv_VANTALIG; */
   width: 15%;
   display: inline-block;
   font-weight: normal;
@@ -141,11 +141,12 @@
 .contact_email .email_msg label {
   color: #141414;
   font-size: 16px;
-  font-family: Conv_VANTALIG;
+  /* font-family: Conv_VANTALIG; */
   width: 15%;
   display: inline-block;
   font-weight: normal;
   vertical-align: top;
+  margin-top: 34px;
 }
 .contact_email .email_name_id .eid_fild label {
   width: 20%;
@@ -153,7 +154,7 @@
 }
 .contact_email .email_submit {
   margin-top: 20px;
-  justify-content: center;
+  text-align: center;
 }
 .contact_email .email_submit input {
   background-color: #28b6b7;
@@ -187,7 +188,7 @@
 .head_info p {
   margin-bottom: 2px;
   color: #141414;
-  font-family: Conv_VANTALIG;
+  /* font-family: Conv_VANTALIG; */
   font-size: 16px;
 }
 .head_info p i {
@@ -199,7 +200,7 @@
 .head_info a {
   margin-bottom: 2px;
   color: #141414;
-  font-family: Conv_VANTALIG;
+  /* font-family: Conv_VANTALIG; */
   font-size: 16px;
 }
 .head_info p.mb2 {
@@ -259,7 +260,7 @@
   display: block;
 }
 .servic_list p {
-  font-family: Conv_VANTALIG;
+  /* font-family: Conv_VANTALIG; */
   font-size: 14px;
   color: #fff;
   margin-bottom: 0;
@@ -382,7 +383,7 @@
 .jed_detail p {
   color: #fff;
   font-size: 14px;
-  font-family: Conv_VANTALIG;
+  /* font-family: Conv_VANTALIG; */
   margin-bottom: 0;
 }
 .about_bottom_dot {
@@ -437,7 +438,7 @@
 .about_hones .about_hone_detail li {
   color: #fff;
   font-size: 14px;
-  font-family: Conv_VANTALIG;
+  /* font-family: Conv_VANTALIG; */
   text-align: left;
 }
 .about_hones .about_hone_detail ul {
@@ -1609,7 +1610,7 @@ section {
   background-color: transparent;
   padding: 15px;
   color: white;
-  font-family: Conv_VANTALIG;
+  /* font-family: Conv_VANTALIG; */
   text-transform: uppercase;
   width: 200px;
   width: 280px;
@@ -2854,4 +2855,8 @@ section {
   .input-field:focus {
     border: 2px solid #28b6b7;
   }
+}
+
+.sidebar-links .wrapper .button.active {
+  margin: 5px 0;
 }
