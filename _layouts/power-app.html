@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    .sidenav {
+      height: 0;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+    .sidenav a {
+      gap: 20px;
+      text-decoration: none;
+      color: #818181;
+      display: inline-flex;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #1ba492;
+    }
+  </style>
+  <body>
+    {% include topnavbar.html %} {% include navigation.html %}
+    <main id="main">
+      <section
+        id="hero-animated"
+        class="hero-animated d-flex align-items-center"
+      >
+        <div class="container" data-aos="zoom-out">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h2>Power Apps</h2>
+              <p>
+                Power Apps is a revolutionary platform developed by Microsoft
+                that allows individuals and businesses to create customized
+                applications without extensive coding knowledge. With its
+                user-friendly interface and low-code development environment,
+                Power Apps empowers you to bring your app ideas to life quickly
+                and efficiently. Whether you are a business professional,
+                entrepreneur, or enthusiast, Power Apps provides a range of
+                pre-built components, seamless data integration, and responsive
+                design capabilities to help you create visually appealing and
+                functional applications. From automating workflows to
+                collaborating with team members, Power Apps offers endless
+                possibilities for innovation and productivity. Discover the
+                power of Power Apps and unlock your potential to build tailored
+                applications that meet your unique needs.
+              </p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+              <img src="/assets/img/hero-imag.png" class="img-fluid animated" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= Cases Section img-right ======= -->
+      <section class="case-single">
+        <div class="container mt-5" data-aos="zoom-out">
+          <div class="row g-5">
+            <div
+              class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first"
+            >
+              <h3>Construction Project Management:</h3>
+              <p>
+                Power Apps has been utilized to streamline construction project management processes, 
+                enabling efficient tracking of project progress, materials, and workforce. For instance, a
+                company called Satterfield & Pontikes Construction utilized Power Apps to develop a
+                custom project management app, which allowed their team members to record and access
+                real-time project data on-site using mobile devices. This resulted in enhanced
+                collaboration, improved decision-making, and increased productivity.
+              </p>
+              <a class="case-single-btn align-self-start" href="#"
+                >Read More</a
+              >
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center"
+            >
+              <div class="img">
+                <img
+                  src="/assets/img/case-study-1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cases Section -->
+
+      <!-- ======= Cases Section img-right ======= -->
+      <section class="case-single">
+        <div class="container mt-5" data-aos="zoom-out">
+          <div class="row g-5">
+            <div class="col-lg-4 col-md-6 d-flex align-items-center">
+              <div class="img">
+                <img
+                  src="/assets/img/case-study-1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div
+              class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center"
+            >
+              <h3>Employee Onboarding:</h3>
+              <p>
+                Power Apps has been employed to facilitate smooth and efficient employee onboarding
+                processes. An example is how the global consulting firm PricewaterhouseCoopers (PwC)
+                utilized Power Apps to develop an onboarding app called "Join PwC." This app provides
+                new employees with access to essential resources, information, and tasks to ensure a
+                seamless onboarding experience. It streamlines paperwork, provides training materials,
+                and allows new hires to connect with colleagues and mentors. 
+              </p>
+              <a class="case-single-btn align-self-start" href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cases Section -->
+
+      <!-- ======= Cases Section img-right ======= -->
+      <section class="case-single">
+        <div class="container mt-5" data-aos="zoom-out">
+          <div class="row g-5">
+            <div
+              class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first"
+            >
+              <h3>Inventory Management:</h3>
+              <p>
+                Power Apps has been leveraged for efficient inventory management in various industries.
+                For example, UK-based company Oxford Instruments, a leader in the field of high-technology
+                tools and systems, implemented a Power Apps-based inventory management solution. The app,
+                called "OxTrack," allows employees to track and manage inventory across multiple locations,
+                improving visibility and reducing errors. It enables real-time updates, inventory search
+                functionality, and data analytics. 
+              </p>
+              <a class="case-single-btn align-self-start" href="#"
+                >Read More</a
+              >
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center"
+            >
+              <div class="img">
+                <img
+                  src="/assets/img/case-study-1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cases Section -->
+      {% include footer.html %}
+    </main>
+    <!-- End #main -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- ======= Hero Section ======= -->
+    {% include script.html %}
+    <!-- End Hero -->
+  </body>
+  <script src="/assets/js/app.js"></script>
+</html>

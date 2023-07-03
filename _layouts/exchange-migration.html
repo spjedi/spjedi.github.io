@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    .sidenav {
+      height: 0;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+    .sidenav a {
+      gap: 20px;
+      text-decoration: none;
+      color: #818181;
+      display: inline-flex;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #1ba492;
+    }
+  </style>
+  <body>
+    {% include topnavbar.html %} {% include navigation.html %}
+    <main id="main">
+      <section
+        id="hero-animated"
+        class="hero-animated d-flex align-items-center"
+      >
+        <div class="container" data-aos="zoom-out">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h2>Exchange Migration</h2>
+              <p>
+                Exchange migration involves transferring email and messaging
+                systems from one version of Microsoft Exchange Server to another
+                or from on-premises Exchange Server to a cloud-based platform
+                like Microsoft 365. It includes migrating mailboxes, data, and
+                settings for a smooth transition. Reasons for migration include
+                upgrades, consolidation, or transitioning to the cloud. Careful
+                planning, coordination, and technical expertise are crucial. The
+                process typically involves planning, coexistence setup, mailbox
+                migration, data synchronization, testing, and decommissioning
+                the old environment. Exchange migration offers improved
+                features, streamlined administration, and scalability.
+              </p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+              <img src="/assets/img/hero-imag.png" class="img-fluid animated" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= Cases Section img-right ======= -->
+      <section class="case-single">
+        <div class="container mt-5" data-aos="zoom-out">
+          <div class="row g-5">
+            <div
+              class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first"
+            >
+              <h3>Seamless Email Transition:</h3>
+              <p>
+                Exchange migration ensures a seamless transition of email services for users. Whether migrating from an older 
+                version of Exchange to a newer one or moving from on-premises Exchange to Exchange Online (part of Office 365 or Microsoft 365), 
+                users can continue accessing their email accounts without interruption. 
+                This allows them to maintain productivity and communication during the migration process.
+              </p>
+              <a class="case-single-btn align-self-start" href="#"
+                >Read More</a
+              >
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center"
+            >
+              <div class="img">
+                <img
+                  src="/assets/img/case-study-1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cases Section -->
+
+      <!-- ======= Cases Section img-right ======= -->
+      <section class="case-single">
+        <div class="container mt-5" data-aos="zoom-out">
+          <div class="row g-5">
+            <div class="col-lg-4 col-md-6 d-flex align-items-center">
+              <div class="img">
+                <img
+                  src="/assets/img/case-study-1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div
+              class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center"
+            >
+              <h3>Enhanced Collaboration:</h3>
+              <p>
+                Exchange migration often involves transitioning to a more advanced and feature-rich version of Exchange. 
+                This can provide users with enhanced collaboration capabilities such as shared calendars, contacts, tasks, and 
+                the ability to schedule meetings efficiently. Users can benefit from improved collaboration tools and features, 
+                leading to better teamwork and productivity.
+              </p>
+              <a class="case-single-btn align-self-start" href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cases Section -->
+
+      <!-- ======= Cases Section img-right ======= -->
+      <section class="case-single">
+        <div class="container mt-5" data-aos="zoom-out">
+          <div class="row g-5">
+            <div
+              class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first"
+            >
+              <h3>Integration with Office 365/Microsoft 365:</h3>
+              <p>
+                Exchange migration to Exchange Online as part of Office 365 or Microsoft 365 brings integration with other productivity tools and services,
+                such as SharePoint, OneDrive, Teams, and more. Users can take advantage of seamless integration between these applications, enabling smooth collaboration 
+                and efficient workflows.
+              </p>
+              <a class="case-single-btn align-self-start" href="#"
+                >Read More</a
+              >
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center"
+            >
+              <div class="img">
+                <img
+                  src="/assets/img/case-study-1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cases Section -->
+
+     
+      <!-- End Cases Section -->
+      {% include footer.html %}
+    </main>
+    <!-- End #main -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- ======= Hero Section ======= -->
+    {% include script.html %}
+    <!-- End Hero -->
+  </body>
+  <script src="/assets/js/app.js"></script>
+</html>

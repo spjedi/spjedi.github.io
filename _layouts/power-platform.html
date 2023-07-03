@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    .sidenav {
+      height: 0;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+    .sidenav a {
+      gap: 20px;
+      text-decoration: none;
+      color: #818181;
+      display: inline-flex;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #1ba492;
+    }
+  </style>
+  <body>
+    {% include topnavbar.html %} {% include navigation.html %}
+    <main id="main">
+      <section
+        id="hero-animated"
+        class="hero-animated d-flex align-items-center"
+      >
+        <div class="container" data-aos="zoom-out">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h2>Power Platform</h2>
+              <p>
+                Power Platform is an innovative suite of Microsoft technologies
+                that empowers individuals and organizations to create custom
+                business solutions. Comprised of Power Apps, Power Automate
+                (formerly known as Microsoft Flow), Power BI, and Power Virtual
+                Agents, Power Platform offers a comprehensive set of tools for
+                app development, process automation, data analysis, and chatbot
+                creation. With its low-code and no-code approach, Power Platform
+                enables users of all skill levels to build robust applications,
+                automate workflows, gain insights from data, and create
+                intelligent virtual agents. Whether you are looking to
+                streamline business processes, make data-driven decisions, or
+                enhance customer experiences, Power Platform provides a powerful
+                and flexible foundation to transform your organization. Discover
+                the limitless possibilities of Power Platform and unleash your
+                innovation today.
+              </p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+              <img src="/assets/img/hero-imag.png" class="img-fluid animated" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= Cases Section img-right ======= -->
+      <section class="case-single">
+        <div class="container mt-5" data-aos="zoom-out">
+          <div class="row g-5">
+            <div
+              class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first"
+            >
+              <h3>Facility Maintenance and Inspection:</h3>
+              <p>
+                The Power Platform has been used to develop facility maintenance and inspection
+                solutions, allowing organizations to streamline their maintenance processes and track
+                inspection activities. An example is how the University of Michigan utilized Power Apps
+                and Power Automate to create a facility inspection app. This app replaced paper-based
+                inspections, improving efficiency, and enabling real-time reporting.
+              </p>
+              <a class="case-single-btn align-self-start" href="#"
+                >Read More</a
+              >
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center"
+            >
+              <div class="img">
+                <img
+                  src="/assets/img/case-study-1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cases Section -->
+
+      <!-- ======= Cases Section img-right ======= -->
+      <section class="case-single">
+        <div class="container mt-5" data-aos="zoom-out">
+          <div class="row g-5">
+            <div class="col-lg-4 col-md-6 d-flex align-items-center">
+              <div class="img">
+                <img
+                  src="/assets/img/case-study-1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div
+              class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center"
+            >
+              <h3>Quality Control and Compliance:</h3>
+              <p>
+                The Power Platform has been employed to develop quality control and compliance
+                solutions, helping organizations ensure product quality and meet regulatory requirements.
+                An example is how Siemens Healthineers utilized Power Apps and Power Automate to
+                create a quality control application. This application automated quality control processes,
+                reducing errors and improving compliance.
+              </p>
+              <a class="case-single-btn align-self-start" href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cases Section -->
+
+      <!-- ======= Cases Section img-right ======= -->
+      <section class="case-single">
+        <div class="container mt-5" data-aos="zoom-out">
+          <div class="row g-5">
+            <div
+              class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first"
+            >
+              <h3>Volunteer Management:</h3>
+              <p>
+                The Power Platform has been utilized for volunteer management solutions, enabling
+                organizations to efficiently manage volunteer activities and track volunteer engagement.
+                An example is how the Royal National Lifeboat Institution (RNLI) utilized Power Apps
+                and Power Automate to develop a volunteer management system. This system
+                streamlined the volunteer registration process, improved communication, and enhanced
+                volunteer coordination.
+              </p>
+              <a class="case-single-btn align-self-start" href="#"
+                >Read More</a
+              >
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center"
+            >
+              <div class="img">
+                <img
+                  src="/assets/img/case-study-1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cases Section -->
+
+      <!-- ======= Cases Section img-right ======= -->
+      <section class="case-single">
+        <div class="container mt-5" data-aos="zoom-out">
+          <div class="row g-5">
+            <div class="col-lg-4 col-md-6 d-flex align-items-center">
+              <div class="img">
+                <img
+                  src="/assets/img/case-study-1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div
+              class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center"
+            >
+              <h3>Project Tracking and Collaboration:</h3>
+              <p>
+                The Power Platform has been used to develop project tracking and collaboration 
+                solutions, enabling organizations to efficiently manage projects, tasks, and team
+                collaboration. An example is how WSP Global, a professional services consulting firm,
+                utilized Power Apps and Power Automate to create a project management app. This app
+                provided real-time visibility into project progress, streamlined task management, and
+                improved collaboration.
+              </p>
+              <a class="case-single-btn align-self-start" href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cases Section -->
+      
+      <!-- ======= Cases Section img-right ======= -->
+      <section class="case-single">
+        <div class="container mt-5" data-aos="zoom-out">
+          <div class="row g-5">
+            <div
+              class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first"
+            >
+              <h3>Event Registration and Management:</h3>
+              <p>
+                The Power Platform has been employed for event registration and management solutions,
+                allowing organizations to streamline event planning, registration, and attendee
+                management. An example is how the American Cancer Society utilized Power Apps and
+                Power Automate to develop an event management solution. This solution simplified
+                event registration, automated communication with attendees, and provided real-time
+                analytics.
+              </p>
+              <a class="case-single-btn align-self-start" href="#"
+                >Read More</a
+              >
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center"
+            >
+              <div class="img">
+                <img
+                  src="/assets/img/case-study-1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cases Section -->
+
+      <!-- ======= Cases Section img-right ======= -->
+      <section class="case-single">
+        <div class="container mt-5" data-aos="zoom-out">
+          <div class="row g-5">
+            <div class="col-lg-4 col-md-6 d-flex align-items-center">
+              <div class="img">
+                <img
+                  src="/assets/img/case-study-1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div
+              class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center"
+            >
+              <h3>Field Service Management:</h3>
+              <p>
+                The Power Platform has been used for field service management solutions, enabling
+                organizations to optimize field service operations, schedule appointments, and track
+                service activities. An example is how G&J Pepsi, a beverage company, utilized Power
+                Apps and Power Automate to create a field service app. This app improved technician
+                scheduling, enhanced service visibility, and streamlined field service operations.
+              </p>
+              <a class="case-single-btn align-self-start" href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cases Section -->
+      {% include footer.html %}
+    </main>
+    <!-- End #main -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- ======= Hero Section ======= -->
+    {% include script.html %}
+    <!-- End Hero -->
+  </body>
+  <script src="/assets/js/app.js"></script>
+</html>
