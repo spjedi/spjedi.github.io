@@ -360,10 +360,15 @@
   margin: 35px 10px;
   display: inline-block;
 }
-.custom-square {
-  width: 200px; 
+.square-tile {
+  width: 31%;
+  margin: 35px 10px;
+  display: inline-block;
+}
+.square-tile .about-hr_jed {
   height: 200px; 
 }
+
 .jed_header {
   background: rgba(31, 31, 31, 0.8);
   border-radius: 10px 10px 0 0;
