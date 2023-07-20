@@ -360,6 +360,10 @@
   margin: 35px 10px;
   display: inline-block;
 }
+.custom-square {
+  width: 80px; 
+  height: 80px; 
+}
 .jed_header {
   background: rgba(31, 31, 31, 0.8);
   border-radius: 10px 10px 0 0;
