@@ -735,6 +735,7 @@ main .copyright span {
 .shrink-btn:hover::before {
   opacity: 1;
 }
+
 .shrink-btn:hover {
   background-color: var(--main-color-dark);
 }
