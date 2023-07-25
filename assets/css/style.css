@@ -701,7 +701,8 @@ main .copyright span {
 .shrink-btn {
   position: absolute;
   top:50%;
-  height: 27px;
+  height: 32px;
+  width: 32px;
   padding: 0 0.3rem;
   background-color: var(--main-color);
   border-radius: 6px;
@@ -715,7 +716,7 @@ main .copyright span {
 }
 
 .shrink-btn i {
-  line-height: 27px;
+  line-height: 32px;
   transition: 0.3s;
 }
 
