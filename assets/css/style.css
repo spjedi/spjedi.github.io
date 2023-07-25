@@ -699,7 +699,7 @@ main .copyright span {
 }
 
 .shrink-btn {
-  position: relative;
+  position: absolute;
   top:50%;
   height: 32px;
   width: 32px;
