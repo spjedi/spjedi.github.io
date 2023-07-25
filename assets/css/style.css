@@ -703,7 +703,7 @@ main .copyright span {
   top:50%;
   height: 32px;
   width: 32px;
-  padding: 0 0.3rem;
+  padding: 0.3rem;
   background-color: var(--main-color);
   border-radius: 6px;
   cursor: pointer;
