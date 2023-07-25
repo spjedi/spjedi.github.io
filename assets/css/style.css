@@ -719,6 +719,21 @@ main .copyright span {
   transition: 0.3s;
 }
 
+.shrink-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px; 
+  opacity: 0;
+  z-index: 1; 
+}
+
+.shrink-btn:hover::before {
+  opacity: 1;
+}
 .shrink-btn:hover {
   background-color: var(--main-color-dark);
 }
