@@ -391,7 +391,7 @@
   padding: 20px;
   border-top: 1px solid #fff;
   position: relative;
-  text-align: left;
+  text-align: center;
 }
 .jed_detail span {
   color: #fff;
@@ -700,15 +700,15 @@ main .copyright span {
 
 .shrink-btn {
   position: absolute;
-  top:50%;
+  top: 50%;
   height: 27px;
   padding: 0 0.3rem;
   background-color: var(--main-color);
   border-radius: 6px;
   cursor: pointer;
   box-shadow: 0 3px 10px -3px rgba(70, 46, 118, 0.3);
-  right:0;
-  transform: translateY(-50%),translateX(-8px);;
+  right: 0;
+  transform: translateY(-50%) translateX(-8px);
   opacity: 0;
   pointer-events: none;
   transition: 0.3s;
