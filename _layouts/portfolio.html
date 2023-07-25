@@ -30,6 +30,22 @@
     .sidenav a:hover {
       color: #1ba492;
     }
+
+	  
+     .container-fluid {
+        margin-top: -25px !important;
+        background-color: white;
+        padding-bottom: 60px;
+    }
+
+      .pull-left {
+         padding-top: 4px;
+    }
+
+      .container-fluid {
+        background-color: #10172C;
+     }
+        
     @font-face {
     font-family: 'entypo';
     src: url('fonts/entypo.eot');
@@ -214,46 +230,32 @@ box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .3); margin-left:-10px; }
 
   </style>
   <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  <script data-cfasync="false" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
-  <body>
-    {% include topnavbar.html %} {% include navigation.html %}
-      <main id="main">
-          <section id="hero-animated"
-                   class="hero-animated d-flex align-items-center">
-              <div class="container" data-aos="zoom-out">
-                  <div class="row align-items-center">
-                      <div class="col-md-6">
-                          <h2>Case Studies</h2>
-                          <p>
-                              Explore software development <br />
-                              case studies from companies with <br />
-                              similar challenges
-                          </p>
-                      </div>
-                      <div class="col-md-6 d-flex justify-content-center">
-                          <img src="/assets/img/hero-imag.png" class="img-fluid animated" />
-                      </div>
-                  </div>
-              </div>
-          </section>
-          <style>
-              .container-fluid {
-                  margin-top: -25px !important;
-                  background-color: white;
-                  padding-bottom: 60px;
-              }
+<body class="home-background">
+  {% include topnavbar.html %}
+  {% include navigation.html %}
 
-              .pull-left {
-                  padding-top: 4px;
-              }
-
-              .container-fluid {
-                  background-color: #10172C;
-              }
-          </style>
-          <script data-cfasync="false" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-            class="home-background">
-              <div class="content-part">
+  <main id="main">
+    <section id="hero-animated" class="hero-animated d-flex align-items-center">
+      <div class="container" data-aos="zoom-out">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2>Case Studies</h2>
+            <p>
+              Explore software development <br />
+              case studies from companies with <br />
+              similar challenges
+            </p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+            <img src="/assets/img/hero-imag.png" class="img-fluid animated" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+        	<div class="content-part">
                   <div class="container">
                       <div class="main-heading">
                           <h1>OUR WORK!!</h1>
@@ -268,7 +270,8 @@ box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .3); margin-left:-10px; }
                                   _gaq.push(['_trackEvent', 'Portfolio', 'Click', 'http://spjedi.com/portfolio/', 4, true]);
                               }
                           </script>
-                          <div class="caption sub slider_center slider_btn" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300" style="padding-top:4% !important;" onclick="trackEventaction();"><a href=" mailto:info@spjedi.com?subject=Website%20Mockup%20Request&body =During business hours we respond within the hour">Request a Mockup</a></div>
+                          <div class="caption sub slider_center slider_btn" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300" style="padding-top:4% !important;" onclick="trackEventaction();">
+			    <a href=" mailto:info@spjedi.com?subject=Website%20Mockup%20Request&body =During business hours we respond within the hour">Request a Mockup</a></div>
                       </div>
 
 
