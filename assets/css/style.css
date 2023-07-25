@@ -716,6 +716,7 @@ main .copyright span {
 
 .shrink-btn i {
   line-height: 27px;
+  font-size: 20px;
   transition: 0.3s;
 }
 
@@ -728,7 +729,7 @@ main .copyright span {
   height: 100%;
   padding: 10px; 
   opacity: 0;
-  z-index: 1; 
+  z-index: -1; 
 }
 
 .shrink-btn:hover::before {
