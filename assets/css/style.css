@@ -716,7 +716,24 @@ main .copyright span {
 
 .shrink-btn i {
   line-height: 27px;
+  font-size: 20px;
   transition: 0.3s;
+}
+
+.shrink-btn::before {
+  content: '';
+  position: absolute;
+  top: -20px; 
+  left: -20px; 
+  width: calc(100% + 40px); 
+  height: calc(100% + 40px); 
+  padding: 20px; 
+  opacity: 0;
+  z-index: -1; 
+}
+
+.shrink-btn:hover::before {
+  opacity: 1;
 }
 
 .shrink-btn:hover {
