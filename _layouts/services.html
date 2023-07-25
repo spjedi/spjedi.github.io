@@ -53,34 +53,29 @@
     .sidenav a:hover {
       color: #1ba492;
     }
-    
     .hr_about-list {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-
-    .jed_detail {
       text-align: center;
+      margin-bottom: 80px;
+    }
+    
+   .about-hr_jed {
+      width: 31%;
+      margin: 35px 10px;
+      display: inline-block;
+    }
+  .jed_header {
+      background: rgba(31, 31, 31, 0.8);
+      border-radius: 10px 10px 0 0;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+  .hr-user {
+      text-align: center;
+      margin-top: -50%;
+      display: inline-block;
+      width: 100%;
     }
 
-    /* Adjust tile size for larger screens */
-    @media (min-width: 768px) {
-      .hr_about-list {
-        width: 100%;
-        max-width: 700px; /* Set the maximum width of the tile */
-        margin: 0 auto; /* Center the tile horizontally */
-        float: left;
-      }
-
-      .jed_header {
-        height: 100%; /* Set the height to use all available space */
-      }
-
-      .hr-user img {
-        max-width: 100%;
-        max-height: 100%; /* Set the height to use all available space */
-      }
-    }
   </style>
   <body>
   {% include navigation.html %}
