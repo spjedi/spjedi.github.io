@@ -700,21 +700,23 @@ main .copyright span {
 
 .shrink-btn {
   position: absolute;
-  top: calc(50% - 13.5px);
-  height: 27px;
+  top:50%;
+  height: 32px;
   padding: 0 0.3rem;
   background-color: var(--main-color);
   border-radius: 6px;
   cursor: pointer;
   box-shadow: 0 3px 10px -3px rgba(70, 46, 118, 0.3);
   right:0;
+  transform: translateY(-50%) translateX(-8px);
   opacity: 0;
   pointer-events: none;
   transition: 0.3s;
 }
 
 .shrink-btn i {
-  line-height: 27px;
+  line-height: 32px;
+  transform: translateY(2px); 
   transition: 0.3s;
 }
 
@@ -724,7 +726,7 @@ main .copyright span {
 
 nav:hover .shrink-btn,
 .shrink-btn.hovered {
-  right: 8px;
+  transform: translateY(-50%) translateX(0px);
   opacity: 1;
   pointer-events: all;
 }
