@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  {% include head.html %}
-  <link href="/assets/css/style.css" rel="stylesheet" />
-
+{% include head.html %}
+  <head>
+   <link href="/assets/css/style.css" rel="stylesheet" />
+</head>
   <style>
     body {
       font-family: "Lato", sans-serif;
@@ -100,144 +100,144 @@
       /* font-family: Conv_VANTALIG; */
       margin-bottom: 0;
     }
+
   </style>
-</head>
+  <body>
+    {% include navigation.html %}
+    {% include topnavbar.html %}
+    
+  <i class="bi bi-list mobile-nav-toggle d-none"></i>
 
-<body>
-  {% include navigation.html %}
-  {% include topnavbar.html %}
-  
-  <section class="cu-contact hr-abouts" style="background-color: rgba(204, 204, 204, 0.7)">
-    <div class="container" data-aos="fade-up" style="background-color: transparent">
-      <header>
-        <div class="liner">
-          <i class="bi bi-check-circle-fill"></i>
-          <div class="line"></div>
-        </div>
-        <p>What We Offer:</p>
-      </header>
-      <div class="row">
-        <!-- First Tile -->
-        <div class="col-md-6">
-          <div class="hr_about-list">
-            <div class="about-hr_jed">
-              <div class="jed_header">
-                <div class="hr-user">
-                  <img src="assets/img/sharepoint.png" alt="" />
-                </div>
-                <h4>Digital<br> Transformation</h4>
-                <p>Drive innovation and better business outcomes with SPJedi.  
-                  Our Digital Transformation and Modern Work Practice will help you harness digital technologies.  
-                  We craft seamless, personalized, and interactive applications.  
-                  Our innovative technology solutions will lead to increased efficiency, reduced costs, and improve productivity across your entire organization.</p>
-              </div>
-              <div class="jed_detail text-center">
-                <span></span>
-                <p></p>
-                <div class="about_bottom_dot"></div>
-                <a class="case-single-btn align-self-start" href="#">Learn More</a>
-              </div>
-            </div>
+  <main id="main">
+    <section id="contact-animated" class="about-animated d-flex align-items-center"
+      style="background-image: url(/assets//img/top-contact-bg.jpg)">
+      <div class="container" data-aos="zoom-out">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2>Services</h2>
+            <hr class="about_top_center" />
+            <p>Feel free to talk to our online representative at any time you please using our Live Chat system on
+              our website or one of the below instant messaging programs.</p>
+
+            <p>Please be patient while waiting for a response. (24/7 Support!)</p>
           </div>
-        </div>
-
-        <!-- Second Tile -->
-        <div class="col-md-6">
-          <div class="hr_about-list">
-            <div class="about-hr_jed">
-              <div class="jed_header">
-                <div class="hr-user">
-                  <img src="assets/img/Process.png" alt="" />
-                </div>
-                <h4>Process<br> Automation</h4>
-                <p>Unlock the future of technology with our Automation and AI Services.
-                  We're experts in Cloud Workflows, Robotic Process Automation (RPA), and Document Processing. 
-                  We at SPJedi will streamline your processes and supercharge productivity. 
-                  Experience tailored workflows, saving time and reducing errors, while you focus on growing your business. 
-                  Discover a new era of efficiency with us today.</p>
-              </div>
-              <div class="jed_detail text-center">
-                <span></span>
-                <p></p>
-                <div class="about_bottom_dot"></div>
-                <a class="case-single-btn align-self-start" href="#">Learn More </a>
-              </div>
+          <div class="col-md-6">
+            <div class="contact_banner_right">
+              <img src="/assets/img/x-wing.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <!-- Third Tile -->
-        <div class="col-md-6">
-          <div class="hr_about-list">
-            <div class="about-hr_jed">
-              <div class="jed_header">
-                <div class="hr-user">
-                  <img src="assets/img/migration.png" alt="" />
+    </section>
+    <section class="cu-contact hr-abouts" style="background-color: rgba(204, 204, 204, 0.7)">
+      <div class="container" data-aos="fade-up" style="background-color: transparent">
+        <header>
+          <div class="liner">
+            <i class="bi bi-check-circle-fill"></i>
+            <div class="line"></div>
+          </div>
+          <p>What We Offer : </p>
+        </header>
+        <div class="row">
+          <!-- First Tile -->
+          <div class="col-md-6">
+            <div class="hr_about-list">
+              <div class="about-hr_jed">
+                <div class="jed_header">
+                  <div class="hr-user">
+                    <img src="assets/img/sharepoint.png" alt="" />
+                  </div>
+                   <h4>Digital<br> Transformation</h4>
+                  <p>Drive innovation and better business outcomes with SPJedi.  
+                    Our Digital Transformation and Modern Work Practice will help you harness digital technologies.  
+                    We craft seamless, personalized, and interactive applications.  
+                    Our innovative technology solutions will lead to increased efficiency, reduced costs, and improve productivity across your entire organization.</p>
                 </div>
-                <h4>Migration Services</h4>
-                <p>Experience seamless and hassle-free technology transitions with our expert migration service. 
-                  Whether you're moving to the cloud, upgrading your systems, or migrating to new platforms, our IT specialists ensure a smooth and secure process. 
-                  Minimize downtime, preserve data integrity, and embrace the future of your IT infrastructure with confidence. Trust us to handle your migration needs and propel your business forward.</p>
-              </div>
-              <div class="jed_detail text-center">
-                <span></span>
-                <p></p>
-                <div class="about_bottom_dot"></div>
-                <a class="case-single-btn align-self-start" href="#">Learn More</a>
+                <div class="jed_detail text-center">
+                  <span></span>
+                  <p></p>
+                  <div class="about_bottom_dot"></div>
+                  <a class="case-single-btn align-self-start" href="#">Learn More</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Fourth Tile -->
-        <div class="col-md-6">
-          <div class="hr_about-list">
-            <div class="about-hr_jed">
-              <div class="jed_header">
-                <div class="hr-user">
-                  <img src="assets/img/external.png" alt="" />
+          <!-- Second Tile -->
+          <div class="col-md-6">
+            <div class="hr_about-list">
+              <div class="about-hr_jed">
+                <div class="jed_header">
+                  <div class="hr-user">
+                    <img src="assets/img/Process.png" alt="" />
+                  </div>
+                   <h4>Process<br> Automation</h4>
+                  <p>Unlock the future of technology with our Automation and AI Services.
+                    We're experts in Cloud Workflows, Robotic Process Automation (RPA), and Document Processing. 
+                    We at SPJedi will streamline your processes and supercharge productivity. 
+                    Experience tailored workflows, saving time and reducing errors, while you focus on growing your business. 
+                    Discover a new era of efficiency with us today.</p>
                 </div>
-                <h4>UI/UX</h4>
-                <p>Elevate your digital presence with our cutting-edge UI/UX design service. 
-                  Our skilled team of designers crafts captivating user interfaces and intuitive user experiences that leave a lasting impression.
-                  We prioritize user-centric design, ensuring seamless navigation and interactions across all devices. 
-                  Let us transform your ideas into visually stunning and user-friendly interfaces that maximize engagement and drive your IT solutions to success.</p>
-              </div>
-              <div class="jed_detail text-center">
-                <span></span>
-                <p></p>
-                <div class="about_bottom_dot"></div>
-                <a class="case-single-btn align-self-start" href="#">Learn More</a>
+                <div class="jed_detail text-center">
+                  <span></span>
+                  <p></p>
+                  <div class="about_bottom_dot"></div>
+                  <a class="case-single-btn align-self-start" href="#">Learn More </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section id="contact-animated" class="about-animated d-flex align-items-center"
-    style="background-image: url(/assets//img/top-contact-bg.jpg)">
-    <div class="container" data-aos="zoom-out">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <h2>Services</h2>
-          <hr class="about_top_center" />
-          <p>Feel free to talk to our online representative at any time you please using our Live Chat system on
-            our website or one of the below instant messaging programs.</p>
-          <p>Please be patient while waiting for a response. (24/7 Support!)</p>
-        </div>
-        <div class="col-md-6">
-          <div class="contact_banner_right">
-            <img src="/assets/img/x-wing.png" alt="" />
+          <div class="row">
+          <!-- Third Tile -->
+          <div class="col-md-6">
+            <div class="hr_about-list">
+              <div class="about-hr_jed">
+                <div class="jed_header">
+                  <div class="hr-user">
+                    <img src="assets/img/migration.png" alt="" />
+                  </div>
+                  <h4>Migration Services</h4>
+                  <p>Experience seamless and hassle-free technology transitions with our expert migration service. 
+                    Whether you're moving to the cloud, upgrading your systems, or migrating to new platforms, our IT specialists ensure a smooth and secure process. 
+                    Minimize downtime, preserve data integrity, and embrace the future of your IT infrastructure with confidence. Trust us to handle your migration needs and propel your business forward.</p>
+                </div>
+                <div class="jed_detail text-center">
+                  <span></span>
+                  <p></p>
+                  <div class="about_bottom_dot"></div>
+                  <a class="case-single-btn align-self-start" href="#">Learn More</a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-     {% include footer.html %}
+          <!-- Fourth Tile -->
+          <div class="col-md-6">
+            <div class="hr_about-list">
+              <div class="about-hr_jed">
+                <div class="jed_header">
+                  <div class="hr-user">
+                    <img src="assets/img/external.png" alt="" />
+                  </div>
+                  <h4>UI/UX</h4>
+                  <p>Elevate your digital presence with our cutting-edge UI/UX design service. 
+                    Our skilled team of designers crafts captivating user interfaces and intuitive user experiences that leave a lasting impression.
+                    We prioritize user-centric design, ensuring seamless navigation and interactions across all devices. 
+                    Let us transform your ideas into visually stunning and user-friendly interfaces that maximize engagement and drive your IT solutions to success.</p>
+                </div>
+                <div class="jed_detail text-center">
+                  <span></span>
+                  <p></p>
+                  <div class="about_bottom_dot"></div>
+                  <a class="case-single-btn align-self-start" href="#">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+    {% include footer.html %}
   </main>
   <!-- End #main -->
 
