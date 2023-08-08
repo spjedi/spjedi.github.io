@@ -1500,7 +1500,6 @@ section {
 
 #hero:before {
   content: "";
-  background: url(../img/spaceship.png) top no-repeat;
   position: absolute;
   height: 100vh;
   bottom: 0;
